@@ -1,0 +1,82 @@
+# --- Config local de Claude Code (no compartir) ---
+.claude/settings.local.json
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Secretos y credenciales (NUNCA subir) ---
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.p12
+credentials.json
+secrets.json
+*.secret
+
+# --- Dependencias / build ---
+node_modules/
+dist/
+build/
+.cache/
+
+# --- Logs y temporales ---
+*.log
+*.tmp
+tmp/
+.tmp/
+
+# --- Cloudflare / Claude local ---
+.wrangler/
+.claude/launch.json
+
+# --- Datos personales de clientes (NUNCA subir): transcripciones de llamadas ---
+cerebros/*/fuentes/llamadas/
+
+# --- Listas de leads para closers (NUNCA subir) ---
+# La lista de origen lleva, persona a persona, país, edad, género, profesión y
+# capacidad de inversión; el email va hasheado, pero el hash se reidentifica en
+# segundos con un export de GHL, así que no es anónimo. Y la lista FINAL que
+# produce cruzar-con-ghl.py lleva nombre, email y teléfono en claro.
+# El script SÍ se versiona (es el método); los CSV se quedan locales.
+salidas/*/closers/*.csv
+
+# --- Método propietario del fundador: transcripciones de formación quedan locales (solo entra el LEEME) ---
+cerebros/*/fuentes/contenido/*
+!cerebros/*/fuentes/contenido/LEEME.md
+
+# --- Tableros por marca ---
+# salidas/ SÍ se versiona: es la producción real de cada lanzamiento.
+# (antes se ignoraba entera salvo dos excepciones, y la producción v1 de crianza
+#  se perdió por vivir solo en local. El repo es privado; no guardar aquí
+#  transcripciones de llamadas ni datos personales de clientes.)
+dashboard.html
+cockpit-*.html
+showcase/
+recreacion-ad/
+
+# --- No-núcleo: borradores y specs sueltos ---
+COCKPIT-*-SPEC.md
+GUIA-IMPLEMENTACION-COCKPIT*.md
+ANALISIS-DASHBOARDS.md
+INDICE-MAESTRO-DASHBOARDS.md
+ESTUDIO-REFERENTES.md
+PROMPT-AUDITORIA.md
+PROMPTS-*.md
+PLAN-IMPLEMENTACION.md
+PLAN-MOTOR-ADQUISICION.md
+RECUPERACION-NO-COMPRADORES-CUMBRE.md
+
+# --- Datos crudos y tableros GENERADOS: llevan email y teléfono de leads reales ---
+# (se reproducen en cualquier momento con herramientas/dashboard-*.py; el repo es
+#  privado, pero la regla de arriba es no guardar aquí datos personales de clientes)
+salidas/.cache-*.json
+salidas/dashboard-*.html
+salidas/dashboard-*.json
+salidas/historial-etapas.json
+salidas/ventas-*.csv
+salidas/rastreo-utm-*.json
+salidas/utm-*.json

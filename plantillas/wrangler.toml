@@ -1,0 +1,6 @@
+# Plantilla de Worker para Alejo Cloud. Copiar a la carpeta del proyecto y cambiar `name`.
+# account_id fijo = Cloudflare PERSONAL (alejo900327@gmail.com). No cambiarlo.
+name = "nombre-del-worker"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+account_id = "28a0caea3d6af60c2a36eb7ae3f6ecf9"

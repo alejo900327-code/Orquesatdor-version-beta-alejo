@@ -1,0 +1,89 @@
+/* ============================================================
+   tokens.css — Fundación de diseño de la Fábrica (3 capas)
+   Basado en el Sistema Maestro de Implementación. Es la fuente de
+   verdad de los tokens. Los bloques/páginas SOLO consumen estas vars.
+   El theming se hace con [data-theme] en <html> (aplícalo inline = sin FOUC).
+   ============================================================ */
+
+/* === CAPA 1 — PRIMITIVOS (crudos, sin semántica). Color en OKLCH. === */
+:root{
+  --neutral-50:oklch(0.985 0.002 250); --neutral-100:oklch(0.970 0.003 250);
+  --neutral-200:oklch(0.922 0.004 250); --neutral-300:oklch(0.870 0.005 250);
+  --neutral-400:oklch(0.708 0.006 250); --neutral-500:oklch(0.556 0.006 250);
+  --neutral-600:oklch(0.440 0.006 250); --neutral-700:oklch(0.370 0.006 250);
+  --neutral-800:oklch(0.270 0.006 250); --neutral-900:oklch(0.205 0.005 250);
+  --neutral-950:oklch(0.145 0.004 250); --white:#ffffff;
+  /* Acentos por nicho */
+  --growth-500:oklch(0.58 0.18 277); --growth-600:oklch(0.51 0.19 277);
+  --money-500:oklch(0.70 0.15 162);  --money-600:oklch(0.60 0.14 162);
+  --rel-500:oklch(0.65 0.20 15);     --rel-600:oklch(0.58 0.21 15);
+  --premium-600:oklch(0.45 0.15 320);
+  --success-500:oklch(0.72 0.17 150); --warning-500:oklch(0.80 0.16 80); --danger-500:oklch(0.63 0.22 25);
+  /* Espaciado 4/8 */
+  --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem; --space-5:1.25rem; --space-6:1.5rem;
+  --space-8:2rem; --space-10:2.5rem; --space-12:3rem; --space-16:4rem; --space-20:5rem; --space-24:6rem; --space-32:8rem;
+  /* Tipografía (escala ~1.25 + hero fluido) */
+  --font-sans:"Clash Grotesk","Inter",system-ui,sans-serif; --font-body:"Inter",system-ui,sans-serif;
+  --text-xs:.8rem; --text-sm:.875rem; --text-base:1rem; --text-md:1.125rem; --text-lg:1.25rem;
+  --text-xl:1.563rem; --text-2xl:1.953rem; --text-3xl:2.441rem; --text-4xl:3.052rem;
+  --text-hero:clamp(2.5rem,6vw,4.5rem);
+  --leading-tight:1.1; --leading-snug:1.3; --leading-normal:1.5; --leading-loose:1.7;
+  --tracking-tight:-0.02em; --tracking-normal:0;
+  /* Radios / sombras */
+  --radius-sm:.375rem; --radius-md:.75rem; --radius-lg:1.25rem; --radius-xl:1.75rem; --radius-full:9999px;
+  --shadow-sm:0 1px 2px rgb(0 0 0/.06); --shadow-md:0 8px 24px rgb(0 0 0/.10); --shadow-lg:0 24px 60px rgb(0 0 0/.18);
+  --shadow-glow:0 0 40px -8px var(--color-action);
+}
+
+/* === CAPA 2 (semánticos) + CAPA 3 (componente). El theming sobreescribe ESTO. === */
+:root,[data-theme="light"]{
+  --color-bg:var(--white); --color-bg-subtle:var(--neutral-50); --color-surface:var(--white);
+  --color-text:var(--neutral-900); --color-text-muted:var(--neutral-600); --color-border:var(--neutral-200);
+  --color-action:var(--growth-600); --color-action-hover:var(--growth-500); --color-on-action:var(--white); --color-focus:var(--growth-500);
+  --font-display:var(--font-sans);
+  --button-bg:var(--color-action); --button-bg-hover:var(--color-action-hover); --button-fg:var(--color-on-action);
+  --button-radius:var(--radius-full); --button-pad-y:var(--space-4); --button-pad-x:var(--space-8); --button-shadow:var(--shadow-md);
+}
+[data-theme="dark"]{
+  --color-bg:var(--neutral-950); --color-bg-subtle:var(--neutral-900); --color-surface:var(--neutral-900);
+  --color-text:var(--neutral-50); --color-text-muted:var(--neutral-400); --color-border:var(--neutral-800);
+}
+/* Variantes por nicho (cambian SOLO el acento) */
+[data-theme="money"]{--color-action:var(--money-600);--color-action-hover:var(--money-500)}
+[data-theme="relationships"]{--color-action:var(--rel-600);--color-action-hover:var(--rel-500)}
+[data-theme="growth"]{--color-action:var(--growth-600);--color-action-hover:var(--growth-500)}
+[data-theme="premium"]{--color-action:var(--premium-600);--color-action-hover:var(--growth-500)}
+
+/* ============================================================
+   EXTENSIONES DE MARCA (skins propietarios — colores EXACTOS en hex,
+   no aproximados; cada marca puede sobreescribir fuentes).
+   ============================================================ */
+
+/* CRIANZA — "cálido" (Instituto de Crianza / Mamá en Calma) */
+[data-theme="calido"]{
+  --color-bg:#FBF6EF; --color-bg-subtle:#F4EBDF; --color-surface:#FFFFFF;
+  --color-text:#2A2320; --color-text-muted:#5C534C; --color-border:#E7DBCB;
+  --color-action:#C06B4C; --color-action-hover:#A6573B; --color-on-action:#FFFFFF; --color-focus:#C06B4C;
+  --font-sans:"Fraunces",Georgia,serif; --font-display:"Fraunces",Georgia,serif; --font-body:"Nunito Sans",system-ui,sans-serif;
+}
+
+/* CUMBRE MC — "escenario" (evento en vivo, alta energía). Marca: negro + naranja #F08000 */
+[data-theme="escenario"]{
+  --color-bg:#0A0A0A; --color-bg-subtle:#161310; --color-surface:#161310;
+  --color-text:#F4F2F0; --color-text-muted:#B6AEA6; --color-border:rgba(244,242,240,.10);
+  --color-action:#F08000; --color-action-hover:#FF9A2E; --color-on-action:#0A0A0A; --color-focus:#F08000;
+  --font-sans:"Bebas Neue",Impact,sans-serif; --font-display:"Bebas Neue",Impact,sans-serif; --font-body:"Roboto",system-ui,sans-serif;
+}
+[data-theme="escenario"] h1,[data-theme="escenario"] h2{text-transform:uppercase;letter-spacing:.005em;line-height:.98}
+
+/* Base mínima que respeta tokens (los bloques añaden lo suyo) */
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);line-height:var(--leading-normal);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--font-display);line-height:var(--leading-tight)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--color-focus);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--button-bg);color:var(--button-fg);
+  border:none;border-radius:var(--button-radius);padding:var(--button-pad-y) var(--button-pad-x);box-shadow:var(--button-shadow);
+  font-weight:700;cursor:pointer;text-decoration:none;transition:transform .2s,background .2s}
+.btn:hover{background:var(--button-bg-hover);transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

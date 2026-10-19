@@ -1,0 +1,13 @@
+{
+  "name": "emprendimiento-consciente",
+  "owner": {
+    "name": "Emprendimiento Consciente"
+  },
+  "plugins": [
+    {
+      "name": "orquestador-skills",
+      "source": "./plugins/orquestador-skills",
+      "description": "Skills de producción: VSL conciencia, VSL high-ticket, anuncios Meta y workflows de GoHighLevel (planificar + construir en borrador con Claude in Chrome)."
+    }
+  ]
+}

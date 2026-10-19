@@ -1,0 +1,86 @@
+/* ============================================================
+   KIT.CSS · Sistema de diseño de la Fábrica de Landings
+   Tokens + componentes base. El constructor-pagina lo inlinea
+   y sobreescribe las variables de --mood según el proyecto.
+   ============================================================ */
+
+/* ---- TOKENS (mood por defecto: cálido-cercano) ---- */
+:root{
+  --bg:#FBF6EF; --bg-2:#F4EBDF; --ink:#2A2320; --ink-2:#5C534C; --ink-3:#8A7E74;
+  --accent:#C06B4C; --accent-d:#A6573B; --accent-2:#7E9078; --gold:#C9A24B;
+  --card:#FFFFFF; --line:#E7DBCB;
+  --serif:'Fraunces',Georgia,serif; --sans:'Nunito Sans',system-ui,sans-serif;
+  --maxw:920px;
+  /* escala tipográfica fluida */
+  --fs-h1:clamp(2.2rem,5.6vw,3.6rem); --fs-h2:clamp(1.5rem,3.6vw,2.2rem);
+  --fs-h3:1.2rem; --fs-body:1.05rem; --fs-small:.88rem;
+  /* espaciado */
+  --s1:8px; --s2:16px; --s3:24px; --s4:40px; --s5:64px; --s6:96px;
+  --radius:16px; --radius-sm:10px;
+  --shadow:0 2px 16px rgba(120,90,60,.06); --shadow-lg:0 12px 40px rgba(120,90,60,.10);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+/* ---- MOOD: elevado-aspiracional (Cumbre/alto ticket) ---- */
+[data-mood="elevado"]{
+  --bg:#0E1116; --bg-2:#161B22; --ink:#F6F1E7; --ink-2:#B9B2A4; --ink-3:#7E776B;
+  --accent:#C9A24B; --accent-d:#E0BE6A; --accent-2:#5E8B72; --card:#161B22; --line:rgba(246,241,231,.10);
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+}
+/* ---- MOOD: claro-confiable (desarrollo personal) ---- */
+[data-mood="claro"]{
+  --bg:#FAFAF8; --bg-2:#F1F1EE; --ink:#1A1A1A; --ink-2:#4A4A4A; --ink-3:#8A8A8A;
+  --accent:#4F46E5; --accent-d:#3F37C9; --accent-2:#10B981; --card:#FFFFFF; --line:#E6E6E2;
+  --serif:'Sora',system-ui,sans-serif; --sans:'Inter',system-ui,sans-serif;
+}
+/* ---- MOOD: místico-sereno (espiritualidad/sanación) ---- */
+[data-mood="mistico"]{
+  --bg:#14121C; --bg-2:#1D1A28; --ink:#F2EEF7; --ink-2:#B6AECB; --ink-3:#7A7290;
+  --accent:#9B8CCB; --accent-d:#B3A6DC; --accent-2:#C9A24B; --card:#1D1A28; --line:rgba(242,238,247,.10);
+}
+/* ---- MOOD: escenario (Cumbre MC — evento en vivo, alta energía) ---- */
+/* Marca: negro #0A0A0A + naranja #F08000 + blanco. Títulos Bebas Neue (condensada, mayúsculas), texto Roboto. */
+[data-mood="escenario"]{
+  --bg:#0A0A0A; --bg-2:#161310; --ink:#F4F2F0; --ink-2:#B6AEA6; --ink-3:#7C746C;
+  --accent:#F08000; --accent-d:#FF9A2E; --accent-2:#C04A00; --gold:#F08000;
+  --card:#161310; --line:rgba(244,242,240,.09);
+  --serif:'Bebas Neue',Impact,sans-serif; --sans:'Roboto',system-ui,sans-serif;
+}
+[data-mood="escenario"] h1,[data-mood="escenario"] h2{letter-spacing:.005em;font-weight:400;text-transform:uppercase;line-height:.98}
+[data-mood="escenario"] .eyebrow{color:var(--accent)}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+h1{font-family:var(--serif);font-weight:600;font-size:var(--fs-h1);line-height:1.05;letter-spacing:-.01em}
+h2{font-family:var(--serif);font-weight:600;font-size:var(--fs-h2);line-height:1.12}
+h3{font-family:var(--serif);font-weight:600;font-size:var(--fs-h3)}
+p{color:var(--ink-2);font-size:var(--fs-body)}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+::selection{background:var(--accent);color:var(--bg)}
+
+/* ---- componentes ---- */
+section{padding:var(--s5) 0;border-top:1px solid var(--line)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--s3);box-shadow:var(--shadow)}
+.grid{display:grid;gap:var(--s2)}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:720px){.g2,.g3{grid-template-columns:1fr}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;
+  font-weight:800;font-size:1.05rem;padding:16px 28px;border-radius:999px;text-decoration:none;
+  transition:transform .2s var(--ease),background .2s;box-shadow:var(--shadow-lg)}
+.btn:hover{transform:translateY(-2px);background:var(--accent-d)}
+.pill{display:inline-block;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:700;font-size:var(--fs-small);color:var(--ink-2)}
+.badge{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:var(--fs-small);color:var(--accent-2)}
+.pull{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.3rem,3vw,1.9rem);
+  line-height:1.3;border-left:3px solid var(--accent);padding:6px 0 6px 22px;margin:var(--s3) 0}
+.pull b{color:var(--accent);font-style:normal;font-weight:700}
+.cta-fixed{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--card);border-top:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;box-shadow:0 -6px 24px rgba(0,0,0,.06)}
+@media(min-width:721px){.cta-fixed{display:none}}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}

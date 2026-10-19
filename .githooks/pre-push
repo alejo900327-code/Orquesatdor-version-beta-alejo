@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Candado: este repo SOLO puede subir a la cuenta personal de GitHub (Alejoobregon27).
+# Si el remoto apunta a cualquier otra cuenta u organización, el push se bloquea.
+url="$2"
+case "$url" in
+  *github.com[:/]Alejoobregon27/*) exit 0 ;;
+  *) echo "❌ BLOQUEADO: Alejo Cloud solo sube a github.com/Alejoobregon27. Remoto: $url" >&2; exit 1 ;;
+esac
