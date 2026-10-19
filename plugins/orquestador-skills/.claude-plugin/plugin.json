@@ -1,7 +1,7 @@
 {
   "name": "orquestador-skills",
-  "description": "Skills de producción de EL ORQUESTADOR (Emprendimiento Consciente): VSL de conciencia, VSL high-ticket, anuncios para Meta y automatizaciones de GoHighLevel (planificar y construir workflows en borrador, con la referencia oficial de GHL). Producen en la versión honesta y compatible con políticas de plataforma.",
-  "version": "1.1.0",
+  "description": "Skills de producción de EL ORQUESTADOR (Emprendimiento Consciente): VSL de conciencia, VSL high-ticket, anuncios para Meta y automatizaciones de GoHighLevel (planificar y construir workflows en borrador, con la referencia oficial de GHL). Incluye además la suite de diseño UI/UX Pro Max (ui-ux-pro-max, design, brand, design-system, ui-styling, slides, banner-design) para páginas, dashboards, marca y banners. Producen en la versión honesta y compatible con políticas de plataforma.",
+  "version": "1.2.0",
   "author": {
     "name": "Emprendimiento Consciente"
   }

@@ -80,3 +80,14 @@ salidas/historial-etapas.json
 salidas/ventas-*.csv
 salidas/rastreo-utm-*.json
 salidas/utm-*.json
+
+# --- Skill externa impeccable: estado local (solo se versiona .impeccable/config.json) ---
+.impeccable/*
+!.impeccable/config.json
+**/.impeccable/hook.cache.json
+**/.impeccable/hook.pending.json
+**/skills/impeccable/scripts/bin/
+**/skills/impeccable/scripts/config.json
+
+# --- Skill externa taste-skill: archivos de trabajo locales ---
+.taste-skill/

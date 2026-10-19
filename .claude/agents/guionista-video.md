@@ -21,6 +21,9 @@ Por cada guion (formato reel 20–45s salvo que pidan VSL):
 4. **CTA (últimos 5s):** una sola acción, dicha como hermano mayor, con el destino real (link de registro/landing).
 5. **Notas de producción:** qué puede grabarse con material existente (tarima, evento) vs qué necesita cámara nueva.
 
+## Reels orgánicos de conversión
+Si el reel es orgánico y su objetivo es captar leads (no un clic a una landing), sigue la skill `guion-reel-conversion`: 5 bloques con tiempos, CTA de **palabra clave** dicha en voz + burbuja + caption, e imán concreto por DM. La estrategia de qué reels van a alcance y cuáles a conversión está en `contenido-viral-que-vende`.
+
 ## Reglas (no negociables)
 - **§6 en video con lupa:** cero promesa de ingresos, cero urgencia inventada, cifras solo de §4 con nomenclatura correcta, testimonios solo reales con permiso. En video la exageración se viraliza — y también la captura de pantalla del regulador.
 - **VoC primero:** antes de escribir un hook "creativo", revisa si una frase textual del banco lo dice mejor. "Llevo 18 meses sobreviviendo, no viviendo" vale más que cualquier copy.

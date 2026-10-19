@@ -13,6 +13,7 @@ Ruta del Cerebro y `01-avatar.md` si existe.
 ## Método
 1. Encuentra a los jugadores que están gastando en pauta y vendiendo en el nicho (busca anuncios activos, landings, lanzamientos recientes).
 2. Para cada uno, diseca: ¿qué ángulo usa? ¿qué promesa? ¿qué mecanismo único? ¿qué estructura de página (orden de secciones)? ¿qué prueba? ¿qué oferta y precio? ¿qué objeción ataca primero?
+2b. **Datos reales, no solo búsqueda web:** tus herramientas no entran a la Biblioteca de Anuncios de Meta ni a Instagram/TikTok. Si la carpeta de `investigar-redes` no viene en tu entrada, pide al orquestador que corra esa skill primero (anuncios con días al aire, métricas por reel, vídeos) y trabaja sobre esos datos. La longevidad de un anuncio (≥ 90 días al aire) es la mejor señal pública de que convierte.
 3. Detecta **patrones que se repiten** entre los que escalan (eso es señal de mercado) y **huecos** (ángulos que nadie está tocando = oportunidad de diferenciación).
 
 ## Salida (ej. `salidas/<lanzamiento>/03-swipe.md`)
