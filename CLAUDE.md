@@ -12,3 +12,8 @@ Proyecto PERSONAL de Alejo, separado de la empresa. Aquí se construyen y prueba
 - Antes de `wrangler deploy` o cualquier acción en Cloudflare, confirmar que el `account_id` es `28a0caea…`.
 - No traer aquí datos de clientes ni bases de contactos de la empresa.
 - Responder siempre en español.
+
+## Publicar ("deployalo")
+- Cada producto vive en `productos/<slug>/` (`wrangler.toml` + `public/`). Crear: `bash scripts/nuevo-producto.sh <slug> [dominio]`.
+- Publicar SOLO por el carril `bash scripts/deploy.sh <slug>` — ver skill `publicar`. El hook `guardia-cuentas` bloquea `wrangler deploy` suelto y cualquier comando con cuentas de la empresa.
+- Cada deploy queda anotado en `productos/<slug>/DEPLOYS.md`.

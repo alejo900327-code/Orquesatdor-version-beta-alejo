@@ -91,3 +91,7 @@ salidas/utm-*.json
 
 # --- Skill externa taste-skill: archivos de trabajo locales ---
 .taste-skill/
+
+# --- Alejo Cloud ---
+node_modules/
+package-lock.json

@@ -1,0 +1,11 @@
+{
+  "name": "alejo-cloud",
+  "private": true,
+  "scripts": {
+    "deploy": "bash scripts/deploy.sh",
+    "nuevo": "bash scripts/nuevo-producto.sh"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.1"
+  }
+}
