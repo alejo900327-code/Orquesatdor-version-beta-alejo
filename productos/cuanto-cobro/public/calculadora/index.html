@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calculadora gratis · ¿Cuánto Cobro?</title>
+  <meta name="description" content="Calcula gratis el costo real de una receta y cuánto deberías cobrar: ingredientes, empaque, gas y tu tiempo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor">
+      <a class="marca" href="../">¿Cuánto <span>Cobro?</span></a>
+      <a class="boton boton-secundario boton-chico" href="../#preventa">La app completa</a>
+    </div>
+  </header>
+
+  <main class="calc">
+    <div class="contenedor">
+      <span class="etiqueta">Calculadora gratis · 1 receta</span>
+      <h1>¿Cuánto te cuesta de verdad esta receta?</h1>
+      <p class="sub">Pon lo que compras y lo que usas. Al final te decimos tu precio mínimo, tu precio sugerido y cuánto te queda por tu trabajo.</p>
+      <p><button class="enlace-boton" id="cargar-ejemplo" type="button">Ver un ejemplo lleno</button> · <button class="enlace-boton" id="limpiar" type="button">Empezar de cero</button></p>
+
+      <div class="calc-rejilla">
+        <form id="formulario" novalidate onsubmit="return false">
+          <section class="bloque">
+            <h2>1. Tu receta</h2>
+            <div class="campos campos-3">
+              <div>
+                <label for="pais">País</label>
+                <select id="pais">
+                  <option value="MX">México (MXN)</option>
+                  <option value="CO">Colombia (COP)</option>
+                  <option value="PE">Perú (PEN)</option>
+                  <option value="CL">Chile (CLP)</option>
+                  <option value="AR">Argentina (ARS)</option>
+                  <option value="US">EE. UU. (USD)</option>
+                </select>
+              </div>
+              <div>
+                <label for="nombre">¿Qué vas a preparar?</label>
+                <input id="nombre" type="text" placeholder="Ej. Torta de chocolate" autocomplete="off">
+              </div>
+              <div>
+                <label for="porciones">¿Cuántas porciones salen?</label>
+                <input id="porciones" type="number" inputmode="numeric" min="1" step="1" placeholder="Ej. 12">
+              </div>
+            </div>
+          </section>
+
+          <section class="bloque">
+            <h2>2. Ingredientes</h2>
+            <p class="ayuda">Por cada uno: cuánto compras y cuánto pagaste, y cuánto usas en esta receta.</p>
+            <div id="ingredientes"></div>
+            <button class="boton boton-secundario boton-chico" id="agregar" type="button">+ Agregar ingrediente</button>
+            <datalist id="sugerencias">
+              <option value="Harina de trigo"><option value="Azúcar"><option value="Mantequilla"><option value="Huevos">
+              <option value="Leche"><option value="Crema de leche"><option value="Queso crema"><option value="Leche condensada">
+              <option value="Chocolate"><option value="Cacao en polvo"><option value="Polvo de hornear"><option value="Esencia de vainilla">
+              <option value="Aceite"><option value="Azúcar glas"><option value="Fresas"><option value="Dulce de leche / arequipe / cajeta">
+            </datalist>
+          </section>
+
+          <section class="bloque">
+            <h2>3. Lo que casi todas olvidan</h2>
+            <p class="ayuda">Si no lo sumas, lo pagas tú.</p>
+            <div class="campos campos-2">
+              <div>
+                <label for="empaque">Empaque (caja, base, cinta, etiqueta)</label>
+                <div class="con-prefijo"><span class="simbolo">$</span><input id="empaque" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+              </div>
+              <div>
+                <label for="gas">Gas, luz y agua de esta receta</label>
+                <div class="con-prefijo"><span class="simbolo">$</span><input id="gas" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+              </div>
+              <div>
+                <label for="horas">Horas que te toma (comprar, hornear, decorar)</label>
+                <input id="horas" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej. 3">
+              </div>
+              <div>
+                <label for="tarifa">¿Cuánto quieres ganar por hora?</label>
+                <div class="con-prefijo"><span class="simbolo">$</span><input id="tarifa" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej. 60"></div>
+              </div>
+              <div>
+                <label for="desperdicio">Merma o desperdicio (%)</label>
+                <input id="desperdicio" type="number" inputmode="decimal" min="0" max="100" step="any" placeholder="5">
+              </div>
+              <div>
+                <label for="margen">Ganancia para tu negocio (%)</label>
+                <input id="margen" type="number" inputmode="decimal" min="0" max="90" step="any" placeholder="30">
+              </div>
+            </div>
+          </section>
+
+          <section class="bloque">
+            <h2>4. ¿A cuánto la vendes hoy? <span style="font-weight:400;font-size:.9rem">(opcional)</span></h2>
+            <div class="con-prefijo" style="max-width:280px"><span class="simbolo">$</span><input id="precio-actual" type="number" inputmode="decimal" min="0" step="any" placeholder="Precio de la receta completa"></div>
+          </section>
+        </form>
+
+        <aside class="resultado-pegado" aria-live="polite">
+          <div class="resultado" id="resultado">
+            <h2>Tu resultado</h2>
+            <p class="vacio" id="resultado-vacio">Agrega al menos un ingrediente con su precio para ver el cálculo.</p>
+            <div id="resultado-lleno" hidden>
+              <div class="fila"><span>Ingredientes (con merma)</span><strong id="r-ingredientes"></strong></div>
+              <div class="fila"><span>Empaque + gas/luz</span><strong id="r-extras"></strong></div>
+              <div class="fila"><span>Tu trabajo</span><strong id="r-trabajo"></strong></div>
+
+              <div class="grupo">
+                <small>Precio MÍNIMO (debajo de esto pierdes)</small>
+                <div class="grande" id="r-minimo"></div>
+                <small id="r-minimo-porcion"></small>
+              </div>
+              <div class="grupo">
+                <small>Precio SUGERIDO (con ganancia para tu negocio)</small>
+                <div class="grande" id="r-sugerido"></div>
+                <small id="r-sugerido-porcion"></small>
+              </div>
+
+              <div class="pastilla" id="r-semaforo" hidden></div>
+
+              <button class="boton boton-secundario" id="compartir" type="button">Enviarme el resultado por WhatsApp</button>
+              <a class="boton boton-principal" id="ir-preventa" href="../#preventa">Guardar todas mis recetas en la app</a>
+              <p class="nota" style="color:#e9ddd2">La app guarda tus ingredientes y recalcula todas tus recetas cuando sube un precio.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>Calculadora orientativa: el resultado depende de los datos que ingresas. Tus datos se quedan en tu teléfono; no los enviamos a ningún servidor.</p>
+    </div>
+  </footer>
+
+  <template id="tpl-ingrediente">
+    <div class="ingrediente">
+      <div class="ingrediente-cabeza">
+        <div>
+          <label>Ingrediente</label>
+          <input class="i-nombre" type="text" list="sugerencias" placeholder="Ej. Mantequilla" autocomplete="off">
+        </div>
+        <button class="quitar" type="button" aria-label="Quitar ingrediente">×</button>
+      </div>
+      <div class="campos campos-2">
+        <div>
+          <label>Lo compras en</label>
+          <div class="par">
+            <input class="i-compra" type="number" inputmode="decimal" min="0" step="any" placeholder="Cantidad">
+            <select class="i-compra-u">
+              <option value="kg">kg</option><option value="g">g</option><option value="l">litros</option><option value="ml">ml</option><option value="u">unidades</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label>Y pagaste</label>
+          <div class="con-prefijo"><span class="simbolo">$</span><input class="i-precio" type="number" inputmode="decimal" min="0" step="any" placeholder="Precio"></div>
+        </div>
+        <div>
+          <label>En esta receta usas</label>
+          <div class="par">
+            <input class="i-usa" type="number" inputmode="decimal" min="0" step="any" placeholder="Cantidad">
+            <select class="i-usa-u">
+              <option value="g">g</option><option value="kg">kg</option><option value="ml">ml</option><option value="l">litros</option><option value="u">unidades</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="mini-total"></div>
+    </div>
+  </template>
+
+  <script src="calculadora.js"></script>
+</body>
+</html>

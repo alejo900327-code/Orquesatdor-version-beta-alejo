@@ -1,0 +1,8 @@
+# Producto: cuanto-cobro — Cloudflare PERSONAL. No cambiar account_id.
+name = "cuanto-cobro"
+compatibility_date = "2026-10-01"
+account_id = "28a0caea3d6af60c2a36eb7ae3f6ecf9"
+workers_dev = true
+
+[assets]
+directory = "./public"
