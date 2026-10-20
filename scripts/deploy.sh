@@ -43,7 +43,7 @@ LOG="$(mktemp)"; "${W[@]}" deploy 2>&1 | tee "$LOG"
 VER=$(grep -oE 'Current Version ID: [0-9a-f-]+' "$LOG" | awk '{print $4}' || true)
 
 # 5) Smoke: cada URL que imprimió wrangler → 200 + <title>.
-RES="ok"; URLS=$(grep -oE 'https://[a-zA-Z0-9./-]+' "$LOG" | grep -vE 'cloudflare.com|dash\.' | sort -u)
+RES="ok"; URLS=$(grep -oE 'https://[a-zA-Z0-9./-]+' "$LOG" | grep -vE 'cloudflare.com|dash\.|github.com' | sort -u)
 for u in $URLS; do
   ok=0; for i in 1 2 3 4 5 6; do code=$(curl -s -o "$LOG.html" -w '%{http_code}' "$u" || true); [ "$code" = 200 ] && { ok=1; break; }; sleep 5; done
   t=$(grep -oE '<title>[^<]*' "$LOG.html" 2>/dev/null | sed 's/<title>//' || true)
