@@ -41,8 +41,8 @@
     "boton": "Más información"
   },
   "hotmart": {
-    "nombre": "¿Cuánto Cobro? — App de costos para repostería (preventa)",
-    "descripcion": "App web para el celular que calcula el costo real de tus recetas (ingredientes, empaque, gas y tu tiempo) y te da tu precio mínimo y tu precio sugerido. Cuando sube un ingrediente, recalcula todas tus recetas y te arma el mensaje de cotización para WhatsApp.\n\nIncluye: acceso de por vida a la app y sus actualizaciones, ingredientes comunes precargados para tu país, guía de 10 minutos 'Las 4 cosas que olvidas al poner precio' y mensajes para responder cuando te dicen 'está caro'.\n\nPREVENTA: recibes el acceso por email y WhatsApp a más tardar el 30 de noviembre de 2026. Garantía de 7 días: si no logras costear tu primera receta, te devolvemos tu dinero.\n\nHerramienta de cálculo: los resultados dependen de los datos que ingresas y no garantizan ventas ni ingresos.",
+    "nombre": "¿Cuánto Cobro? — App de costos para repostería",
+    "descripcion": "App web para el celular que calcula el costo real de tus recetas (ingredientes, merma, empaque, gas, luz y tu tiempo) y te da tu precio mínimo y tu precio sugerido. Cuando cambias el precio de un ingrediente, recalcula todas tus recetas y te arma el mensaje de cotización para WhatsApp.\n\nIncluye: la app (pago único, sin mensualidad), 16 ingredientes comunes ya cargados con un precio de referencia aproximado en tu moneda, cálculo de gas, luz y agua por minutos de horno, la guía rápida \"Las 4 cosas que olvidas al poner precio\" y 5 mensajes para responder cuando te dicen \"está caro\".\n\nACCESO INMEDIATO: apenas pagas, recibes por email el PDF con el enlace a la app y la guía de inicio. Garantía de 7 días: si no te sirve, pides el reembolso del 100 %.\n\nHerramienta de cálculo: los resultados dependen de los datos que ingresas y no garantizan ventas ni ingresos.",
     "categoria": "Culinaria y Gastronomía",
     "formato": "Aplicación para teléfono celular (entrega: PDF con instrucciones de acceso)",
     "precio": 12,
@@ -53,7 +53,7 @@
     "pagina_gracias": "",
     "soporte_email": "el de la cuenta Hotmart",
     "pais_principal": "Colombia",
-    "fecha_entrega": "2026-11-30",
+    "fecha_entrega": "inmediata",
     "entrega": "Inmediata: PDF entrega/cuanto-cobro-acceso-y-guia.pdf → https://cuantocobro.vendedecasa.com/app/ (la fecha 30-nov es solo protocolo, decisión de Alejo 2026-10-20)"
   },
   "activos": {
@@ -73,12 +73,12 @@
       "nota": null
     },
     "hotmart": {
-      "estado": "en_revision",
+      "estado": "aprobado",
       "producto_id": "8770692",
       "checkout_url": "https://pay.hotmart.com/D108114823S",
-      "en_revision": true,
+      "en_revision": false,
       "fecha": "2026-10-20",
-      "nota": "Cuenta Hotmart personal (titular Diana Marcela Saa Angarita, confirmada por Alejo). Creado por navegador (no hay MCP de Hotmart). 2026-10-20: contenido = PDF de acceso/guía, página de venta externa https://cuantocobro.vendedecasa.com/. Registro finalizado 2026-10-20 con el sí de Alejo (aceptó el Término de Tratamiento de Datos); Hotmart lo analiza (~15 min, máx. 1 día). Afiliados sin configurar."
+      "nota": "Cuenta Hotmart personal (titular Diana Marcela Saa Angarita, confirmada por Alejo). Creado por navegador (no hay MCP de Hotmart). 2026-10-20: contenido = PDF de acceso/guía, página de venta externa https://cuantocobro.vendedecasa.com/. Registro finalizado 2026-10-20 con el sí de Alejo (aceptó el Término de Tratamiento de Datos); Hotmart lo analiza (~15 min, máx. 1 día). Afiliados sin configurar. 2026-10-20: aprobado (Ventas activas). Nombre sin '(preventa)', descripción con acceso inmediato y garantía incondicional, PDF de entrega reemplazado por la versión con gas por minutos."
     }
   },
   "paraguas": {

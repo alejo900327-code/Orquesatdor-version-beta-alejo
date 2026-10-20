@@ -14,11 +14,14 @@ Modelo de negocio: `conocimiento/_COMPARTIDO/investigaciones/2026-10-micro-apps-
 - [x] ~~Alejo compra el dominio~~ 2026-10-20: `vendedecasa.com` (paraguas para todas las micro apps) → `cuantocobro.vendedecasa.com`.
 - [x] ~~App paga en `public/app/`~~ 2026-10-20: publicada en https://cuantocobro.vendedecasa.com/app/
 - [x] ~~Hotmart → Página de venta externa~~ 2026-10-20: https://cuantocobro.vendedecasa.com/ guardada; PDF reemplazado con la URL nueva.
-- [x] ~~Hotmart → Finalizar registro~~ 2026-10-20: enviado a análisis (sí de Alejo). Falta: aviso de aprobación de Hotmart → probar una compra real del checkout.
+- [x] ~~Hotmart → Finalizar registro~~ 2026-10-20: aprobado, "Ventas activas". Nombre y descripción sin "preventa"; PDF nuevo subido (el viejo, quitado).
+- [ ] **Compra real de prueba** (Alejo: pagar, ver que llegue el email con el PDF y que abra /app/, pedir el reembolso).
 - [x] ~~Fijar la fecha real de entrega en `#fecha-entrega`~~ 2026-10-20: 30 de noviembre de 2026 (decisión de Alejo). Es solo protocolo: la entrega es inmediata (PDF + /app/).
 - [ ] Conectar el píxel de Meta / analítica a los eventos de `dataLayer`.
 - [x] ~~Elegir dominio~~ 2026-10-20: `cuantocobro.vendedecasa.com` (dominio paraguas `vendedecasa.com`).
-- [ ] Pasar el copy por `guardian-etico` (claims) y `editor-voz-marca`.
+- [x] ~~Copy por `guardian-etico`~~ 2026-10-20: landing v2 publicada con los 8 bloqueos y R1–R7 aplicados; citas verificadas en su fuente. Pendiente: `editor-voz-marca`.
+- [ ] Decidir si se sube a USD 17 más adelante (por ahora la landing no lo menciona: el dictamen exige confirmación) y si se ofrece "acceso de por vida" (hoy dice "pago único, sin mensualidad").
+- [ ] Confirmar métodos de pago activos por país en Hotmart para listarlos en la FAQ.
 - [ ] Decidir nombre definitivo (alternativas: Cobra Bien, Precio Justo, Mi Costo Real).
 
 ## Activos digitales (skill `activos-digitales`)
