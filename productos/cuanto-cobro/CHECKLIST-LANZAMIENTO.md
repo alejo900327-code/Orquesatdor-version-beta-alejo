@@ -31,9 +31,9 @@ Estado al 2026-10-20 (actualizado tras el deploy 5106f634). Leyenda: ✅ listo y
 | C4 | **Order bump configurado** en el checkout del 8770692 con el 8773273 | Claude | ✅ publicado (página de pago estándar "En blanco" + bump USD 5, sin precio tachado); confirmar que se ve en `pay.hotmart.com/D108114823S` | Abrir el checkout y ver la casilla del bump |
 | C5 | Página de venta externa = landing | Claude | ✅ | Hotmart → Página de producto |
 | C6 | Afiliados desactivados | Claude | ✅ | Programa de afiliados sin configurar |
-| C7 | Email de atención al cliente (hoy VACÍO) | Alejo | ⬜🔴 | Hotmart → producto → Herramientas → Página de pago → "Email de Atención al Cliente" |
-| C8 | Datos bancarios para recibir pagos | Alejo | ⬜🔴 | Hotmart → Mi cuenta → Datos bancarios |
-| C9 | **Compra real de prueba** (1 persona, luego reembolso): llega email, PDF y bump | Alejo | ⬜🔴 | Recibir el email de Hotmart y abrir `/app/` |
+| C7 | Email de atención al cliente `soporte@vendedecasa.com` (Cloudflare Email Routing → gmail de Alejo) | Claude | ✅ | Hotmart → Página de pago; también en /privacidad/ y en el PDF |
+| C8 | Datos bancarios para recibir pagos | Alejo | ✅ (confirmado por Alejo) | Hotmart → Mi cuenta → Datos bancarios |
+| C9 | **Compra real de prueba** con cupón `PRUEBACC0VX42K` (95 %, vence 23-oct 00:00 BRT): llega email, PDF y bump | Alejo | ⬜🔴 | Recibir el email de Hotmart y abrir `/app/` |
 
 ## D · Medición (píxel 520582086176158, BM Alejo Traffiker Respaldo)
 | # | Ítem | Quién | Estado | Cómo se verifica |
@@ -42,14 +42,14 @@ Estado al 2026-10-20 (actualizado tras el deploy 5106f634). Leyenda: ✅ listo y
 | D2 | PageView · Lead (`calc_primer_resultado`, 1 vez por navegador) · `ClicComprar` personalizado | Claude | ✅ código; Lead se verá con la primera calculadora real | Probar eventos en vivo |
 | D3 | Hotmart envía InitiateCheckout y Purchase al mismo píxel (web) | Claude | ✅ | Configurado; ver eventos tras la compra de prueba |
 | D4 | API de Conversiones en Hotmart (token de Meta) | Alejo | ⬜ | Generar el token en Events Manager y pegarlo en Hotmart → Píxel → API |
-| D5 | Dominio `vendedecasa.com` **verificado** en el BM (registro TXT en Cloudflare) | Alejo | ⬜🔴 | BM → Seguridad de la marca → Dominios |
+| D5 | Dominio `vendedecasa.com` **verificado** en el BM (metaetiqueta en la portada vendedecasa.com) | Claude | ✅ | BM → Seguridad de la marca → Dominios |
 | D6 | Eventos priorizados en Events Manager (Purchase, Lead) | Alejo/Claude | ⬜ | Tras verificar dominio |
 
 ## E · Meta Ads (cuenta)
 | # | Ítem | Quién | Estado | Cómo se verifica |
 |---|---|---|---|---|
 | E1 | Cuenta publicitaria del BM Respaldo activa, en USD o COP, zona horaria Bogotá | Alejo | ⬜ | Configuración de la cuenta |
-| E2 | Método de pago cargado | Alejo | ⬜🔴 | Facturación |
+| E2 | Método de pago cargado | Alejo | ✅ (confirmado por Alejo) | Facturación |
 | E3 | Página de Facebook Receta Rentable + IG @recetarentable conectados a la cuenta | Alejo | ⬜ | Identidad del anuncio |
 | E4 | Sin restricciones/políticas pendientes en la cuenta | Alejo | ⬜ | Calidad de la cuenta |
 
@@ -73,5 +73,5 @@ Estado al 2026-10-20 (actualizado tras el deploy 5106f634). Leyenda: ✅ listo y
 ## H · Verificado en el checkout (Colombia)
 - Precio mostrado: **$40.159 COP** (USD 12 convertido), cuotas hasta 12 con tarjeta.
 - Medios activos para CO: tarjeta, **PSE, Nequi, Bancolombia, Efecty**.
-- El checkout dice "Autor: Diana Marcela Saa Angarita" (titular de la cuenta Hotmart): decidir si se deja.
+- Autor en el checkout: **Receta Rentable** (perfil público y nombre social cambiados). OJO: el checkout personalizado (con bump y autor nuevo) es `?checkoutMode=10`; los botones de la landing ya apuntan ahí. El enlace sin parámetro muestra el checkout clásico sin bump.
 - Pendientes de revisión de creativos: verificar la cita de visto-b en su URL; rojo-a 4:5 tiene la etiqueta "Vendida a" tapando un botón (retocar).

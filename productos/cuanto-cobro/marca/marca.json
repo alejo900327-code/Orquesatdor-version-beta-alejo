@@ -75,7 +75,7 @@
     "hotmart": {
       "estado": "aprobado",
       "producto_id": "8770692",
-      "checkout_url": "https://pay.hotmart.com/D108114823S",
+      "checkout_url": "https://pay.hotmart.com/D108114823S?checkoutMode=10",
       "en_revision": false,
       "fecha": "2026-10-20",
       "nota": "Cuenta Hotmart personal (titular Diana Marcela Saa Angarita, confirmada por Alejo). Creado por navegador (no hay MCP de Hotmart). 2026-10-20: contenido = PDF de acceso/guía, página de venta externa https://cuantocobro.vendedecasa.com/. Registro finalizado 2026-10-20 con el sí de Alejo (aceptó el Término de Tratamiento de Datos); Hotmart lo analiza (~15 min, máx. 1 día). Afiliados sin configurar. 2026-10-20: aprobado (Ventas activas). Nombre sin '(preventa)', descripción con acceso inmediato y garantía incondicional, PDF de entrega reemplazado por la versión con gas por minutos."
