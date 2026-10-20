@@ -1,0 +1,75 @@
+{
+  "slug": "receta-rentable",
+  "nombre": "Receta Rentable",
+  "tagline": "Cocina, cobra bien y gana de verdad",
+  "promesa": "Herramientas simples para que las emprendedoras de cocina y repostería sepan cuánto cobrar y cuánto ganan.",
+  "colores": {
+    "fondo": "#fbf6ef",
+    "tinta": "#2b1d16",
+    "acento": "#b8325a"
+  },
+  "monograma": "RR",
+  "handles": {
+    "candidatos": [
+      "recetarentable"
+    ],
+    "disponibles": [
+      "recetarentable"
+    ],
+    "elegido": "recetarentable"
+  },
+  "instagram": {
+    "nombre": "Receta Rentable · Costos y precios",
+    "bio": "Para emprendedoras de cocina y repostería 🎂\nAprende a cobrar bien y saber cuánto ganas.\nCalculadora gratis 👇",
+    "link": "",
+    "categoria": "Educación (verificar)"
+  },
+  "facebook": {
+    "nombre_pagina": "Receta Rentable",
+    "categoria": "Educación (verificar)",
+    "bio": "Para emprendedoras que venden comida y postres desde casa: cómo calcular costos, poner precios justos y cobrar tu tiempo. Herramientas simples, desde el celular.",
+    "sitio_web": "",
+    "boton": "Más información"
+  },
+  "productos": [
+    "cuanto-cobro"
+  ],
+  "pagina_base": "ver productos/cuanto-cobro/marca/marca.json → paraguas",
+  "activos": {
+    "facebook": {
+      "estado": "configurado",
+      "url": "https://www.facebook.com/recetarentable",
+      "id": "103991017957239",
+      "fecha": "2026-10-20",
+      "nota": "Reutiliza Chef.alejo.cocina. Nombre Receta Rentable (aprobado al instante), usuario recetarentable, foto y portada logo B, presentación nueva, categoría Sitio web de educación. Asignada a BM 2 Fokuz Anunciante (Anuncios). Falta: email/WhatsApp de contacto, sitio web (landing sin publicar), archivar 4 publicaciones de la Cumbre (Alejo)."
+    },
+    "instagram": {
+      "estado": "configurado",
+      "url": "https://www.instagram.com/recetarentable/",
+      "handle": "recetarentable",
+      "conectada_a_pagina": true,
+      "tipo": "empresa · Educación",
+      "fecha": "2026-10-20",
+      "nota": "Foto logo B, nombre 'Receta Rentable · Costos y precios', bio. Falta link (solo se edita desde la app móvil) y datos de contacto. 28 piezas: 1 publicada, 27 programadas hasta el 26-oct."
+    },
+    "hotmart": {
+      "estado": "no_aplica",
+      "nota": "El producto en Hotmart va por producto (cuanto-cobro)"
+    }
+  },
+  "logo": {
+    "elegido": "b-etiqueta-batidor",
+    "simbolo": "logo/b-etiqueta-batidor-simbolo.svg",
+    "horizontal": "logo/b-etiqueta-batidor-horizontal.svg",
+    "perfil": "logo/b-etiqueta-batidor-perfil.png",
+    "fuente": "Avenir Next Bold"
+  },
+  "pauta": {
+    "bm": "BM 2 Fokuz Anunciante (3158645351122587)",
+    "cuenta": "CP Fokuz 1 (381913140730176)",
+    "alertas": [
+      "La cuenta también pauta para Muso (cliente)",
+      "Meta muestra aviso: verificar la cuenta publicitaria para seguir publicando anuncios"
+    ]
+  }
+}

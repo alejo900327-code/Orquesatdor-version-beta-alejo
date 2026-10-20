@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="480">
+    <rect width="1400" height="480" fill="#fbf6ef"/>
+    <g transform="translate(30 40)"><g transform="rotate(-12 200 200)">
+    <path d="M118 84 H306 a26 26 0 0 1 26 26 V290 a26 26 0 0 1 -26 26 H118 L58 200 Z" fill="#b8325a"/>
+    <circle cx="104" cy="200" r="15" fill="#fbf6ef"/>
+    <g stroke="#fbf6ef" stroke-width="11" fill="none" stroke-linecap="round">
+      <path d="M222 236 C162 196 168 108 222 108 C276 108 282 196 222 236"/>
+      <path d="M222 236 C194 196 198 132 222 132 C246 132 250 196 222 236"/>
+      <path d="M222 236 V114"/>
+    </g>
+    <rect x="210" y="232" width="24" height="68" rx="12" fill="#fbf6ef"/>
+  </g></g>
+    <g transform="translate(470 0)"><text x="0" y="225" font-family="Avenir Next" font-weight="700" font-size="150" letter-spacing="-5" fill="#2b1d16">receta</text><text x="0" y="375" font-family="Avenir Next" font-weight="700" font-size="150" letter-spacing="-5" fill="#b8325a">rentable</text></g></svg>

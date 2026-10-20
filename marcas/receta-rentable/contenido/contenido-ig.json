@@ -1,0 +1,911 @@
+{
+ "_nota": "Instagram de Receta Rentable. tipo: frase | lista | formula | carrusel. fondo: crema | frambuesa | choco. *palabra* = resaltada. Sin venta.",
+ "posts": [
+  {
+   "id": "ig01",
+   "dia": "hoy",
+   "carril": "A",
+   "tipo": "frase",
+   "fondo": "frambuesa",
+   "etiqueta": "Hola",
+   "titulo": [
+    "Cocinas *delicioso*.",
+    "¿Pero cobras",
+    "*bien*?"
+   ],
+   "texto": [
+    "Aquí vas a aprender a calcular tus costos, poner precios justos y cobrar tu tiempo. Sin Excel y sin culpa."
+   ],
+   "caption": "Bienvenida a Receta Rentable 🎂\n\nEsta cuenta es para ti si vendes tortas, postres o comida desde casa y sientes que trabajas mucho pero no ves la plata.\n\nAquí vas a encontrar:\n✅ Cómo calcular lo que de verdad te cuesta cada receta\n✅ Cómo poner precios sin miedo\n✅ Cómo cobrar tu tiempo\n\nCuéntame en comentarios: ¿qué vendes tú? 👇\n\n#reposteria #emprendedoras #negociodesdecasa #recetarentable",
+   "programada": "2026-10-20 01:15",
+   "estado": "publicada"
+  },
+  {
+   "id": "ig02",
+   "dia": "hoy",
+   "carril": "A",
+   "tipo": "carrusel",
+   "fondo": "crema",
+   "etiqueta": "Precios",
+   "slides": [
+    {
+     "tipo": "portada",
+     "titulo": [
+      "Las 4 cosas",
+      "que *olvidas*",
+      "al poner precio"
+     ],
+     "sub": "La 4 es la que más duele."
+    },
+    {
+     "tipo": "paso",
+     "num": "01",
+     "titulo": "El empaque",
+     "texto": "Caja, base, cinta, etiqueta, la bolsa. Suma más de lo que crees, sobre todo en pedidos grandes."
+    },
+    {
+     "tipo": "paso",
+     "num": "02",
+     "titulo": "Gas, luz y agua",
+     "texto": "Tu horno encendido una hora no es gratis. Ponle un valor fijo por receta."
+    },
+    {
+     "tipo": "paso",
+     "num": "03",
+     "titulo": "La merma",
+     "texto": "Lo que queda en el bowl, el bizcocho que no salió perfecto. Súmale un 3-10 % a tus ingredientes."
+    },
+    {
+     "tipo": "paso",
+     "num": "04",
+     "titulo": "Tu tiempo",
+     "texto": "Comprar, hornear, decorar, empacar y entregar. Si no lo cobras, estás trabajando gratis."
+    },
+    {
+     "tipo": "cierre",
+     "titulo": [
+      "*Guárdalo* para",
+      "tu próxima",
+      "cotización"
+     ],
+     "texto": "Y envíaselo a esa amiga que vende tortas y nunca le alcanza."
+    }
+   ],
+   "caption": "Si tu precio solo suma ingredientes, estás regalando parte de tu trabajo 😬\n\nDesliza y revisa las 4 cosas que casi todas olvidan. ¿Cuál se te pasa a ti? 👇\n\nGuárdalo para tu próxima cotización 📌\n\n#reposteria #costos #emprendedoras #preciojusto #recetarentable",
+   "programada": "2026-10-20 04:15",
+   "estado": "programada"
+  },
+  {
+   "id": "ig03",
+   "dia": "hoy",
+   "carril": "B",
+   "tipo": "frase",
+   "fondo": "choco",
+   "etiqueta": "Opinión",
+   "titulo": [
+    "Tu precio mínimo",
+    "*NO* es el de",
+    "tu competencia"
+   ],
+   "texto": [
+    "Ella no compra donde tú compras, no usa tus ingredientes ni tarda lo que tú tardas."
+   ],
+   "caption": "Copiar el precio de otra parece fácil… hasta que te das cuenta de que no estás ganando 🙃\n\nTu precio mínimo sale de TUS costos. El de la competencia es una referencia, no tu punto de partida.\n\n¿Estás de acuerdo? Sí o no, y por qué 👇\n\n#emprendimiento #reposteria #precios #recetarentable",
+   "programada": "2026-10-20 08:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig04",
+   "dia": "hoy",
+   "carril": "A",
+   "tipo": "carrusel",
+   "fondo": "crema",
+   "etiqueta": "Paso a paso",
+   "slides": [
+    {
+     "tipo": "portada",
+     "titulo": [
+      "¿Cuánto te",
+      "cuesta *cada*",
+      "*gramo*?"
+     ],
+     "sub": "El truco base para costear cualquier receta."
+    },
+    {
+     "tipo": "paso",
+     "num": "01",
+     "titulo": "Mira el paquete",
+     "texto": "Cuánto pagaste y cuánto trae. Ejemplo: mantequilla, 1 kg a $220."
+    },
+    {
+     "tipo": "paso",
+     "num": "02",
+     "titulo": "Divide",
+     "texto": "$220 ÷ 1.000 g = $0,22 por gramo. Ese es tu costo por gramo."
+    },
+    {
+     "tipo": "paso",
+     "num": "03",
+     "titulo": "Multiplica",
+     "texto": "Si tu receta usa 200 g: 200 × $0,22 = $44 de mantequilla."
+    },
+    {
+     "tipo": "paso",
+     "num": "04",
+     "titulo": "Repite y suma",
+     "texto": "Haz lo mismo con cada ingrediente y súmalo. Ese es el costo real de tus ingredientes."
+    },
+    {
+     "tipo": "cierre",
+     "titulo": [
+      "Hazlo una vez,",
+      "*úsalo siempre*"
+     ],
+     "texto": "Números de referencia: usa los de tu país y tu tienda."
+    }
+   ],
+   "caption": "Con este paso calculas cualquier ingrediente 🧈\n\nDivide lo que pagaste entre los gramos del paquete y multiplica por lo que usas. Así de simple.\n\nGuárdalo y pruébalo con tu receta más vendida 📌\n\n#reposteria #costos #emprendedoras #recetarentable",
+   "programada": "2026-10-20 08:35",
+   "estado": "programada"
+  },
+  {
+   "id": "ig05",
+   "dia": "hoy",
+   "carril": "A",
+   "tipo": "formula",
+   "fondo": "crema",
+   "etiqueta": "Tu tiempo",
+   "titulo": [
+    "¿Cuánto vale",
+    "*tu hora*?"
+   ],
+   "formula": "Horas × tarifa por hora = tu trabajo",
+   "ejemplo": [
+    "Una torta te toma 3 horas.",
+    "Si tu hora vale $80:",
+    "3 × $80 = $240 que también",
+    "tienen que estar en el precio."
+   ],
+   "caption": "Tu tiempo también es un ingrediente ⏰\n\nCuenta todo: comprar, hornear, decorar, empacar y entregar.\n\n(Números de referencia: ajústalos a tu moneda.)\n\n¿Cuántas horas te toma tu postre más pedido? 👇\n\n#reposteria #emprendedoras #costos #recetarentable",
+   "programada": "2026-10-20 09:10",
+   "estado": "programada"
+  },
+  {
+   "id": "ig06",
+   "dia": "hoy",
+   "carril": "A",
+   "tipo": "carrusel",
+   "fondo": "frambuesa",
+   "etiqueta": "Fórmula",
+   "slides": [
+    {
+     "tipo": "portada",
+     "titulo": [
+      "Tu precio",
+      "en *5 pasos*"
+     ],
+     "sub": "Guárdalo: lo vas a usar en cada pedido."
+    },
+    {
+     "tipo": "paso",
+     "num": "01",
+     "titulo": "Ingredientes",
+     "texto": "Costo por gramo × lo que usas. Súmalos todos."
+    },
+    {
+     "tipo": "paso",
+     "num": "02",
+     "titulo": "+ Merma",
+     "texto": "Súmale entre 3 y 10 % a los ingredientes."
+    },
+    {
+     "tipo": "paso",
+     "num": "03",
+     "titulo": "+ Empaque y gas",
+     "texto": "Un valor fijo por receta. No lo dejes en cero."
+    },
+    {
+     "tipo": "paso",
+     "num": "04",
+     "titulo": "+ Tu tiempo",
+     "texto": "Horas × lo que quieres ganar por hora. Ese es tu precio MÍNIMO."
+    },
+    {
+     "tipo": "paso",
+     "num": "05",
+     "titulo": "÷ (1 − ganancia)",
+     "texto": "Con 30 % de ganancia: mínimo ÷ 0,70 = tu precio sugerido."
+    },
+    {
+     "tipo": "cierre",
+     "titulo": [
+      "Mínimo para",
+      "no perder.",
+      "*Sugerido* para crecer."
+     ],
+     "texto": "Ejemplo de referencia: mínimo $450 → sugerido $643."
+    }
+   ],
+   "caption": "La fórmula completa, en 5 pasos 📌\n\nPrecio mínimo = lo que te cuesta + tu tiempo.\nPrecio sugerido = mínimo ÷ (1 − tu % de ganancia).\n\nGuárdalo y envíaselo a quien todavía pone precios \"a ojo\" 👀\n\n#reposteria #precios #emprendimiento #recetarentable",
+   "programada": "2026-10-20 10:10",
+   "estado": "programada"
+  },
+  {
+   "id": "ig07",
+   "dia": "hoy",
+   "carril": "B",
+   "tipo": "frase",
+   "fondo": "choco",
+   "etiqueta": "Ojo",
+   "titulo": [
+    "Subió la",
+    "*mantequilla*.",
+    "¿Y tu precio?"
+   ],
+   "texto": [
+    "Cada aumento que no pasas a tu precio sale de tu bolsillo, pedido tras pedido."
+   ],
+   "caption": "Los insumos suben y muchas veces no lo notamos hasta fin de mes 😓\n\nTip: revisa tus precios cada vez que cambie un ingrediente importante.\n\n¿Cada cuánto revisas los tuyos? a) cada mes b) cuando me acuerdo c) nunca 👇\n\n#reposteria #emprendimiento #precios #recetarentable",
+   "programada": "2026-10-20 11:10",
+   "estado": "programada"
+  },
+  {
+   "id": "ig08",
+   "dia": "hoy",
+   "carril": "B",
+   "tipo": "carrusel",
+   "fondo": "crema",
+   "etiqueta": "Clientes",
+   "slides": [
+    {
+     "tipo": "portada",
+     "titulo": [
+      "Te dicen",
+      "*\"está caro\"*.",
+      "¿Qué respondes?"
+     ],
+     "sub": "3 respuestas que no bajan tu precio."
+    },
+    {
+     "tipo": "paso",
+     "num": "01",
+     "titulo": "Explica el valor",
+     "texto": "\"Entiendo. Este precio incluye ingredientes de calidad y mi tiempo de trabajo.\""
+    },
+    {
+     "tipo": "paso",
+     "num": "02",
+     "titulo": "Ofrece otro tamaño",
+     "texto": "\"Si quieres, te propongo una versión más pequeña que se ajusta a tu presupuesto.\""
+    },
+    {
+     "tipo": "paso",
+     "num": "03",
+     "titulo": "Ajusta el diseño",
+     "texto": "\"Puedo simplificar la decoración para llegar a lo que buscas.\""
+    },
+    {
+     "tipo": "cierre",
+     "titulo": [
+      "Cambia la opción,",
+      "*no tu valor*"
+     ],
+     "texto": "Bajar el precio enseña a tu clienta a pedirte descuento siempre."
+    }
+   ],
+   "caption": "Responder sin culpa también se practica 💬\n\nNo tienes que bajar tu precio: puedes darle opciones que sí te funcionen.\n\n¿Qué respondes tú cuando te dicen \"está caro\"? 👇\n\n#reposteria #ventas #emprendedoras #recetarentable",
+   "programada": "2026-10-20 12:10",
+   "estado": "programada"
+  },
+  {
+   "id": "ig09",
+   "dia": "hoy",
+   "carril": "A",
+   "tipo": "lista",
+   "fondo": "crema",
+   "etiqueta": "Costo invisible",
+   "titulo": [
+    "La merma: lo que",
+    "*no ves* pero pagas"
+   ],
+   "items": [
+    "Masa que queda en el bowl",
+    "Bizcochos que no salen perfectos",
+    "Crema que sobra y se pierde",
+    "Súmale entre 3 % y 10 % a tus ingredientes"
+   ],
+   "caption": "No todo lo que compras termina en el postre 🥣\n\nSúmale un porcentaje de merma a tus ingredientes para que no salga de tu ganancia.\n\n#reposteria #costos #emprendedoras #recetarentable",
+   "programada": "2026-10-20 12:55",
+   "estado": "programada"
+  },
+  {
+   "id": "ig10",
+   "dia": "hoy",
+   "carril": "A",
+   "tipo": "lista",
+   "fondo": "frambuesa",
+   "etiqueta": "Checklist",
+   "titulo": [
+    "Antes de cotizar",
+    "*un pedido*"
+   ],
+   "items": [
+    "¿Sumaste ingredientes con merma?",
+    "¿Incluiste empaque y gas?",
+    "¿Contaste tus horas?",
+    "¿Le pusiste tu % de ganancia?",
+    "¿Lo comparaste con tu mínimo?"
+   ],
+   "caption": "Guárdalo para tu próxima cotización ✅\n\nSi respondes \"sí\" a las 5, tu precio está mucho más cerca de ser justo para ti y para tu clienta.\n\n#reposteria #emprendimiento #cotizar #recetarentable",
+   "programada": "2026-10-20 13:40",
+   "estado": "programada"
+  },
+  {
+   "id": "ig11",
+   "dia": "2026-10-21",
+   "carril": "A",
+   "tipo": "carrusel",
+   "fondo": "choco",
+   "etiqueta": "Errores",
+   "slides": [
+    {
+     "tipo": "portada",
+     "titulo": [
+      "5 errores que",
+      "te hacen",
+      "*trabajar gratis*"
+     ],
+     "sub": "El 3 lo cometen casi todas."
+    },
+    {
+     "tipo": "paso",
+     "num": "01",
+     "titulo": "Costear a ojo",
+     "texto": "\"Más o menos me sale en tanto\" no es un costo. Es una apuesta."
+    },
+    {
+     "tipo": "paso",
+     "num": "02",
+     "titulo": "No cobrar el empaque",
+     "texto": "En un pedido de 50 cajitas, el empaque puede ser una parte enorme del costo."
+    },
+    {
+     "tipo": "paso",
+     "num": "03",
+     "titulo": "Precio de amiga",
+     "texto": "Descuentos a todo el que conoces. Tu cocina no es una ONG."
+    },
+    {
+     "tipo": "paso",
+     "num": "04",
+     "titulo": "No revisar precios",
+     "texto": "Mismo precio desde hace un año, ingredientes más caros cada mes."
+    },
+    {
+     "tipo": "paso",
+     "num": "05",
+     "titulo": "No contar tu tiempo",
+     "texto": "Si al final del mes no te pagas a ti, no tienes un negocio: tienes un hobby caro."
+    },
+    {
+     "tipo": "cierre",
+     "titulo": [
+      "¿Cuál era",
+      "*el tuyo*?"
+     ],
+     "texto": "Cuéntamelo en comentarios, sin pena: todas empezamos así."
+    }
+   ],
+   "caption": "Ninguno de estos errores es por falta de talento: es por falta de números 📊\n\n¿Con cuál te identificaste? Dime el número 👇\n\n#reposteria #emprendedoras #negociodesdecasa #recetarentable",
+   "programada": "2026-10-21 11:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig12",
+   "dia": "2026-10-21",
+   "carril": "B",
+   "tipo": "frase",
+   "fondo": "frambuesa",
+   "etiqueta": "Pregunta",
+   "titulo": [
+    "¿Le cobras",
+    "*el gas del horno*",
+    "a tu clienta?"
+   ],
+   "texto": [
+    "Responde con un SÍ o un NO. Mañana te cuento qué hacen la mayoría de las emprendedoras."
+   ],
+   "caption": "Pregunta del día 🔥\n\n¿Incluyes el gas (o la luz) del horno en tu precio?\n\nResponde SÍ o NO en comentarios 👇\n\n#reposteria #costos #emprendedoras #recetarentable",
+   "programada": "2026-10-21 15:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig13",
+   "dia": "2026-10-21",
+   "carril": "A",
+   "tipo": "frase",
+   "fondo": "crema",
+   "etiqueta": "Comparte",
+   "titulo": [
+    "Envíaselo a la",
+    "amiga que vende",
+    "*tortas* y nunca",
+    "le alcanza"
+   ],
+   "texto": [
+    "No es que venda poco. Es que nadie le enseñó a costear."
+   ],
+   "caption": "Todas tenemos una 💕\n\nEnvíaselo con cariño: puede que sea justo lo que necesita leer hoy.\n\n#reposteria #emprendedoras #amigas #recetarentable",
+   "programada": "2026-10-21 19:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig14",
+   "dia": "2026-10-22",
+   "carril": "A",
+   "tipo": "carrusel",
+   "fondo": "crema",
+   "etiqueta": "Porciones",
+   "slides": [
+    {
+     "tipo": "portada",
+     "titulo": [
+      "Precio por",
+      "*porción*:",
+      "cómo sacarlo"
+     ],
+     "sub": "Para tortas, postres en vaso y mesas dulces."
+    },
+    {
+     "tipo": "paso",
+     "num": "01",
+     "titulo": "Costo total de la receta",
+     "texto": "Ingredientes + merma + empaque + gas + tu tiempo."
+    },
+    {
+     "tipo": "paso",
+     "num": "02",
+     "titulo": "Cuenta las porciones reales",
+     "texto": "No las ideales: las que de verdad salen después de cortar y emparejar."
+    },
+    {
+     "tipo": "paso",
+     "num": "03",
+     "titulo": "Divide",
+     "texto": "Costo total ÷ porciones = tu costo por porción."
+    },
+    {
+     "tipo": "paso",
+     "num": "04",
+     "titulo": "Aplica tu ganancia",
+     "texto": "Costo por porción ÷ 0,70 (con 30 %) = precio por porción."
+    },
+    {
+     "tipo": "cierre",
+     "titulo": [
+      "Ahora sí puedes",
+      "cotizar *por persona*"
+     ],
+     "texto": "Ideal para cumpleaños y eventos: la clienta entiende mejor el precio."
+    }
+   ],
+   "caption": "Cuando te piden \"una torta para 30 personas\", esto es lo que necesitas saber 🎂\n\nGuárdalo para tu próximo evento 📌\n\n#reposteria #mesadulce #emprendedoras #recetarentable",
+   "programada": "2026-10-22 11:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig15",
+   "dia": "2026-10-22",
+   "carril": "B",
+   "tipo": "frase",
+   "fondo": "choco",
+   "etiqueta": "Mito",
+   "titulo": [
+    "\"Si cobro más,",
+    "*no me compran*\""
+   ],
+   "texto": [
+    "Las clientas que solo buscan lo más barato se van con cualquiera. Las que valoran tu trabajo se quedan."
+   ],
+   "caption": "Mito o verdad? 🤔\n\nCobrar lo justo puede hacer que pierdas algunas clientas… y que ganes las que de verdad valoran lo que haces.\n\n¿Te ha pasado al subir precios? Cuéntame 👇\n\n#reposteria #emprendimiento #precios #recetarentable",
+   "programada": "2026-10-22 15:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig16",
+   "dia": "2026-10-22",
+   "carril": "A",
+   "tipo": "lista",
+   "fondo": "crema",
+   "etiqueta": "Lo que no se ve",
+   "titulo": [
+    "Una torta no es",
+    "*solo* harina",
+    "y huevos"
+   ],
+   "items": [
+    "Las horas de prueba y error",
+    "Los cursos que pagaste",
+    "El horno, las boquillas, los moldes",
+    "Tu tiempo respondiendo mensajes"
+   ],
+   "caption": "Cuando alguien dice \"pero si son ingredientes baratos\"… envíale esto 😉\n\n#reposteria #emprendedoras #valor #recetarentable",
+   "programada": "2026-10-22 19:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig17",
+   "dia": "2026-10-23",
+   "carril": "A",
+   "tipo": "carrusel",
+   "fondo": "frambuesa",
+   "etiqueta": "Empaque",
+   "slides": [
+    {
+     "tipo": "portada",
+     "titulo": [
+      "¿Cuánto cuesta",
+      "*de verdad*",
+      "tu empaque?"
+     ],
+     "sub": "Spoiler: más de lo que pones en tu precio."
+    },
+    {
+     "tipo": "paso",
+     "num": "01",
+     "titulo": "Haz la lista",
+     "texto": "Caja, base, separadores, cinta, sticker, tarjeta, bolsa."
+    },
+    {
+     "tipo": "paso",
+     "num": "02",
+     "titulo": "Precio por unidad",
+     "texto": "Si el paquete trae 50 cajas a $500, cada caja cuesta $10."
+    },
+    {
+     "tipo": "paso",
+     "num": "03",
+     "titulo": "Suma por pedido",
+     "texto": "Caja $10 + base $4 + cinta $2 + sticker $1 = $17 por torta."
+    },
+    {
+     "tipo": "cierre",
+     "titulo": [
+      "Esos $17",
+      "*van en tu precio*"
+     ],
+     "texto": "Números de referencia. Haz la cuenta con tus proveedores."
+    }
+   ],
+   "caption": "El empaque es parte de lo que vendes: también se cobra 📦\n\n¿Lo estabas incluyendo? Sí / No 👇\n\n#reposteria #empaques #emprendedoras #recetarentable",
+   "programada": "2026-10-23 11:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig18",
+   "dia": "2026-10-23",
+   "carril": "A",
+   "tipo": "lista",
+   "fondo": "crema",
+   "etiqueta": "Tu tiempo",
+   "titulo": [
+    "El tiempo que",
+    "*no estás contando*"
+   ],
+   "items": [
+    "Ir a comprar los ingredientes",
+    "Lavar todo después",
+    "Responder WhatsApp y cotizar",
+    "Ir a entregar el pedido"
+   ],
+   "caption": "Hornear es solo una parte del trabajo ⏳\n\nLa próxima vez que calcules tus horas, cuenta también esto.\n\n#reposteria #emprendedoras #tiempo #recetarentable",
+   "programada": "2026-10-23 15:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig19",
+   "dia": "2026-10-23",
+   "carril": "A",
+   "tipo": "frase",
+   "fondo": "choco",
+   "etiqueta": "Recuerda",
+   "titulo": [
+    "Tu trabajo *vale*.",
+    "Tu precio",
+    "debe decirlo."
+   ],
+   "texto": [
+    "Ponerle precio justo a lo que haces también es respetarte."
+   ],
+   "caption": "Léelo dos veces 💛\n\nY si alguien necesita leerlo hoy, compártelo.\n\n#emprendedoras #reposteria #autoestima #recetarentable",
+   "programada": "2026-10-23 19:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig20",
+   "dia": "2026-10-24",
+   "carril": "A",
+   "tipo": "carrusel",
+   "fondo": "crema",
+   "etiqueta": "Pedidos grandes",
+   "slides": [
+    {
+     "tipo": "portada",
+     "titulo": [
+      "100 galletas",
+      "decoradas:",
+      "¿*cuánto cobro*?"
+     ],
+     "sub": "Cómo cotizar un pedido grande sin perder."
+    },
+    {
+     "tipo": "paso",
+     "num": "01",
+     "titulo": "Costea 1 tanda",
+     "texto": "Calcula el costo de una tanda y cuántas galletas salen."
+    },
+    {
+     "tipo": "paso",
+     "num": "02",
+     "titulo": "Escala",
+     "texto": "¿Cuántas tandas necesitas para 100? Multiplica el costo."
+    },
+    {
+     "tipo": "paso",
+     "num": "03",
+     "titulo": "Cuenta la decoración",
+     "texto": "En galletas decoradas, el tiempo de decorar suele ser lo más caro."
+    },
+    {
+     "tipo": "paso",
+     "num": "04",
+     "titulo": "Empaque individual",
+     "texto": "100 bolsitas, 100 cintas: súmalo aparte."
+    },
+    {
+     "tipo": "cierre",
+     "titulo": [
+      "Pedido grande",
+      "*≠* descuento grande"
+     ],
+     "texto": "Si das descuento por volumen, que salga de tu ganancia, nunca de tu mínimo."
+    }
+   ],
+   "caption": "Los pedidos grandes emocionan… y a veces son los que más pérdida dejan 😅\n\nGuárdalo para cuando te llegue el próximo 📌\n\n#galletasdecoradas #reposteria #emprendedoras #recetarentable",
+   "programada": "2026-10-24 11:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig21",
+   "dia": "2026-10-24",
+   "carril": "A",
+   "tipo": "formula",
+   "fondo": "frambuesa",
+   "etiqueta": "Descuentos",
+   "titulo": [
+    "Antes de dar",
+    "un *descuento*"
+   ],
+   "formula": "Precio con descuento ≥ precio mínimo",
+   "ejemplo": [
+    "Si tu mínimo es $450 y vendes en $643,",
+    "puedes descontar hasta $193.",
+    "Más que eso, pagas tú",
+    "por trabajar."
+   ],
+   "caption": "Un descuento no es malo. Un descuento debajo de tu mínimo, sí 🚫\n\n(Números de referencia.)\n\n#reposteria #descuentos #emprendedoras #recetarentable",
+   "programada": "2026-10-24 15:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig22",
+   "dia": "2026-10-24",
+   "carril": "B",
+   "tipo": "frase",
+   "fondo": "choco",
+   "etiqueta": "Encuesta",
+   "titulo": [
+    "¿Cuánto cobras",
+    "por una torta",
+    "de *20 porciones*?"
+   ],
+   "texto": [
+    "Escribe tu precio y tu país en comentarios. Vamos a comparar entre países."
+   ],
+   "caption": "Hagamos una encuesta entre emprendedoras 🌎\n\nComenta: precio + país (ej: \"$650 MXN, México\").\n\nEl domingo comparto el resumen 👇\n\n#reposteria #emprendedoras #latam #recetarentable",
+   "programada": "2026-10-24 19:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig23",
+   "dia": "2026-10-25",
+   "carril": "A",
+   "tipo": "carrusel",
+   "fondo": "frambuesa",
+   "etiqueta": "Subir precios",
+   "slides": [
+    {
+     "tipo": "portada",
+     "titulo": [
+      "Cómo subir",
+      "tus precios",
+      "*sin perder clientas*"
+     ],
+     "sub": "4 pasos y un mensaje listo para copiar."
+    },
+    {
+     "tipo": "paso",
+     "num": "01",
+     "titulo": "Haz la cuenta",
+     "texto": "Compara tu precio actual con tu precio mínimo. Ahí está tu razón."
+    },
+    {
+     "tipo": "paso",
+     "num": "02",
+     "titulo": "Avisa con tiempo",
+     "texto": "Dos semanas antes, no el día del pedido."
+    },
+    {
+     "tipo": "paso",
+     "num": "03",
+     "titulo": "Explica sin pedir perdón",
+     "texto": "\"Por el aumento de los insumos, desde el 1 actualizo mis precios.\""
+    },
+    {
+     "tipo": "paso",
+     "num": "04",
+     "titulo": "Agradece",
+     "texto": "\"Gracias por seguir eligiendo lo que hago.\""
+    },
+    {
+     "tipo": "cierre",
+     "titulo": [
+      "Un aumento bien",
+      "comunicado *se respeta*"
+     ],
+     "texto": "La mayoría de las clientas lo entienden más de lo que crees."
+    }
+   ],
+   "caption": "Subir precios da miedo… hasta que haces la cuenta 📈\n\nGuárdalo y úsalo cuando llegue el momento.\n\n#reposteria #precios #emprendedoras #recetarentable",
+   "programada": "2026-10-25 11:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig24",
+   "dia": "2026-10-25",
+   "carril": "A",
+   "tipo": "frase",
+   "fondo": "crema",
+   "etiqueta": "Comparte",
+   "titulo": [
+    "Envíaselo a",
+    "quien siempre",
+    "dice \"te lo hago",
+    "a *precio de amiga*\""
+   ],
+   "texto": [
+    "Ser amiga no significa trabajar gratis."
+   ],
+   "caption": "Tag a esa amiga 😂💕\n\n#reposteria #emprendedoras #humor #recetarentable",
+   "programada": "2026-10-25 15:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig25",
+   "dia": "2026-10-25",
+   "carril": "A",
+   "tipo": "formula",
+   "fondo": "choco",
+   "etiqueta": "Ganancia",
+   "titulo": [
+    "Ganancia *≠*",
+    "lo que te queda",
+    "en la mano"
+   ],
+   "formula": "Ganancia = precio − costos − tu sueldo",
+   "ejemplo": [
+    "Si vendes en $643, te cuesta $210",
+    "y tu tiempo vale $240,",
+    "tu ganancia real es $193.",
+    "Esa es la que hace crecer tu negocio."
+   ],
+   "caption": "Tu sueldo y la ganancia de tu negocio son dos cosas distintas 💡\n\n(Números de referencia.)\n\n¿Lo sabías? 👇\n\n#emprendimiento #finanzas #reposteria #recetarentable",
+   "programada": "2026-10-25 19:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig26",
+   "dia": "2026-10-26",
+   "carril": "A",
+   "tipo": "carrusel",
+   "fondo": "crema",
+   "etiqueta": "Organización",
+   "slides": [
+    {
+     "tipo": "portada",
+     "titulo": [
+      "Organiza tu",
+      "semana de",
+      "*pedidos*"
+     ],
+     "sub": "4 pasos para no vivir apagando incendios."
+    },
+    {
+     "tipo": "paso",
+     "num": "01",
+     "titulo": "Un día para cotizar",
+     "texto": "Responde cotizaciones en un horario fijo, no a toda hora."
+    },
+    {
+     "tipo": "paso",
+     "num": "02",
+     "titulo": "Un día de compras",
+     "texto": "Compra para toda la semana: ahorras tiempo y pasajes."
+    },
+    {
+     "tipo": "paso",
+     "num": "03",
+     "titulo": "Bloques de producción",
+     "texto": "Hornea todo junto, decora todo junto. Menos limpieza, más rendimiento."
+    },
+    {
+     "tipo": "paso",
+     "num": "04",
+     "titulo": "Entregas agrupadas",
+     "texto": "Agrupa entregas por zona y por día."
+    },
+    {
+     "tipo": "cierre",
+     "titulo": [
+      "Menos caos,",
+      "*más ganancia*"
+     ],
+     "texto": "El tiempo que ahorras también es dinero."
+    }
+   ],
+   "caption": "Organizarte también es ganar más 🗓️\n\n¿Qué día de la semana es el más caótico para ti? 👇\n\n#reposteria #organizacion #emprendedoras #recetarentable",
+   "programada": "2026-10-26 11:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig27",
+   "dia": "2026-10-26",
+   "carril": "A",
+   "tipo": "lista",
+   "fondo": "frambuesa",
+   "etiqueta": "Antes de cotizar",
+   "titulo": [
+    "3 preguntas antes",
+    "de decir *el precio*"
+   ],
+   "items": [
+    "¿Para cuándo y para cuántas personas?",
+    "¿Qué diseño o sabor exacto quiere?",
+    "¿Lo recoge o hay que entregarlo?"
+   ],
+   "caption": "Con estas 3 respuestas, tu cotización sale justa y sin sorpresas ✨\n\n#reposteria #emprendedoras #cotizar #recetarentable",
+   "programada": "2026-10-26 15:00",
+   "estado": "programada"
+  },
+  {
+   "id": "ig28",
+   "dia": "2026-10-26",
+   "carril": "A",
+   "tipo": "frase",
+   "fondo": "choco",
+   "etiqueta": "Cierre de semana",
+   "titulo": [
+    "Cocinar es",
+    "tu *talento*.",
+    "Cobrar bien es",
+    "tu *negocio*."
+   ],
+   "texto": [
+    "Esta semana aprendiste a costear, cobrar tu tiempo y subir precios. Seguimos."
+   ],
+   "caption": "Gracias por acompañarnos esta semana 🎂💛\n\n¿Qué tema quieres que tratemos la próxima? Te leo 👇\n\n#emprendedoras #reposteria #recetarentable",
+   "programada": "2026-10-26 19:00",
+   "estado": "programada"
+  }
+ ]
+}

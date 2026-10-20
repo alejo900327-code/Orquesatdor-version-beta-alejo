@@ -1,0 +1,230 @@
+{
+  "_nota": "Contenido de calentamiento. 'tipo' define la plantilla en scripts/activos/generar-posts.mjs. 'canales' dice dónde va. Sin claims de ingresos.",
+  "posts": [
+    {
+      "id": "01-bienvenida",
+      "canales": [
+        "facebook",
+        "instagram"
+      ],
+      "tipo": "frase",
+      "etiqueta": "Bienvenida",
+      "titulo": [
+        "Chef Alejo Cocina",
+        "ahora es",
+        "Receta Rentable"
+      ],
+      "texto": [
+        "Mismo amor por la cocina.",
+        "Ahora, para que también te deje plata."
+      ],
+      "caption": "Esta página nació de la cocina y ahora da un paso más: se llama Receta Rentable 🎂\n\nAquí vas a encontrar ideas simples para emprendedoras que venden comida y postres desde casa: cómo calcular tus costos, poner precios justos y cobrar tu tiempo.\n\n¿Vendes algo que cocinas? Cuéntame en comentarios qué preparas 👇\n\n#emprendimiento #reposteria #emprendedoras #negociodesdecasa",
+      "publicar_cuando": "después de que Meta apruebe el nombre Receta Rentable"
+    },
+    {
+      "id": "02-cuatro-olvidos",
+      "canales": [
+        "facebook",
+        "instagram"
+      ],
+      "tipo": "lista",
+      "etiqueta": "Precios",
+      "titulo": [
+        "Las 4 cosas",
+        "que olvidas al",
+        "poner precio"
+      ],
+      "items": [
+        "El empaque (caja, base, cinta, etiqueta)",
+        "El gas, la luz y el agua",
+        "La merma: lo que se pierde en el proceso",
+        "Tu tiempo: comprar, hornear, decorar, entregar"
+      ],
+      "caption": "Si tu precio solo suma ingredientes, estás regalando parte de tu trabajo 😬\n\nAntes de cotizar tu próximo pedido, revisa estas 4 cosas:\n1. Empaque\n2. Gas, luz y agua\n3. Merma\n4. Tu tiempo\n\n¿Cuál de las 4 se te olvida más? 👇\n\n#reposteria #costos #emprendedoras #preciojusto"
+    },
+    {
+      "id": "03-precio-competencia",
+      "canales": [
+        "facebook",
+        "instagram"
+      ],
+      "tipo": "frase",
+      "etiqueta": "Mentalidad",
+      "titulo": [
+        "Tu precio mínimo",
+        "NO es el de",
+        "tu competencia"
+      ],
+      "texto": [
+        "Ella no compra donde tú compras,",
+        "no usa tus ingredientes",
+        "ni tarda lo que tú tardas."
+      ],
+      "caption": "Copiar el precio de otra parece fácil… hasta que te das cuenta de que no estás ganando 🙃\n\nTu precio mínimo sale de TUS costos: tus ingredientes, tu empaque, tu gas y tu tiempo. El precio de la competencia te sirve como referencia, no como punto de partida.\n\n¿Alguna vez copiaste un precio y luego te arrepentiste? 👇\n\n#emprendimiento #reposteria #precios #negocio"
+    },
+    {
+      "id": "04-valor-hora",
+      "canales": [
+        "facebook",
+        "instagram"
+      ],
+      "tipo": "formula",
+      "etiqueta": "Tu tiempo",
+      "titulo": [
+        "¿Cuánto vale",
+        "tu hora?"
+      ],
+      "formula": "Horas × tarifa por hora = tu trabajo",
+      "ejemplo": [
+        "Una torta te toma 3 horas.",
+        "Si tu hora vale $80:",
+        "3 × $80 = $240 que también",
+        "tienen que estar en el precio."
+      ],
+      "caption": "Tu tiempo también es un ingrediente ⏰\n\nCuenta todo: ir a comprar, hornear, decorar, empacar y entregar. Multiplica esas horas por lo que quieres ganar por hora y súmalo a tus costos.\n\n(Ejemplo con números de referencia: ajústalos a tu moneda y tu realidad.)\n\n¿Cuántas horas te toma tu postre más pedido? 👇\n\n#reposteria #emprendedoras #costos"
+    },
+    {
+      "id": "05-formula-precio",
+      "canales": [
+        "facebook",
+        "instagram"
+      ],
+      "tipo": "formula",
+      "etiqueta": "Fórmula",
+      "titulo": [
+        "Precio sugerido",
+        "en una línea"
+      ],
+      "formula": "Costo total ÷ (1 − % de ganancia)",
+      "ejemplo": [
+        "Costo total: $450",
+        "Ganancia que quieres: 30 %",
+        "$450 ÷ 0,70 = $643",
+        "Ese es tu precio sugerido."
+      ],
+      "caption": "Guarda esta fórmula 📌\n\nCosto total = ingredientes + empaque + gas + merma + tu tiempo.\nLuego divides entre (1 − tu % de ganancia).\n\nCon 30 % de ganancia: costo ÷ 0,70.\n\nEjemplo con números de referencia, usa los tuyos.\n\n#reposteria #precios #emprendimiento"
+    },
+    {
+      "id": "06-costo-gramo",
+      "canales": [
+        "instagram"
+      ],
+      "tipo": "formula",
+      "etiqueta": "Paso a paso",
+      "titulo": [
+        "Costo por gramo:",
+        "el truco base"
+      ],
+      "formula": "Precio del paquete ÷ gramos del paquete",
+      "ejemplo": [
+        "Mantequilla: 1 kg a $220",
+        "$220 ÷ 1000 g = $0,22 por gramo",
+        "Si usas 200 g:",
+        "200 × $0,22 = $44"
+      ],
+      "caption": "Con este paso calculas cualquier ingrediente 🧈\n\n1. Divide lo que pagaste entre los gramos (o ml) del paquete.\n2. Multiplica por lo que usas en tu receta.\n\nHazlo una vez por ingrediente y ya tienes la base de todos tus costos.\n\n#reposteria #costos #emprendedoras"
+    },
+    {
+      "id": "07-subio-mantequilla",
+      "canales": [
+        "instagram"
+      ],
+      "tipo": "frase",
+      "etiqueta": "Ojo",
+      "titulo": [
+        "Subió la",
+        "mantequilla.",
+        "¿Y tu precio?"
+      ],
+      "texto": [
+        "Cada aumento que no pasas a tu precio",
+        "sale de tu bolsillo, pedido tras pedido."
+      ],
+      "caption": "Los insumos suben y muchas veces no lo notamos hasta fin de mes 😓\n\nTip: revisa tus precios cada vez que cambie el precio de un ingrediente importante (mantequilla, chocolate, crema, huevos).\n\n¿Cada cuánto revisas tus precios? 👇\n\n#reposteria #emprendimiento #precios"
+    },
+    {
+      "id": "08-merma",
+      "canales": [
+        "instagram"
+      ],
+      "tipo": "lista",
+      "etiqueta": "Costo invisible",
+      "titulo": [
+        "La merma: lo que",
+        "no ves pero pagas"
+      ],
+      "items": [
+        "Masa que queda en el bowl",
+        "Bizcochos que no salen perfectos",
+        "Crema que sobra y se pierde",
+        "Súmale entre 3 % y 10 % a tus ingredientes"
+      ],
+      "caption": "No todo lo que compras termina en el postre 🥣\n\nLa merma es real: súmale un porcentaje a tus ingredientes (muchas usan entre 3 % y 10 %, según la receta) para que no salga de tu ganancia.\n\n#reposteria #costos #emprendedoras"
+    },
+    {
+      "id": "09-esta-caro",
+      "canales": [
+        "instagram"
+      ],
+      "tipo": "lista",
+      "etiqueta": "Clientes",
+      "titulo": [
+        "Cuando te dicen",
+        "\"está caro\""
+      ],
+      "items": [
+        "\"Entiendo. Este precio incluye ingredientes de calidad y mi tiempo.\"",
+        "\"Si quieres, te propongo un tamaño más pequeño.\"",
+        "\"Puedo ajustar la decoración para llegar a tu presupuesto.\""
+      ],
+      "caption": "Responder sin culpa también se practica 💬\n\nNo tienes que bajar tu precio: puedes ofrecer opciones que sí te funcionen (tamaño, decoración, sabor).\n\n¿Qué respondes tú cuando te dicen \"está caro\"? 👇\n\n#reposteria #ventas #emprendedoras"
+    },
+    {
+      "id": "10-checklist",
+      "canales": [
+        "instagram"
+      ],
+      "tipo": "lista",
+      "etiqueta": "Checklist",
+      "titulo": [
+        "Antes de cotizar",
+        "un pedido"
+      ],
+      "items": [
+        "¿Sumaste todos los ingredientes con merma?",
+        "¿Incluiste empaque y gas?",
+        "¿Contaste tus horas?",
+        "¿Le pusiste tu % de ganancia?",
+        "¿Lo comparaste con tu precio mínimo?"
+      ],
+      "caption": "Guárdalo para tu próxima cotización ✅\n\nSi respondes \"sí\" a las 5, tu precio está mucho más cerca de ser justo para ti y para tu cliente.\n\n#reposteria #emprendimiento #cotizar"
+    }
+  ],
+  "calendario_facebook": [
+    {
+      "post": "02-cuatro-olvidos",
+      "cuando": "2026-10-20 12:00 (Bogotá)",
+      "estado": "programada"
+    },
+    {
+      "post": "03-precio-competencia",
+      "cuando": "2026-10-20 19:00",
+      "estado": "programada"
+    },
+    {
+      "post": "04-valor-hora",
+      "cuando": "2026-10-21 12:00",
+      "estado": "programada"
+    },
+    {
+      "post": "05-formula-precio",
+      "cuando": "2026-10-21 19:00",
+      "estado": "programada"
+    },
+    {
+      "post": "01-bienvenida",
+      "cuando": "pendiente: nombre ya aprobado, programar el 22-oct",
+      "estado": "pendiente"
+    }
+  ]
+}

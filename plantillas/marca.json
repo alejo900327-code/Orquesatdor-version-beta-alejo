@@ -1,0 +1,21 @@
+{
+  "slug": "",
+  "nombre": "",
+  "tagline": "",
+  "promesa": "",
+  "colores": { "fondo": "#fbf6ef", "tinta": "#2b1d16", "acento": "#b8325a" },
+  "monograma": "",
+  "handles": { "candidatos": [], "disponibles": [], "elegido": "" },
+  "instagram": { "nombre": "", "bio": "", "link": "", "categoria": "" },
+  "facebook": { "nombre_pagina": "", "categoria": "", "bio": "", "sitio_web": "", "boton": "Más información" },
+  "hotmart": {
+    "nombre": "", "descripcion": "", "categoria": "", "formato": "",
+    "precio": 0, "moneda": "USD", "pago": "unico", "garantia_dias": 7,
+    "pagina_venta": "", "pagina_gracias": "", "soporte_email": ""
+  },
+  "activos": {
+    "facebook": { "estado": "pendiente", "url": null, "id": null, "fecha": null, "nota": null },
+    "instagram": { "estado": "pendiente", "url": null, "handle": null, "conectada_a_pagina": false, "fecha": null, "nota": null },
+    "hotmart": { "estado": "pendiente", "producto_id": null, "checkout_url": null, "en_revision": null, "fecha": null, "nota": null }
+  }
+}
