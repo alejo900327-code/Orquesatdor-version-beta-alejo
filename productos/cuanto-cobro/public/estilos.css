@@ -196,3 +196,8 @@ q { font-style: italic; color: var(--tinta-2); }
 .cierre li { margin-bottom: 8px; }
 .barra .boton-chico { white-space: nowrap; }
 @media (max-width: 420px) { .barra .boton-chico { padding: 8px 12px; font-size: .85rem; } .marca { font-size: 1.05rem; } }
+
+/* Privacidad */
+.legal h2 { font-size: 1.3rem; margin-top: 32px; }
+.legal ul { padding-left: 20px; }
+.legal li { margin-bottom: 8px; }

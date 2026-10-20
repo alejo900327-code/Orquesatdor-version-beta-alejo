@@ -192,9 +192,13 @@
 
   function render() {
     if ($("aviso").getAttribute("data-ruta") !== location.hash) $("aviso").hidden = true; // el aviso es de la pantalla donde salió
+    var r = ruta();
+    if (r.vista === "importar" && r.id) {
+      if (!estado.pais) packPendiente = r.id; // primero elige país; después se importa
+      else { importarDesdeEnlace(r.id); return; }
+    }
     if (!estado.pais) { renderBienvenida(); marcarPestana(null); return; }
     $("barra-pais").textContent = pais().nombre + " · " + pais().moneda;
-    var r = ruta();
     if (r.vista === "receta" && r.id && receta(r.id)) { renderEditor(receta(r.id)); marcarPestana("recetas"); }
     else if (r.vista === "ingredientes") { renderIngredientes(); marcarPestana("ingredientes"); }
     else if (r.vista === "mensajes") { renderMensajes(); marcarPestana("mensajes"); }
@@ -222,7 +226,7 @@
       '<h1>Pongamos el precio justo a tus postres</h1>' +
       '<p class="sub">Elige tu país. Te cargamos los ingredientes más comunes con un precio de referencia para que solo corrijas lo que tú pagas.</p>' +
       '<div class="rejilla-paises">' + opciones + '</div>' +
-      '<p class="nota">Tus datos se quedan en este teléfono. No necesitas cuenta ni contraseña.</p>' +
+      '<p class="nota">Tus recetas y precios se quedan en este teléfono. No necesitas cuenta ni contraseña. <a href="../privacidad/">Privacidad y contacto</a></p>' +
       '<p class="nota">¿Cambiaste de celular? <button class="enlace-boton" id="restaurar-inicio" type="button">Restaurar desde tu copia</button></p>' +
       '</section>';
     $("restaurar-inicio").onclick = function () { $("archivo-respaldo").click(); };
@@ -234,6 +238,7 @@
         estado.ingredientes = comunesDe(codigo);
         guardar();
         medir("app_pais", { pais: codigo });
+        if (packPendiente) { var pendiente = packPendiente; packPendiente = null; importarDesdeEnlace(pendiente); return; }
         ir("#/ingredientes");
         avisar("Listo: cargamos " + estado.ingredientes.length + " ingredientes con precio de <strong>referencia</strong>. Toca cada uno y pon lo que tú pagas.", "verde", 9000);
       };
@@ -245,7 +250,8 @@
     var html = '<div class="cabeza-vista"><h1>Mis recetas</h1><button class="boton boton-principal boton-chico" id="nueva-receta" type="button">+ Nueva receta</button></div>';
     if (!estado.recetas.length) {
       html += '<div class="vacio-caja"><p><strong>Todavía no tienes recetas.</strong></p><p>Empieza por la que más vendes: elige sus ingredientes, cuánto usas, y suma empaque, gas y tus horas.</p>' +
-        '<button class="boton boton-principal" id="nueva-receta-2" type="button">Crear mi primera receta</button></div>';
+        '<button class="boton boton-principal" id="nueva-receta-2" type="button">Crear mi primera receta</button>' +
+        '<p class="nota">¿Compraste el pack de recetas? <button class="enlace-boton" id="importar-pack-2" type="button">Importar recetas</button></p></div>';
     } else {
       var subieron = 0;
       html += '<ul class="lista-tarjetas">' + estado.recetas.map(function (r) {
@@ -272,6 +278,7 @@
     }
     vista.innerHTML = html;
     [$("nueva-receta"), $("nueva-receta-2")].forEach(function (b) { if (b) b.onclick = crearReceta; });
+    if ($("importar-pack-2")) $("importar-pack-2").onclick = function () { $("archivo-pack").click(); };
     if ($("ya-vi")) $("ya-vi").onclick = function () {
       estado.recetas.forEach(function (r) { r.visto = calcular(r).sugerido; });
       guardar(); render();
@@ -702,6 +709,8 @@
       '</div><p class="costo-base" id="rc-resultado"></p>' +
       '<button class="boton boton-secundario boton-chico" id="rc-usar" type="button" disabled>Usar este valor</button></details>' +
       '</section>' +
+      '<section class="bloque"><h2>Importar recetas</h2><p class="ayuda">¿Compraste un pack de recetas? Súbelo aquí y se suma a lo que ya tienes: no borra nada y tus precios de ingredientes se respetan.</p>' +
+      '<button class="boton boton-principal boton-chico" id="importar-pack" type="button">Importar recetas</button></section>' +
       '<section class="bloque"><h2>Copia de seguridad</h2><p class="ayuda">Tus recetas viven en este teléfono. Si cambias de celular o borras el navegador, se pierden: descarga una copia de vez en cuando y guárdala (por ejemplo, mándatela por WhatsApp o correo).</p>' +
       '<div class="acciones"><button class="boton boton-principal boton-chico" id="exportar" type="button">Descargar copia</button>' +
       '<button class="boton boton-secundario boton-chico" id="importar" type="button">Restaurar desde copia</button></div></section>' +
@@ -711,7 +720,7 @@
       '<section class="bloque"><h2>Ingredientes de referencia</h2><p class="ayuda">Agrega los ingredientes comunes de tu país que te falten (no cambia los que ya tienes).</p>' +
       '<button class="boton boton-secundario boton-chico" id="recargar" type="button">Agregar ingredientes comunes</button></section>' +
       '<p><button class="enlace-boton enlace-peligro" id="borrar-todo" type="button">Borrar todos mis datos de este teléfono</button></p>' +
-      '<p class="nota">¿Algo no funciona? Responde el email de tu compra de Hotmart y te ayudamos.<br>¿Cuánto Cobro? es una herramienta de cálculo: los resultados dependen de los datos que ingresas y no garantizan ventas ni ingresos.</p>';
+      '<p class="nota">¿Algo no funciona? Responde el email de tu compra de Hotmart y te ayudamos. <a href="../privacidad/">Privacidad y contacto</a><br>¿Cuánto Cobro? es una herramienta de cálculo: los resultados dependen de los datos que ingresas y no garantizan ventas ni ingresos.</p>';
 
     $("aj-negocio").oninput = function (e) { estado.negocio = e.target.value; guardar(); };
     $("aj-tarifa").oninput = function (e) { estado.tarifa = e.target.value; guardar(); };
@@ -746,6 +755,7 @@
     };
     $("exportar").onclick = exportar;
     $("importar").onclick = function () { $("archivo-respaldo").click(); };
+    $("importar-pack").onclick = function () { $("archivo-pack").click(); };
     $("recargar").onclick = agregarComunes;
     $("borrar-todo").onclick = function () {
       if (!confirm("Esto borra TODAS tus recetas e ingredientes de este teléfono. ¿Descargaste una copia antes?")) return;
@@ -779,6 +789,7 @@
     lector.onload = function () {
       try {
         var j = JSON.parse(lector.result);
+        if (j && j.formato === "cuanto-cobro-pack") { avisar("Ese archivo es un pack de recetas: súbelo con <strong>Importar recetas</strong> (se suma a lo tuyo sin borrar nada).", "amarillo", 8000); return; }
         var d = j && j.datos ? j.datos : j;
         if (!d || d.v !== 1 || !Array.isArray(d.ingredientes) || !Array.isArray(d.recetas) || !PAISES[d.pais]) throw new Error("formato");
         if (!confirm("Restaurar esta copia (" + d.recetas.length + " recetas, " + d.ingredientes.length + " ingredientes)? Reemplaza lo que tienes ahora.")) return;
@@ -790,6 +801,114 @@
     };
     lector.readAsText(f);
   };
+
+  // ---------- Importar pack de recetas (formato: entrega/FORMATO-PACK.md) ----------
+  // Fusiona: no borra nada. Ingrediente existente (mismo nombre, sin importar tildes ni mayúsculas) → se usa el suyo
+  // con SU precio. Ingrediente nuevo → se agrega con el precio de referencia del pack (marcado "Referencia").
+  // Receta con un nombre que ya existe → se salta (así importar dos veces no duplica).
+  function claveNombre(t) {
+    return String(t || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+  }
+  function validarPack(p) {
+    if (!p || p.formato !== "cuanto-cobro-pack" || p.version !== 1) throw new Error("Ese archivo no es un pack de recetas de ¿Cuánto Cobro?.");
+    if (!Array.isArray(p.ingredientes) || !Array.isArray(p.recetas) || !p.recetas.length) throw new Error("El pack no trae recetas.");
+    var nombres = {};
+    p.ingredientes.forEach(function (i, n) {
+      if (!i || !i.nombre || !num(i.compra) || !UNIDADES[i.compraU]) throw new Error("Ingrediente " + (n + 1) + " del pack incompleto.");
+      nombres[claveNombre(i.nombre)] = i;
+    });
+    p.recetas.forEach(function (r, n) {
+      if (!r || !r.nombre || !Array.isArray(r.items) || !r.items.length) throw new Error("Receta " + (n + 1) + " del pack incompleta.");
+      r.items.forEach(function (l) {
+        var i = nombres[claveNombre(l.ingrediente)];
+        if (!i) throw new Error("La receta \"" + r.nombre + "\" usa \"" + l.ingrediente + "\", que no está en los ingredientes del pack.");
+        if (!UNIDADES[l.u] || UNIDADES[l.u].dim !== UNIDADES[i.compraU].dim) throw new Error("Unidad inválida para \"" + l.ingrediente + "\" en \"" + r.nombre + "\".");
+      });
+    });
+  }
+  function importarPack(p) {
+    var mismaMoneda = !p.moneda || p.moneda === pais().moneda;
+    var porNombre = {};
+    estado.ingredientes.forEach(function (i) { porNombre[claveNombre(i.nombre)] = i; });
+    var mapa = {}, nuevosIng = 0, usados = 0;
+    p.ingredientes.forEach(function (pi) {
+      var k = claveNombre(pi.nombre), suyo = porNombre[k];
+      var dimPack = UNIDADES[pi.compraU].dim;
+      if (suyo && UNIDADES[suyo.compraU] && UNIDADES[suyo.compraU].dim === dimPack) { mapa[k] = suyo.id; usados++; return; }
+      var nuevo = {
+        id: nuevoId(), nombre: suyo ? pi.nombre + " (pack)" : pi.nombre, compra: num(pi.compra), compraU: pi.compraU,
+        precio: mismaMoneda && num(pi.precio) ? num(pi.precio) : "", referencia: true
+      };
+      estado.ingredientes.push(nuevo);
+      porNombre[claveNombre(nuevo.nombre)] = nuevo;
+      mapa[k] = nuevo.id; nuevosIng++;
+    });
+    var existentes = {};
+    estado.recetas.forEach(function (r) { existentes[claveNombre(r.nombre)] = true; });
+    var nuevas = [], saltadas = 0;
+    p.recetas.forEach(function (pr) {
+      if (existentes[claveNombre(pr.nombre)]) { saltadas++; return; }
+      var r = {
+        id: nuevoId(), nombre: pr.nombre, porciones: pr.porciones || "",
+        items: pr.items.map(function (l) { return { ingId: mapa[claveNombre(l.ingrediente)], cant: num(l.cant) || "", u: l.u }; }),
+        empaque: mismaMoneda ? (pr.empaque || "") : "", gas: mismaMoneda ? (pr.gas || "") : "",
+        servicios: pr.servicios ? {
+          horno: pr.servicios.horno || "", tipo: pr.servicios.tipo === "elec" ? "elec" : "gas",
+          estufa: pr.servicios.estufa || "", batidora: pr.servicios.batidora || "", lavado: pr.servicios.lavado !== false
+        } : null,
+        horas: pr.horas || "", tarifa: estado.tarifa || "",
+        desperdicio: pr.desperdicio === undefined ? 5 : pr.desperdicio, margen: pr.margen === undefined ? 30 : pr.margen
+      };
+      r.visto = calcular(r).sugerido;
+      existentes[claveNombre(r.nombre)] = true;
+      nuevas.push(r);
+    });
+    estado.recetas = nuevas.concat(estado.recetas);
+    guardar();
+    medir("app_importar_pack", { recetas: nuevas.length });
+    return { recetas: nuevas.length, saltadas: saltadas, nuevosIng: nuevosIng, usados: usados, mismaMoneda: mismaMoneda };
+  }
+  var entradaPack = document.createElement("input");
+  entradaPack.type = "file"; entradaPack.accept = ".json,application/json,text/plain"; entradaPack.id = "archivo-pack"; entradaPack.hidden = true;
+  document.body.appendChild(entradaPack);
+  entradaPack.onchange = function (e) {
+    var f = e.target.files[0];
+    e.target.value = "";
+    if (!f) return;
+    var lector = new FileReader();
+    lector.onload = function () {
+      var p;
+      try { p = JSON.parse(lector.result); }
+      catch (err) { avisar("Ese archivo no es un pack de recetas de ¿Cuánto Cobro?.", "rojo", 8000); return; }
+      procesarPack(p);
+    };
+    lector.readAsText(f);
+  };
+  function procesarPack(p) {
+    try { validarPack(p); }
+    catch (err) { avisar(esc(err.message), "rojo", 8000); return; }
+    var aviso = "Importar \"" + (p.nombre || "pack de recetas") + "\": " + p.recetas.length + " recetas. Se suman a las tuyas; no se borra nada y tus precios se respetan.";
+    if (p.moneda && p.moneda !== pais().moneda) aviso += "\n\nOjo: el pack trae precios en " + p.moneda + " y tu app está en " + pais().moneda + ". Las recetas y cantidades llegan igual; los ingredientes nuevos y el empaque llegan sin precio para que pongas el tuyo.";
+    if (!confirm(aviso)) return;
+    var res = importarPack(p);
+    ir("#/recetas");
+    var pl = function (n, uno, varios) { return n + " " + (n === 1 ? uno : varios); };
+    avisar("Importé <strong>" + pl(res.recetas, "receta", "recetas") + "</strong>" + (res.saltadas ? " (" + pl(res.saltadas, "ya la tenías", "ya las tenías") + " y no las dupliqué)" : "") + ". " +
+      (res.usados ? "Usé " + pl(res.usados, "ingrediente tuyo", "ingredientes tuyos") + " con tus precios. " : "") +
+      (res.nuevosIng ? "Agregué " + pl(res.nuevosIng, "ingrediente nuevo", "ingredientes nuevos") + " " + (res.mismaMoneda ? "con precio de referencia" : "sin precio") + ": revísalos en Ingredientes." : ""), "verde", 12000);
+  }
+  // Enlace directo: /app/#/importar/<nombre> trae packs/<nombre>.json sin que tenga que descargar nada
+  // (en iPhone, tocar un .json lo abre como texto en vez de descargarlo).
+  var packPendiente = null;
+  function importarDesdeEnlace(nombre) {
+    history.replaceState(null, "", "#/recetas");
+    render();
+    if (!/^[a-z0-9-]+$/.test(nombre)) { avisar("Ese enlace de pack no es válido.", "rojo", 8000); return; }
+    fetch("packs/" + nombre + ".json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+      .then(procesarPack)
+      .catch(function () { avisar("No pude traer el pack. Revisa tu internet y vuelve a tocar el enlace, o súbelo con <strong>Importar recetas</strong> en Ajustes.", "rojo", 10000); });
+  }
 
   // ---------- Inicio ----------
   var eventoInstalar = null;

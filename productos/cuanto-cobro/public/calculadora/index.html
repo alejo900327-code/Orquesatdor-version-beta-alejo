@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../estilos.css">
+  <script src="../pixel.js"></script>
 </head>
 <body>
   <header class="barra">
@@ -34,7 +35,7 @@
                 <label for="pais">País</label>
                 <select id="pais">
                   <option value="MX">México (MXN)</option>
-                  <option value="CO">Colombia (COP)</option>
+                  <option value="CO" selected>Colombia (COP)</option>
                   <option value="PE">Perú (PEN)</option>
                   <option value="CL">Chile (CLP)</option>
                   <option value="AR">Argentina (ARS)</option>
@@ -96,7 +97,7 @@
               </div>
               <div>
                 <label for="tarifa">¿Cuánto quieres ganar por hora?</label>
-                <div class="con-prefijo"><span class="simbolo">$</span><input id="tarifa" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej. 60"></div>
+                <div class="con-prefijo"><span class="simbolo">$</span><input id="tarifa" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej. 15000"></div>
               </div>
               <div>
                 <label for="desperdicio">Merma o desperdicio (%)</label>
@@ -149,7 +150,7 @@
 
   <footer class="pie">
     <div class="contenedor">
-      <p>Calculadora orientativa: el resultado depende de los datos que ingresas. Tus datos se quedan en tu teléfono; no los enviamos a ningún servidor.</p>
+      <p>Calculadora orientativa: el resultado depende de los datos que ingresas. Tus recetas y precios se quedan en tu teléfono; no los enviamos a ningún servidor. Usamos el píxel de Meta para medir visitas a esta página; no recibe tus recetas ni tus precios. <a href="../privacidad/">Privacidad y contacto</a></p>
     </div>
   </footer>
 

@@ -1,0 +1,59 @@
+{
+  "formato": "cuanto-cobro-pack",
+  "version": 1,
+  "nombre": "30 recetas base (ejemplo de 2)",
+  "moneda": "COP",
+  "ingredientes": [
+    { "nombre": "Harina de trigo", "compra": 1, "compraU": "kg", "precio": 4000 },
+    { "nombre": "Azúcar", "compra": 1, "compraU": "kg", "precio": 4500 },
+    { "nombre": "Mantequilla", "compra": 1, "compraU": "kg", "precio": 36000 },
+    { "nombre": "Huevos", "compra": 30, "compraU": "u", "precio": 18000 },
+    { "nombre": "Cacao en polvo", "compra": 500, "compraU": "g", "precio": 20000 },
+    { "nombre": "Leche", "compra": 1, "compraU": "l", "precio": 4400 },
+    { "nombre": "Polvo de hornear", "compra": 100, "compraU": "g", "precio": 4800 },
+    { "nombre": "Esencia de vainilla", "compra": 120, "compraU": "ml", "precio": 10000 },
+    { "nombre": "Zanahoria", "compra": 1, "compraU": "kg", "precio": 3000 },
+    { "nombre": "Aceite vegetal", "compra": 1, "compraU": "l", "precio": 10000 },
+    { "nombre": "Queso crema", "compra": 1, "compraU": "kg", "precio": 36000 },
+    { "nombre": "Azúcar pulverizada", "compra": 500, "compraU": "g", "precio": 6000 }
+  ],
+  "recetas": [
+    {
+      "nombre": "Torta de chocolate húmeda (12 porciones)",
+      "porciones": 12,
+      "items": [
+        { "ingrediente": "Harina de trigo", "cant": 300, "u": "g" },
+        { "ingrediente": "Azúcar", "cant": 300, "u": "g" },
+        { "ingrediente": "Cacao en polvo", "cant": 80, "u": "g" },
+        { "ingrediente": "Huevos", "cant": 3, "u": "u" },
+        { "ingrediente": "Leche", "cant": 250, "u": "ml" },
+        { "ingrediente": "Aceite vegetal", "cant": 120, "u": "ml" },
+        { "ingrediente": "Polvo de hornear", "cant": 10, "u": "g" },
+        { "ingrediente": "Esencia de vainilla", "cant": 5, "u": "ml" }
+      ],
+      "empaque": 8000,
+      "servicios": { "horno": 60, "tipo": "gas", "estufa": 0, "batidora": 10, "lavado": true },
+      "horas": 3,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Torta de zanahoria con queso crema (12 porciones)",
+      "porciones": 12,
+      "items": [
+        { "ingrediente": "Harina de trigo", "cant": 280, "u": "g" },
+        { "ingrediente": "Azúcar", "cant": 250, "u": "g" },
+        { "ingrediente": "Zanahoria", "cant": 300, "u": "g" },
+        { "ingrediente": "Huevos", "cant": 4, "u": "u" },
+        { "ingrediente": "Aceite vegetal", "cant": 200, "u": "ml" },
+        { "ingrediente": "Polvo de hornear", "cant": 8, "u": "g" },
+        { "ingrediente": "Queso crema", "cant": 300, "u": "g" },
+        { "ingrediente": "Mantequilla", "cant": 60, "u": "g" },
+        { "ingrediente": "Azúcar pulverizada", "cant": 150, "u": "g" }
+      ],
+      "empaque": 8000,
+      "servicios": { "horno": 55, "tipo": "gas", "estufa": 0, "batidora": 15, "lavado": true },
+      "horas": 3.5
+    }
+  ]
+}

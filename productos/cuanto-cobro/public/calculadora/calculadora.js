@@ -19,17 +19,18 @@
     u: { dim: "unidades", f: 1 }
   };
   // Precios de EJEMPLO (no son referencia de mercado): solo para mostrar cómo se llena.
+  // Son las mismas cifras de los anuncios de Colombia (copy/05-anuncios-campana-1.md, escenario E1).
   var EJEMPLO = {
-    pais: "MX", nombre: "Torta de chocolate (ejemplo)", porciones: 12,
-    empaque: 45, gas: 10, horas: 3, tarifa: 80, desperdicio: 5, margen: 30, precioActual: 380,
+    pais: "CO", nombre: "Torta de chocolate (ejemplo)", porciones: 12,
+    empaque: 8000, gas: 2000, horas: 3, tarifa: 15000, desperdicio: 5, margen: 30, precioActual: 70000,
     ingredientes: [
-      { nombre: "Harina de trigo", compra: 1, compraU: "kg", precio: 28, usa: 300, usaU: "g" },
-      { nombre: "Azúcar", compra: 1, compraU: "kg", precio: 32, usa: 250, usaU: "g" },
-      { nombre: "Mantequilla", compra: 1, compraU: "kg", precio: 220, usa: 200, usaU: "g" },
-      { nombre: "Huevos", compra: 30, compraU: "u", precio: 95, usa: 4, usaU: "u" },
-      { nombre: "Cacao en polvo", compra: 500, compraU: "g", precio: 120, usa: 80, usaU: "g" },
-      { nombre: "Leche", compra: 1, compraU: "l", precio: 28, usa: 250, usaU: "ml" },
-      { nombre: "Chocolate", compra: 1, compraU: "kg", precio: 260, usa: 200, usaU: "g" }
+      { nombre: "Harina de trigo", compra: 1, compraU: "kg", precio: 4000, usa: 300, usaU: "g" },
+      { nombre: "Azúcar", compra: 1, compraU: "kg", precio: 4500, usa: 250, usaU: "g" },
+      { nombre: "Mantequilla", compra: 1, compraU: "kg", precio: 36000, usa: 200, usaU: "g" },
+      { nombre: "Huevos", compra: 30, compraU: "u", precio: 18000, usa: 4, usaU: "u" },
+      { nombre: "Cacao en polvo", compra: 500, compraU: "g", precio: 20000, usa: 80, usaU: "g" },
+      { nombre: "Leche", compra: 1, compraU: "l", precio: 4400, usa: 250, usaU: "ml" },
+      { nombre: "Chocolate", compra: 1, compraU: "kg", precio: 44000, usa: 200, usaU: "g" }
     ]
   };
 
@@ -272,8 +273,12 @@
   });
   $("ir-preventa").addEventListener("click", function () { medir("calc_a_preventa"); });
 
-  // Inicio
-  if (!restaurar()) { agregarIngrediente(); agregarIngrediente(); agregarIngrediente(); }
+  // Inicio: Colombia por defecto; ?pais=MX (o CO, PE, CL, AR, US) elige otro país si no hay borrador guardado.
+  if (!restaurar()) {
+    var paisUrl = (new URLSearchParams(location.search).get("pais") || "").toUpperCase();
+    $("pais").value = PAISES[paisUrl] ? paisUrl : "CO";
+    agregarIngrediente(); agregarIngrediente(); agregarIngrediente();
+  }
   actualizarSimbolos();
   if (calcular()) medir("calc_resultado_restaurado");
   var primerResultado = false;

@@ -1,0 +1,1797 @@
+{
+  "formato": "cuanto-cobro-pack",
+  "version": 1,
+  "nombre": "30 recetas base",
+  "moneda": "COP",
+  "ingredientes": [
+    {
+      "nombre": "Harina de trigo",
+      "compra": 1000,
+      "compraU": "g",
+      "precio": 6000
+    },
+    {
+      "nombre": "Azúcar",
+      "compra": 1000,
+      "compraU": "g",
+      "precio": 6000
+    },
+    {
+      "nombre": "Azúcar morena",
+      "compra": 1000,
+      "compraU": "g",
+      "precio": 7000
+    },
+    {
+      "nombre": "Azúcar pulverizada",
+      "compra": 500,
+      "compraU": "g",
+      "precio": 6000
+    },
+    {
+      "nombre": "Mantequilla",
+      "compra": 500,
+      "compraU": "g",
+      "precio": 20000
+    },
+    {
+      "nombre": "Huevos",
+      "compra": 30,
+      "compraU": "u",
+      "precio": 20000
+    },
+    {
+      "nombre": "Leche",
+      "compra": 1000,
+      "compraU": "ml",
+      "precio": 4800
+    },
+    {
+      "nombre": "Crema de leche (para batir)",
+      "compra": 1000,
+      "compraU": "ml",
+      "precio": 20000
+    },
+    {
+      "nombre": "Queso crema",
+      "compra": 400,
+      "compraU": "g",
+      "precio": 15000
+    },
+    {
+      "nombre": "Leche condensada",
+      "compra": 397,
+      "compraU": "g",
+      "precio": 8500
+    },
+    {
+      "nombre": "Leche evaporada",
+      "compra": 410,
+      "compraU": "g",
+      "precio": 7500
+    },
+    {
+      "nombre": "Chocolate de cobertura",
+      "compra": 1000,
+      "compraU": "g",
+      "precio": 48000
+    },
+    {
+      "nombre": "Cacao en polvo",
+      "compra": 500,
+      "compraU": "g",
+      "precio": 24000
+    },
+    {
+      "nombre": "Chips de chocolate",
+      "compra": 250,
+      "compraU": "g",
+      "precio": 12000
+    },
+    {
+      "nombre": "Polvo de hornear",
+      "compra": 100,
+      "compraU": "g",
+      "precio": 5000
+    },
+    {
+      "nombre": "Bicarbonato de sodio",
+      "compra": 100,
+      "compraU": "g",
+      "precio": 2500
+    },
+    {
+      "nombre": "Sal",
+      "compra": 500,
+      "compraU": "g",
+      "precio": 1800
+    },
+    {
+      "nombre": "Esencia de vainilla",
+      "compra": 120,
+      "compraU": "ml",
+      "precio": 9000
+    },
+    {
+      "nombre": "Aceite vegetal",
+      "compra": 1000,
+      "compraU": "ml",
+      "precio": 10000
+    },
+    {
+      "nombre": "Fécula de maíz",
+      "compra": 380,
+      "compraU": "g",
+      "precio": 8000
+    },
+    {
+      "nombre": "Gelatina sin sabor",
+      "compra": 50,
+      "compraU": "g",
+      "precio": 8000
+    },
+    {
+      "nombre": "Colorante en gel rojo",
+      "compra": 20,
+      "compraU": "g",
+      "precio": 9000
+    },
+    {
+      "nombre": "Vinagre blanco",
+      "compra": 500,
+      "compraU": "ml",
+      "precio": 3500
+    },
+    {
+      "nombre": "Café instantáneo",
+      "compra": 85,
+      "compraU": "g",
+      "precio": 15000
+    },
+    {
+      "nombre": "Canela molida",
+      "compra": 50,
+      "compraU": "g",
+      "precio": 4500
+    },
+    {
+      "nombre": "Canela en astilla",
+      "compra": 25,
+      "compraU": "g",
+      "precio": 4000
+    },
+    {
+      "nombre": "Naranjas",
+      "compra": 12,
+      "compraU": "u",
+      "precio": 8000
+    },
+    {
+      "nombre": "Limones",
+      "compra": 12,
+      "compraU": "u",
+      "precio": 3500
+    },
+    {
+      "nombre": "Bananos maduros",
+      "compra": 6,
+      "compraU": "u",
+      "precio": 3000
+    },
+    {
+      "nombre": "Zanahoria",
+      "compra": 1000,
+      "compraU": "g",
+      "precio": 3500
+    },
+    {
+      "nombre": "Mora de Castilla",
+      "compra": 500,
+      "compraU": "g",
+      "precio": 4500
+    },
+    {
+      "nombre": "Pulpa de maracuyá",
+      "compra": 500,
+      "compraU": "g",
+      "precio": 8000
+    },
+    {
+      "nombre": "Frutos rojos congelados",
+      "compra": 500,
+      "compraU": "g",
+      "precio": 16000
+    },
+    {
+      "nombre": "Nueces",
+      "compra": 250,
+      "compraU": "g",
+      "precio": 22000
+    },
+    {
+      "nombre": "Uvas pasas",
+      "compra": 250,
+      "compraU": "g",
+      "precio": 8000
+    },
+    {
+      "nombre": "Ciruelas pasas sin semilla",
+      "compra": 250,
+      "compraU": "g",
+      "precio": 10000
+    },
+    {
+      "nombre": "Frutas confitadas",
+      "compra": 250,
+      "compraU": "g",
+      "precio": 8000
+    },
+    {
+      "nombre": "Vino tinto dulce",
+      "compra": 750,
+      "compraU": "ml",
+      "precio": 16000
+    },
+    {
+      "nombre": "Galletas tipo María",
+      "compra": 400,
+      "compraU": "g",
+      "precio": 7000
+    },
+    {
+      "nombre": "Galletas tipo soleta (deditos)",
+      "compra": 200,
+      "compraU": "g",
+      "precio": 8500
+    },
+    {
+      "nombre": "Masmelos",
+      "compra": 250,
+      "compraU": "g",
+      "precio": 7500
+    },
+    {
+      "nombre": "Capacillos para cupcake",
+      "compra": 100,
+      "compraU": "u",
+      "precio": 6000
+    }
+  ],
+  "recetas": [
+    {
+      "nombre": "Bizcocho de vainilla (de mantequilla)",
+      "porciones": 12,
+      "items": [
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 200,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 5,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Leche",
+          "cant": 200,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Polvo de hornear",
+          "cant": 10,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 10,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 2,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 55,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 12,
+        "lavado": true
+      },
+      "horas": 1.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Bizcocho de chocolate húmedo",
+      "porciones": 12,
+      "items": [
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 250,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Cacao en polvo",
+          "cant": 60,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 3,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Leche",
+          "cant": 250,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Aceite vegetal",
+          "cant": 125,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Bicarbonato de sodio",
+          "cant": 6,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Polvo de hornear",
+          "cant": 6,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Café instantáneo",
+          "cant": 4,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 2,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 55,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 6,
+        "lavado": true
+      },
+      "horas": 1,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Bizcocho red velvet",
+      "porciones": 14,
+      "items": [
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Cacao en polvo",
+          "cant": 10,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 2,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Aceite vegetal",
+          "cant": 250,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Leche",
+          "cant": 240,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Vinagre blanco",
+          "cant": 15,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Bicarbonato de sodio",
+          "cant": 5,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Colorante en gel rojo",
+          "cant": 10,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 2,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 45,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 6,
+        "lavado": true
+      },
+      "horas": 1.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Bizcocho de naranja",
+      "porciones": 12,
+      "items": [
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 280,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 150,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 4,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Naranjas",
+          "cant": 3,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Polvo de hornear",
+          "cant": 10,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 1,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 55,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 10,
+        "lavado": true
+      },
+      "horas": 1.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Torta de zanahoria",
+      "porciones": 14,
+      "items": [
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 280,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar morena",
+          "cant": 150,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 150,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Aceite vegetal",
+          "cant": 240,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 4,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Zanahoria",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Nueces",
+          "cant": 80,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Uvas pasas",
+          "cant": 60,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Canela molida",
+          "cant": 5,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Bicarbonato de sodio",
+          "cant": 5,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Polvo de hornear",
+          "cant": 5,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 2,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 60,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 6,
+        "lavado": true
+      },
+      "horas": 1.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Bizcocho esponjoso para tres leches",
+      "porciones": 15,
+      "items": [
+        {
+          "ingrediente": "Huevos",
+          "cant": 6,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 200,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 200,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Polvo de hornear",
+          "cant": 6,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Leche",
+          "cant": 60,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        }
+      ],
+      "servicios": {
+        "horno": 40,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 12,
+        "lavado": true
+      },
+      "horas": 1,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Ponqué tradicional",
+      "porciones": 14,
+      "items": [
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 250,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 250,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 5,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 250,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Polvo de hornear",
+          "cant": 5,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Leche",
+          "cant": 60,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Limones",
+          "cant": 1,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 10,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 1,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 65,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 15,
+        "lavado": true
+      },
+      "horas": 1.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Torta negra",
+      "porciones": 16,
+      "items": [
+        {
+          "ingrediente": "Uvas pasas",
+          "cant": 150,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Ciruelas pasas sin semilla",
+          "cant": 150,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Frutas confitadas",
+          "cant": 150,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Vino tinto dulce",
+          "cant": 375,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 100,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 250,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar morena",
+          "cant": 250,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 5,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 250,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Polvo de hornear",
+          "cant": 5,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Bicarbonato de sodio",
+          "cant": 3,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Canela molida",
+          "cant": 3,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 130,
+        "tipo": "gas",
+        "estufa": 10,
+        "batidora": 10,
+        "lavado": true
+      },
+      "horas": 3,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Torta de banano",
+      "porciones": 10,
+      "items": [
+        {
+          "ingrediente": "Bananos maduros",
+          "cant": 3,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 250,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar morena",
+          "cant": 180,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Aceite vegetal",
+          "cant": 120,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 2,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Bicarbonato de sodio",
+          "cant": 5,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Polvo de hornear",
+          "cant": 4,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Canela molida",
+          "cant": 3,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 2,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 65,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 5,
+        "lavado": true
+      },
+      "horas": 1,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Brownies",
+      "porciones": 20,
+      "items": [
+        {
+          "ingrediente": "Chocolate de cobertura",
+          "cant": 200,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 180,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 4,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 120,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Cacao en polvo",
+          "cant": 30,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 2,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 38,
+        "tipo": "gas",
+        "estufa": 5,
+        "batidora": 4,
+        "lavado": true
+      },
+      "horas": 1,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Cupcakes de vainilla",
+      "porciones": 18,
+      "items": [
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 240,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 200,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 115,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 2,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Leche",
+          "cant": 180,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Polvo de hornear",
+          "cant": 8,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 8,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 1,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Capacillos para cupcake",
+          "cant": 18,
+          "u": "u"
+        }
+      ],
+      "servicios": {
+        "horno": 32,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 8,
+        "lavado": true
+      },
+      "horas": 1.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Cupcakes de chocolate",
+      "porciones": 20,
+      "items": [
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 180,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Cacao en polvo",
+          "cant": 50,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 220,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 2,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Aceite vegetal",
+          "cant": 120,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Leche",
+          "cant": 180,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Bicarbonato de sodio",
+          "cant": 4,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Polvo de hornear",
+          "cant": 4,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 1,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Capacillos para cupcake",
+          "cant": 20,
+          "u": "u"
+        }
+      ],
+      "servicios": {
+        "horno": 30,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 5,
+        "lavado": true
+      },
+      "horas": 1.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Galletas de mantequilla para decorar",
+      "porciones": 35,
+      "items": [
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 225,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar pulverizada",
+          "cant": 200,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 1,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 450,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 2,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 40,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 6,
+        "lavado": true
+      },
+      "horas": 2,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Galletas con chips de chocolate",
+      "porciones": 24,
+      "items": [
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 170,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar morena",
+          "cant": 150,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 100,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 1,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 280,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Bicarbonato de sodio",
+          "cant": 5,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 3,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Chips de chocolate",
+          "cant": 250,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 34,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 4,
+        "lavado": true
+      },
+      "horas": 1,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Arequipe casero",
+      "porciones": 1,
+      "items": [
+        {
+          "ingrediente": "Leche",
+          "cant": 2000,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 500,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Bicarbonato de sodio",
+          "cant": 2,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Canela en astilla",
+          "cant": 3,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 120,
+        "batidora": 0,
+        "lavado": true
+      },
+      "horas": 2.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Crema de mantequilla (buttercream sencilla)",
+      "porciones": 1,
+      "items": [
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 250,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar pulverizada",
+          "cant": 500,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Leche",
+          "cant": 30,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 1,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 10,
+        "lavado": true
+      },
+      "horas": 0.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Buttercream de merengue suizo",
+      "porciones": 1,
+      "items": [
+        {
+          "ingrediente": "Huevos",
+          "cant": 5,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 450,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Sal",
+          "cant": 1,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 10,
+        "batidora": 20,
+        "lavado": true
+      },
+      "horas": 1,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Ganache de chocolate",
+      "porciones": 1,
+      "items": [
+        {
+          "ingrediente": "Chocolate de cobertura",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Crema de leche (para batir)",
+          "cant": 300,
+          "u": "ml"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 5,
+        "batidora": 0,
+        "lavado": true
+      },
+      "horas": 0.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Crema chantilly estabilizada",
+      "porciones": 1,
+      "items": [
+        {
+          "ingrediente": "Crema de leche (para batir)",
+          "cant": 500,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Azúcar pulverizada",
+          "cant": 60,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Gelatina sin sabor",
+          "cant": 5,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 2,
+        "batidora": 6,
+        "lavado": true
+      },
+      "horas": 0.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Crema pastelera",
+      "porciones": 1,
+      "items": [
+        {
+          "ingrediente": "Leche",
+          "cant": 500,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 4,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 100,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Fécula de maíz",
+          "cant": 40,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 25,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 15,
+        "batidora": 0,
+        "lavado": true
+      },
+      "horas": 0.75,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Mermelada de mora",
+      "porciones": 1,
+      "items": [
+        {
+          "ingrediente": "Mora de Castilla",
+          "cant": 500,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Limones",
+          "cant": 1,
+          "u": "u"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 35,
+        "batidora": 0,
+        "lavado": true
+      },
+      "horas": 1,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Frosting de queso crema",
+      "porciones": 1,
+      "items": [
+        {
+          "ingrediente": "Queso crema",
+          "cant": 250,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 115,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar pulverizada",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 6,
+        "lavado": true
+      },
+      "horas": 0.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Glaseado real",
+      "porciones": 1,
+      "items": [
+        {
+          "ingrediente": "Huevos",
+          "cant": 2,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Azúcar pulverizada",
+          "cant": 400,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Limones",
+          "cant": 0.5,
+          "u": "u"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 6,
+        "lavado": true
+      },
+      "horas": 0.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Fondant casero de masmelos",
+      "porciones": 1,
+      "items": [
+        {
+          "ingrediente": "Masmelos",
+          "cant": 250,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar pulverizada",
+          "cant": 500,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 20,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 5,
+        "batidora": 0,
+        "lavado": true
+      },
+      "horas": 1,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Tres leches",
+      "porciones": 12,
+      "items": [
+        {
+          "ingrediente": "Huevos",
+          "cant": 5,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 150,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Harina de trigo",
+          "cant": 150,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Polvo de hornear",
+          "cant": 5,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Leche condensada",
+          "cant": 397,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Leche evaporada",
+          "cant": 410,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Crema de leche (para batir)",
+          "cant": 500,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Azúcar pulverizada",
+          "cant": 40,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Canela molida",
+          "cant": 2,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 35,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 15,
+        "lavado": true
+      },
+      "horas": 2,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Mousse de maracuyá",
+      "porciones": 10,
+      "items": [
+        {
+          "ingrediente": "Pulpa de maracuyá",
+          "cant": 350,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Leche condensada",
+          "cant": 397,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Crema de leche (para batir)",
+          "cant": 400,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Gelatina sin sabor",
+          "cant": 10,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 50,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 8,
+        "batidora": 6,
+        "lavado": true
+      },
+      "horas": 1,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Postre de natas (base)",
+      "porciones": 8,
+      "items": [
+        {
+          "ingrediente": "Leche",
+          "cant": 3000,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 350,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 4,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Uvas pasas",
+          "cant": 80,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Vino tinto dulce",
+          "cant": 60,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Canela en astilla",
+          "cant": 3,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 120,
+        "batidora": 0,
+        "lavado": true
+      },
+      "horas": 3,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Cheesecake de frutos rojos",
+      "porciones": 12,
+      "items": [
+        {
+          "ingrediente": "Galletas tipo María",
+          "cant": 200,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Mantequilla",
+          "cant": 90,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Queso crema",
+          "cant": 600,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 260,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Huevos",
+          "cant": 3,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Crema de leche (para batir)",
+          "cant": 200,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Fécula de maíz",
+          "cant": 15,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Frutos rojos congelados",
+          "cant": 300,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Limones",
+          "cant": 0.5,
+          "u": "u"
+        }
+      ],
+      "servicios": {
+        "horno": 70,
+        "tipo": "gas",
+        "estufa": 12,
+        "batidora": 6,
+        "lavado": true
+      },
+      "horas": 1.5,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Tiramisú (versión sin mascarpone)",
+      "porciones": 10,
+      "items": [
+        {
+          "ingrediente": "Galletas tipo soleta (deditos)",
+          "cant": 200,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Café instantáneo",
+          "cant": 10,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Queso crema",
+          "cant": 400,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Crema de leche (para batir)",
+          "cant": 400,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Azúcar pulverizada",
+          "cant": 120,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Esencia de vainilla",
+          "cant": 5,
+          "u": "ml"
+        },
+        {
+          "ingrediente": "Cacao en polvo",
+          "cant": 15,
+          "u": "g"
+        }
+      ],
+      "servicios": {
+        "horno": 0,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 8,
+        "lavado": true
+      },
+      "horas": 1,
+      "desperdicio": 5,
+      "margen": 30
+    },
+    {
+      "nombre": "Merengón (base de merengue)",
+      "porciones": 12,
+      "items": [
+        {
+          "ingrediente": "Huevos",
+          "cant": 6,
+          "u": "u"
+        },
+        {
+          "ingrediente": "Azúcar",
+          "cant": 360,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Fécula de maíz",
+          "cant": 10,
+          "u": "g"
+        },
+        {
+          "ingrediente": "Vinagre blanco",
+          "cant": 5,
+          "u": "ml"
+        }
+      ],
+      "servicios": {
+        "horno": 130,
+        "tipo": "gas",
+        "estufa": 0,
+        "batidora": 12,
+        "lavado": true
+      },
+      "horas": 1.5,
+      "desperdicio": 5,
+      "margen": 30
+    }
+  ]
+}

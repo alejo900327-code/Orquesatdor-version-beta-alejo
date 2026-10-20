@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>¿Cuánto Cobro? · Precio justo para tus pasteles</title>
+  <title>¿Cuánto Cobro? · Precio justo para tus tortas</title>
   <meta name="description" content="La app en tu celular que suma ingredientes, merma, empaque, gas y tu tiempo, y te dice tu precio mínimo y tu precio sugerido antes de cotizar. Acceso inmediato.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
+  <script src="pixel.js"></script>
 </head>
 <body>
   <header class="barra">
     <div class="contenedor">
       <a class="marca" href="./">¿Cuánto <span>Cobro?</span></a>
-      <a class="boton boton-principal boton-chico" href="calculadora/" data-evento="landing_a_calculadora">Calcula tu pastel gratis</a>
+      <a class="boton boton-principal boton-chico" href="calculadora/" data-evento="landing_a_calculadora">Calcula tu torta gratis</a>
     </div>
   </header>
 
@@ -23,8 +24,8 @@
     <section class="hero">
       <div class="contenedor">
         <div>
-          <span class="etiqueta">Para reposteras que ya venden pasteles y tortas por encargo</span>
-          <h1>Muchas reposteras venden bien y al final del mes no ven el dinero.</h1>
+          <span class="etiqueta">Para reposteras que ya venden tortas por encargo</span>
+          <h1>Muchas reposteras venden bien y al final del mes no ven la plata.</h1>
           <p class="sub">Casi siempre es por lo que el precio deja fuera: las horas, el gas del horno, la caja y lo que se pierde en la receta. ¿Cuánto Cobro? lo suma desde tu celular y te da dos números antes de mandar el precio por WhatsApp: <strong>el mínimo, debajo del cual pierdes</strong>, y <strong>el que deja ganancia para tu negocio</strong>.</p>
           <div class="acciones">
             <a class="boton boton-principal" href="calculadora/" data-evento="landing_a_calculadora">Ver si estoy cobrando de menos (gratis)</a>
@@ -37,16 +38,16 @@
           <div class="telefono" aria-label="Ejemplo de resultado en la app">
             <div class="pantalla">
               <h4>Torta de chocolate</h4>
-              <div class="pequeno">12 porciones · datos de ejemplo (MXN)</div>
-              <div class="fila"><span>Ingredientes</span><strong>$159</strong></div>
-              <div class="fila"><span>Empaque + gas</span><strong>$55</strong></div>
-              <div class="fila"><span>Tu trabajo (3 h)</span><strong>$240</strong></div>
-              <div class="fila"><span>Precio mínimo</span><strong>$454</strong></div>
-              <div class="fila"><span>Precio sugerido</span><strong>$648</strong></div>
-              <div class="pastilla pastilla-roja">La vendías a $380: estás $74 por debajo de tu mínimo.</div>
+              <div class="pequeno">12 porciones · datos de ejemplo (COP)</div>
+              <div class="fila"><span>Ingredientes</span><strong>$26.276</strong></div>
+              <div class="fila"><span>Empaque + gas</span><strong>$10.000</strong></div>
+              <div class="fila"><span>Tu trabajo (3 h)</span><strong>$45.000</strong></div>
+              <div class="fila"><span>Precio mínimo</span><strong>$81.276</strong></div>
+              <div class="fila"><span>Precio sugerido</span><strong>$116.109</strong></div>
+              <div class="pastilla pastilla-roja">La vendías a $70.000: estás $11.276 por debajo de tu mínimo.</div>
             </div>
           </div>
-          <p class="nota pie-telefono">En este ejemplo, cada pastel vendido a $380 son $74 que pone la repostera. Con 10 pedidos así al mes, serían $740.</p>
+          <p class="nota pie-telefono">En este ejemplo, cada torta vendida a $70.000 son $11.276 que pone la repostera. Con 10 pedidos así al mes, serían $112.760.</p>
         </div>
       </div>
     </section>
@@ -55,23 +56,23 @@
     <section class="seccion seccion-alt">
       <div class="contenedor estrecho">
         <span class="etiqueta">Haz la cuenta</span>
-        <h2>Un pastel que se vende a $380 puede costar $454 hacerlo bien.</h2>
+        <h2>Una torta que se vende a $70.000 puede costar $81.276 hacerla bien.</h2>
         <p>Mira el ejemplo de arriba. La repostera no cobraba mal "porque sí". Cobraba lo que le parecía razonable, lo que cobraban otras y lo que la clienta no le iba a discutir.</p>
         <p>Pero cuando se suma todo, la cuenta queda así:</p>
         <div class="tabla-wrap">
           <table class="tabla-cuenta">
-            <thead><tr><th>Lo que pone en el pastel</th><th>Cuánto</th></tr></thead>
+            <thead><tr><th>Lo que pone en la torta</th><th>Cuánto</th></tr></thead>
             <tbody>
-              <tr><td>Ingredientes (con un 5 % de merma)</td><td>$159</td></tr>
-              <tr><td>Caja, base, gas del horno, luz, agua</td><td>$55</td></tr>
-              <tr><td>Sus 3 horas de trabajo, a $80 la hora</td><td>$240</td></tr>
-              <tr><th>Lo mínimo para no perder</th><th>$454</th></tr>
-              <tr><td>Lo que cobraba</td><td>$380</td></tr>
-              <tr class="fila-fuga"><th>Lo que ponía ella, en cada pedido</th><th>$74</th></tr>
+              <tr><td>Ingredientes (con un 5 % de merma)</td><td>$26.276</td></tr>
+              <tr><td>Caja, base, gas del horno, luz, agua</td><td>$10.000</td></tr>
+              <tr><td>Sus 3 horas de trabajo, a $15.000 la hora</td><td>$45.000</td></tr>
+              <tr><th>Lo mínimo para no perder</th><th>$81.276</th></tr>
+              <tr><td>Lo que cobraba</td><td>$70.000</td></tr>
+              <tr class="fila-fuga"><th>Lo que ponía ella, en cada pedido</th><th>$11.276</th></tr>
             </tbody>
           </table>
         </div>
-        <p class="remate">No es una tragedia en un pastel. Es una fuga en todos.</p>
+        <p class="remate">No es una tragedia en una torta. Es una fuga en todas.</p>
         <div class="acciones">
           <a class="boton boton-principal" href="calculadora/" data-evento="landing_a_calculadora">Hacer la cuenta con mi receta (gratis)</a>
         </div>
@@ -83,7 +84,7 @@
     <section class="seccion">
       <div class="contenedor estrecho">
         <span class="etiqueta">¿Te ha pasado?</span>
-        <h2>Lo que nadie ve de tu negocio de pasteles.</h2>
+        <h2>Lo que nadie ve de tu negocio de tortas.</h2>
 
         <div class="escena">
           <h3>El precio que da miedo mandar</h3>
@@ -94,13 +95,13 @@
 
         <div class="escena">
           <h3>"¿En cuánto me lo dejas?"</h3>
-          <p>Te comparan con el pastel del supermercado. Te piden "uno parecido, pero más sencillo" por la mitad. Y tú, sin un número que te respalde, terminas bajando. No porque quieras: porque no tienes con qué decir que no.</p>
+          <p>Te comparan con la torta del supermercado. Te piden "uno parecido, pero más sencillo" por la mitad. Y tú, sin un número que te respalde, terminas bajando. No porque quieras: porque no tienes con qué decir que no.</p>
           <p data-cita="2.2">Como lo dijo una repostera: <q>las personas pretenden comparar el precio de una torta personalizada con una torta de pastelería.</q></p>
         </div>
 
         <div class="escena">
           <h3>El mes que no paraste… y no te alcanzó</h3>
-          <p>Diciembre, Día de las Madres, la temporada de fiestas. Horneaste todos los fines de semana, entregaste todo a tiempo, las fotos quedaron preciosas. Y cuando fuiste a comprar los insumos del siguiente pedido, el dinero no alcanzaba.</p>
+          <p>Amor y Amistad, Día de la Madre, diciembre. Horneaste todos los fines de semana, entregaste todo a tiempo, las fotos quedaron preciosas. Y cuando fuiste a comprar los insumos del siguiente pedido, la plata no alcanzaba.</p>
           <p>¿Cómo se puede vender tanto y que no quede nada? Pasa cuando cada pedido sale un poco por debajo de lo que cuesta: entre más vendes, más pones tú.</p>
         </div>
 
@@ -155,7 +156,7 @@
           <div class="tarjeta">
             <div class="numero">1</div>
             <h3>Pon lo que compras, una sola vez</h3>
-            <p>"1 kg de harina a $28." Ya vienen 16 ingredientes comunes con un precio de referencia aproximado en tu moneda; solo corriges lo que tú pagas. La app calcula cuánto te cuesta cada gramo.</p>
+            <p>"1 kg de harina a $4.000." Ya vienen 16 ingredientes comunes con un precio de referencia aproximado en tu moneda; solo corriges lo que tú pagas. La app calcula cuánto te cuesta cada gramo.</p>
           </div>
           <div class="tarjeta">
             <div class="numero">2</div>
@@ -171,25 +172,25 @@
 
         <div class="tarjeta recalculo">
           <h3>Y cuando cambia un precio…</h3>
-          <p>Cambias el precio de la mantequilla, del huevo o de la caja, y <strong>todas las recetas que la usan se recalculan solas</strong>. La app te muestra cuánto subió cada una, por ejemplo: "Pastel de chocolate: $612 → $648" <em>(ejemplo)</em>. Así tu precio nunca vuelve a quedarse en otra época.</p>
+          <p>Cambias el precio de la mantequilla, del huevo o de la caja, y <strong>todas las recetas que la usan se recalculan solas</strong>. La app te muestra cuánto subió cada una, por ejemplo: "Torta de chocolate: $110.000 → $116.109" <em>(ejemplo)</em>. Así tu precio nunca vuelve a quedarse en otra época.</p>
         </div>
 
         <div class="tarjeta servicios-ejemplo">
           <h3>¿Y el gas, la luz y el agua? No tienes que adivinarlo.</h3>
-          <p>Nadie sabe cuánto gas gastó en un pastel, pero sí cuánto rato prendió el horno. La app te pregunta los <strong>minutos</strong> de horno, estufa y batidora y los convierte en dinero con un valor aproximado de tu país.</p>
+          <p>Nadie sabe cuánto gas gastó en una torta, pero sí cuánto rato prendió el horno. La app te pregunta los <strong>minutos</strong> de horno, estufa y batidora y los convierte en dinero con un valor aproximado de tu país.</p>
           <div class="tabla-wrap">
             <table>
-              <thead><tr><th>Pastel de chocolate (ejemplo)</th><th>Cuesta</th></tr></thead>
+              <thead><tr><th>Torta de chocolate (ejemplo, COP)</th><th>Cuesta</th></tr></thead>
               <tbody>
-                <tr><td>Horno a gas, 60 min (con precalentado)</td><td>$5.50</td></tr>
-                <tr><td>Estufa, 20 min (ganache)</td><td>$0.83</td></tr>
-                <tr><td>Batidora, 15 min</td><td>$0.20</td></tr>
-                <tr><td>Agua y jabón del lavado</td><td>$3.00</td></tr>
-                <tr><th>Gas, luz y agua de este pastel</th><th>$9.53</th></tr>
+                <tr><td>Horno a gas, 90 min (con precalentado)</td><td>$1.350</td></tr>
+                <tr><td>Estufa, 25 min (ganache)</td><td>$167</td></tr>
+                <tr><td>Batidora, 15 min</td><td>$75</td></tr>
+                <tr><td>Agua y jabón del lavado</td><td>$400</td></tr>
+                <tr><th>Gas, luz y agua de esta torta</th><th>$1.992</th></tr>
               </tbody>
             </table>
           </div>
-          <p class="nota"><strong>¿Lo quieres exacto?</strong> Recibo de gas del mes ÷ horas de horno del mes = lo que te cuesta 1 hora de horno. Ej.: $330 ÷ 60 horas = $5.50 por hora. Lo pones una vez y todas tus recetas se recalculan.</p>
+          <p class="nota"><strong>¿Lo quieres exacto?</strong> Recibo de gas del mes ÷ horas de horno del mes = lo que te cuesta 1 hora de horno. Ej.: $54.000 ÷ 60 horas = $900 por hora. Lo pones una vez y todas tus recetas se recalculan. (En el ejemplo de arriba lo redondeamos a $2.000.)</p>
         </div>
         <div class="acciones">
           <a class="boton boton-secundario" href="calculadora/" data-evento="landing_a_calculadora">Probarlo gratis con 1 receta</a>
@@ -209,7 +210,7 @@
             <tbody>
               <tr><td>"¿Estuvo caro o barato?"</td><td>Sabes cuánto te deja cada pedido, antes de aceptarlo.</td></tr>
               <tr><td>Le bajas al precio para que no se asuste.</td><td>Mandas tu precio con un número que lo respalda.</td></tr>
-              <tr><td>Cobras 3 horas por un pastel de 8.</td><td>Tu tiempo está en el precio, siempre.</td></tr>
+              <tr><td>Cobras 3 horas por una torta de 8.</td><td>Tu tiempo está en el precio, siempre.</td></tr>
               <tr><td>Te dicen "está caro" y te quedas sin palabras.</td><td>Tienes 5 respuestas amables listas para copiar y pegar.</td></tr>
               <tr><td>Copias la lista de precios de otra.</td><td>Tus precios salen de tu receta, tu horno y tus horas.</td></tr>
               <tr><td>Tu precio es de hace un año.</td><td>Cambias un ingrediente y todo se recalcula.</td></tr>
@@ -242,8 +243,8 @@
             </tbody>
           </table>
         </div>
-        <p style="margin-top:16px">¿No estás segura? No nos creas: haz la cuenta de tu pastel en la calculadora gratis y compárala con lo que cobras hoy.</p>
-        <a class="boton boton-secundario" href="calculadora/" data-evento="landing_a_calculadora">Comparar con mi pastel (gratis)</a>
+        <p style="margin-top:16px">¿No estás segura? No nos creas: haz la cuenta de tu torta en la calculadora gratis y compárala con lo que cobras hoy.</p>
+        <a class="boton boton-secundario" href="calculadora/" data-evento="landing_a_calculadora">Comparar con mi torta (gratis)</a>
       </div>
     </section>
 
@@ -267,13 +268,13 @@
           </div>
           <div>
             <div class="precio-caja">
-              <span class="etiqueta">Precio de lanzamiento</span>
+              <span class="etiqueta">Pago único</span>
               <div class="precio">USD 12 <small>pago único</small></div>
               <p class="nota" style="margin-top:0">Pagas por Hotmart en tu moneda local, con los medios disponibles en tu país. Sin mensualidad.</p>
               <a class="boton boton-principal" style="width:100%;margin-top:8px" href="https://pay.hotmart.com/D108114823S" id="boton-comprar" data-evento="clic_comprar_preventa">Quiero cobrar lo justo · USD 12</a>
               <p class="nota"><strong>Acceso inmediato:</strong> apenas pagas, te llega a tu email el enlace a la app y la guía de inicio.</p>
             </div>
-            <p class="nota ancla">USD 12 es menos de lo que cuestan los ingredientes de un pastel. ¿Te conviene? No lo decidas por nosotros: haz primero <a href="calculadora/" data-evento="landing_a_calculadora">la cuenta gratis con tu receta</a> y mira tu propio número.</p>
+            <p class="nota ancla">USD 12, una sola vez, es menos de lo que vale una torta de 12 porciones. ¿Te conviene? No lo decidas por nosotros: haz primero <a href="calculadora/" data-evento="landing_a_calculadora">la cuenta gratis con tu receta</a> y mira tu propio número.</p>
             <p class="nota"><strong>¿Por qué tan barato?</strong> Estamos lanzando. Preferimos que las primeras reposteras la usen, nos digan qué le falta y la mejoremos juntas.</p>
           </div>
         </div>
@@ -286,7 +287,7 @@
         <span class="etiqueta">Sin riesgo</span>
         <h2>7 días para probarla. Si no te sirve, te devolvemos tu dinero.</h2>
         <p>Tienes 7 días para probarla con tu receta de verdad. Si no te convence, por la razón que sea, pides el reembolso del 100 % desde Hotmart (o respondes al email de tu compra y te ayudamos a hacerlo). Sin preguntas incómodas.</p>
-        <p>Y si quieres estar segura antes de pagar, la calculadora gratis hace la cuenta de un pastel completo, con la misma fórmula que la app.</p>
+        <p>Y si quieres estar segura antes de pagar, la calculadora gratis hace la cuenta de una torta completa, con la misma fórmula que la app.</p>
         <a class="boton boton-principal" href="https://pay.hotmart.com/D108114823S" data-evento="clic_comprar_preventa">Quiero cobrar lo justo · USD 12</a>
       </div>
     </section>
@@ -297,9 +298,9 @@
         <span class="etiqueta">Preguntas frecuentes</span>
         <h2>Lo que te preguntas antes de cobrar distinto</h2>
         <details><summary>¿Y si subo mi precio y me dejan de comprar?</summary><p>Es el miedo más común, y es válido. Por eso la app no te da un solo número: te da tu piso y tu precio. El piso es el mínimo para no perder; entre el piso y el sugerido tienes margen para decidir según tu clienta y tu zona. Y si alguien solo te compra por debajo de tu piso, ese pedido te cuesta dinero cada vez que lo haces. Cuando la clienta quiere pagar menos, puedes ofrecerle un tamaño más pequeño o una decoración más sencilla (duplicas la receta, cambias lo que necesites y ves su precio). No regalas tu trabajo: ajustas el pedido.</p></details>
-        <details><summary>Soy nueva, ¿puedo cobrar como si tuviera experiencia?</summary><p>Lo que cuesta tu pastel no depende de tu experiencia: la harina, la caja y el gas cuestan lo mismo si llevas un mes o diez años. Eso sí o sí tiene que estar en tu precio. Lo que sí puedes ajustar es cuánto cobras por hora; puedes empezar con una tarifa más baja y subirla cuando ganes rapidez y seguridad. Lo que no conviene es empezar perdiendo.</p></details>
+        <details><summary>Soy nueva, ¿puedo cobrar como si tuviera experiencia?</summary><p>Lo que cuesta tu torta no depende de tu experiencia: la harina, la caja y el gas cuestan lo mismo si llevas un mes o diez años. Eso sí o sí tiene que estar en tu precio. Lo que sí puedes ajustar es cuánto cobras por hora; puedes empezar con una tarifa más baja y subirla cuando ganes rapidez y seguridad. Lo que no conviene es empezar perdiendo.</p></details>
         <details><summary>La competencia cobra mucho menos que yo. ¿No me conviene igualarla?</summary><p>Ella no compra donde tú compras, no usa tus ingredientes ni tarda lo que tú tardas. Si cobra mucho menos con la misma calidad, o tiene costos muy distintos o está perdiendo dinero sin darse cuenta. Copiar su precio es copiar su cuenta, y tú no sabes cuál es. Con la app sabes la tuya.</p></details>
-        <details><summary>No soy buena con los números.</summary><p>No necesitas serlo. Pones lo que compras, cuánto pagaste y cuánto usas, como lo dirías en voz alta: "1 kg de harina a $28, uso 300 gramos". La app hace todas las cuentas y te muestra el resultado en grande.</p></details>
+        <details><summary>No soy buena con los números.</summary><p>No necesitas serlo. Pones lo que compras, cuánto pagaste y cuánto usas, como lo dirías en voz alta: "1 kg de harina a $4.000, uso 300 gramos". La app hace todas las cuentas y te muestra el resultado en grande.</p></details>
         <details><summary>Mis clientas no pagarían lo que dice la app.</summary><p>Puede pasar, sobre todo cuando la economía está difícil. La app no te obliga a cobrar el sugerido: te muestra dónde está tu piso para que decidas sabiendo. Con eso puedes elegir qué versión del pedido sí te deja algo, y tienes mensajes amables para explicar tu precio sin pelear. Lo que no cambia es esto: un pedido que te hace perder no te ayuda a ti ni a tu negocio.</p></details>
         <details><summary>¿Y con amigas y familia, qué hago?</summary><p>Tú decides si les haces un precio especial. La diferencia es que ahora vas a saber exactamente cuánto les estás regalando, y podrás decidirlo con cariño, no por compromiso.</p></details>
         <details><summary>¿Cuándo la recibo?</summary><p>Al instante. Apenas pagas, te llega a tu email el enlace a la app y la guía de inicio.</p></details>
@@ -321,7 +322,7 @@
         <p>Llevas meses (o años) horneando bien, entregando a tiempo y cobrando a ojo. No te falta talento ni ganas. Te faltaba la cuenta.</p>
         <p>Hoy puedes empezar de dos maneras:</p>
         <ol>
-          <li><strong>Haz la cuenta gratis</strong> de un pastel y mira si estás por encima o por debajo de tu mínimo.</li>
+          <li><strong>Haz la cuenta gratis</strong> de una torta y mira si estás por encima o por debajo de tu mínimo.</li>
           <li><strong>Lleva todas tus recetas a la app</strong> por USD 12, una sola vez, con 7 días de garantía.</li>
         </ol>
         <p>La próxima vez que te pregunten "¿cuánto cuesta?", que tu respuesta salga de tus números, no de tus nervios.</p>
@@ -338,6 +339,7 @@
     <div class="contenedor">
       <p>¿Cuánto Cobro? es una herramienta de cálculo: los resultados dependen de los datos que ingresas y no garantizan ventas ni ingresos.</p>
       <p>Las frases entre comillas son de reposteras en blogs públicos de repostería; no son clientas de la app.</p>
+      <p>Usamos el píxel de Meta para medir visitas a esta página; no recibe tus recetas ni tus precios. <a href="privacidad/">Privacidad y contacto</a></p>
     </div>
   </footer>
 

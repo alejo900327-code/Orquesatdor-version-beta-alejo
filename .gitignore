@@ -95,3 +95,6 @@ salidas/utm-*.json
 # --- Alejo Cloud ---
 node_modules/
 package-lock.json
+
+# Creativos de anuncios (PNG/MP4 pesados y node_modules de Remotion): viven fuera de git
+productos/*/creativos/

@@ -1,0 +1,1807 @@
+{
+  "_nota": "Precios en COP (Colombia, 2026) aproximados y de REFERENCIA: cada repostera los reemplaza por lo que paga. Unidades válidas en la app: g, kg, ml, l, u.",
+  "ingredientes": [
+    {
+      "nombre": "Harina de trigo",
+      "unidad_compra": "g",
+      "cantidad_compra": 1000,
+      "precio_ref_cop": 6000
+    },
+    {
+      "nombre": "Azúcar",
+      "unidad_compra": "g",
+      "cantidad_compra": 1000,
+      "precio_ref_cop": 6000
+    },
+    {
+      "nombre": "Azúcar morena",
+      "unidad_compra": "g",
+      "cantidad_compra": 1000,
+      "precio_ref_cop": 7000
+    },
+    {
+      "nombre": "Azúcar pulverizada",
+      "unidad_compra": "g",
+      "cantidad_compra": 500,
+      "precio_ref_cop": 6000
+    },
+    {
+      "nombre": "Mantequilla",
+      "unidad_compra": "g",
+      "cantidad_compra": 500,
+      "precio_ref_cop": 20000
+    },
+    {
+      "nombre": "Huevos",
+      "unidad_compra": "u",
+      "cantidad_compra": 30,
+      "precio_ref_cop": 20000
+    },
+    {
+      "nombre": "Leche",
+      "unidad_compra": "ml",
+      "cantidad_compra": 1000,
+      "precio_ref_cop": 4800
+    },
+    {
+      "nombre": "Crema de leche (para batir)",
+      "unidad_compra": "ml",
+      "cantidad_compra": 1000,
+      "precio_ref_cop": 20000
+    },
+    {
+      "nombre": "Queso crema",
+      "unidad_compra": "g",
+      "cantidad_compra": 400,
+      "precio_ref_cop": 15000
+    },
+    {
+      "nombre": "Leche condensada",
+      "unidad_compra": "g",
+      "cantidad_compra": 397,
+      "precio_ref_cop": 8500
+    },
+    {
+      "nombre": "Leche evaporada",
+      "unidad_compra": "g",
+      "cantidad_compra": 410,
+      "precio_ref_cop": 7500
+    },
+    {
+      "nombre": "Chocolate de cobertura",
+      "unidad_compra": "g",
+      "cantidad_compra": 1000,
+      "precio_ref_cop": 48000
+    },
+    {
+      "nombre": "Cacao en polvo",
+      "unidad_compra": "g",
+      "cantidad_compra": 500,
+      "precio_ref_cop": 24000
+    },
+    {
+      "nombre": "Chips de chocolate",
+      "unidad_compra": "g",
+      "cantidad_compra": 250,
+      "precio_ref_cop": 12000
+    },
+    {
+      "nombre": "Polvo de hornear",
+      "unidad_compra": "g",
+      "cantidad_compra": 100,
+      "precio_ref_cop": 5000
+    },
+    {
+      "nombre": "Bicarbonato de sodio",
+      "unidad_compra": "g",
+      "cantidad_compra": 100,
+      "precio_ref_cop": 2500
+    },
+    {
+      "nombre": "Sal",
+      "unidad_compra": "g",
+      "cantidad_compra": 500,
+      "precio_ref_cop": 1800
+    },
+    {
+      "nombre": "Esencia de vainilla",
+      "unidad_compra": "ml",
+      "cantidad_compra": 120,
+      "precio_ref_cop": 9000
+    },
+    {
+      "nombre": "Aceite vegetal",
+      "unidad_compra": "ml",
+      "cantidad_compra": 1000,
+      "precio_ref_cop": 10000
+    },
+    {
+      "nombre": "Fécula de maíz",
+      "unidad_compra": "g",
+      "cantidad_compra": 380,
+      "precio_ref_cop": 8000
+    },
+    {
+      "nombre": "Gelatina sin sabor",
+      "unidad_compra": "g",
+      "cantidad_compra": 50,
+      "precio_ref_cop": 8000
+    },
+    {
+      "nombre": "Colorante en gel rojo",
+      "unidad_compra": "g",
+      "cantidad_compra": 20,
+      "precio_ref_cop": 9000
+    },
+    {
+      "nombre": "Vinagre blanco",
+      "unidad_compra": "ml",
+      "cantidad_compra": 500,
+      "precio_ref_cop": 3500
+    },
+    {
+      "nombre": "Café instantáneo",
+      "unidad_compra": "g",
+      "cantidad_compra": 85,
+      "precio_ref_cop": 15000
+    },
+    {
+      "nombre": "Canela molida",
+      "unidad_compra": "g",
+      "cantidad_compra": 50,
+      "precio_ref_cop": 4500
+    },
+    {
+      "nombre": "Canela en astilla",
+      "unidad_compra": "g",
+      "cantidad_compra": 25,
+      "precio_ref_cop": 4000
+    },
+    {
+      "nombre": "Naranjas",
+      "unidad_compra": "u",
+      "cantidad_compra": 12,
+      "precio_ref_cop": 8000
+    },
+    {
+      "nombre": "Limones",
+      "unidad_compra": "u",
+      "cantidad_compra": 12,
+      "precio_ref_cop": 3500
+    },
+    {
+      "nombre": "Bananos maduros",
+      "unidad_compra": "u",
+      "cantidad_compra": 6,
+      "precio_ref_cop": 3000
+    },
+    {
+      "nombre": "Zanahoria",
+      "unidad_compra": "g",
+      "cantidad_compra": 1000,
+      "precio_ref_cop": 3500
+    },
+    {
+      "nombre": "Mora de Castilla",
+      "unidad_compra": "g",
+      "cantidad_compra": 500,
+      "precio_ref_cop": 4500
+    },
+    {
+      "nombre": "Pulpa de maracuyá",
+      "unidad_compra": "g",
+      "cantidad_compra": 500,
+      "precio_ref_cop": 8000
+    },
+    {
+      "nombre": "Frutos rojos congelados",
+      "unidad_compra": "g",
+      "cantidad_compra": 500,
+      "precio_ref_cop": 16000
+    },
+    {
+      "nombre": "Nueces",
+      "unidad_compra": "g",
+      "cantidad_compra": 250,
+      "precio_ref_cop": 22000
+    },
+    {
+      "nombre": "Uvas pasas",
+      "unidad_compra": "g",
+      "cantidad_compra": 250,
+      "precio_ref_cop": 8000
+    },
+    {
+      "nombre": "Ciruelas pasas sin semilla",
+      "unidad_compra": "g",
+      "cantidad_compra": 250,
+      "precio_ref_cop": 10000
+    },
+    {
+      "nombre": "Frutas confitadas",
+      "unidad_compra": "g",
+      "cantidad_compra": 250,
+      "precio_ref_cop": 8000
+    },
+    {
+      "nombre": "Vino tinto dulce",
+      "unidad_compra": "ml",
+      "cantidad_compra": 750,
+      "precio_ref_cop": 16000
+    },
+    {
+      "nombre": "Galletas tipo María",
+      "unidad_compra": "g",
+      "cantidad_compra": 400,
+      "precio_ref_cop": 7000
+    },
+    {
+      "nombre": "Galletas tipo soleta (deditos)",
+      "unidad_compra": "g",
+      "cantidad_compra": 200,
+      "precio_ref_cop": 8500
+    },
+    {
+      "nombre": "Masmelos",
+      "unidad_compra": "g",
+      "cantidad_compra": 250,
+      "precio_ref_cop": 7500
+    },
+    {
+      "nombre": "Capacillos para cupcake",
+      "unidad_compra": "u",
+      "cantidad_compra": 100,
+      "precio_ref_cop": 6000
+    }
+  ],
+  "recetas": [
+    {
+      "nombre": "Bizcocho de vainilla (de mantequilla)",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "1 molde de 22 cm (≈1,2 kg)",
+      "porciones": 12,
+      "ingredientes": [
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 300,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 300,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 200,
+          "unidad": "g",
+          "detalle": "a temperatura ambiente"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 5,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 200,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Polvo de hornear",
+          "cantidad": 10,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 10,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 2,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 55,
+        "estufa": 0,
+        "batidora": 12
+      },
+      "horas_trabajo": 1.5,
+      "nota": "La base de todo: rellénalo con arequipe, crema pastelera o mermelada. Horno a 175 °C."
+    },
+    {
+      "nombre": "Bizcocho de chocolate húmedo",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "1 molde de 22 cm (≈1,3 kg)",
+      "porciones": 12,
+      "ingredientes": [
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 250,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 300,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Cacao en polvo",
+          "cantidad": 60,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 3,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 250,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Aceite vegetal",
+          "cantidad": 125,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Bicarbonato de sodio",
+          "cantidad": 6,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Polvo de hornear",
+          "cantidad": 6,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Café instantáneo",
+          "cantidad": 4,
+          "unidad": "g",
+          "detalle": "disuelto en 200 ml de agua caliente"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 2,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 55,
+        "estufa": 0,
+        "batidora": 6
+      },
+      "horas_trabajo": 1,
+      "nota": "Lleva 200 ml de agua caliente con el café. Combina con ganache o arequipe. Horno a 175 °C."
+    },
+    {
+      "nombre": "Bizcocho red velvet",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "2 moldes de 20 cm o 1 de 24 cm (≈1,3 kg)",
+      "porciones": 14,
+      "ingredientes": [
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 300,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 300,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Cacao en polvo",
+          "cantidad": 10,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 2,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Aceite vegetal",
+          "cantidad": 250,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 240,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Vinagre blanco",
+          "cantidad": 15,
+          "unidad": "ml",
+          "detalle": "se mezcla con la leche y se deja cortar 10 min"
+        },
+        {
+          "nombre": "Bicarbonato de sodio",
+          "cantidad": 5,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Colorante en gel rojo",
+          "cantidad": 10,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 2,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 45,
+        "estufa": 0,
+        "batidora": 6
+      },
+      "horas_trabajo": 1.5,
+      "nota": "Su pareja natural es el frosting de queso crema. Horno a 170 °C."
+    },
+    {
+      "nombre": "Bizcocho de naranja",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "1 molde de 22 cm (≈1,1 kg)",
+      "porciones": 12,
+      "ingredientes": [
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 300,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 280,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 150,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 4,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Naranjas",
+          "cantidad": 3,
+          "unidad": "u",
+          "detalle": "jugo (≈200 ml) y ralladura"
+        },
+        {
+          "nombre": "Polvo de hornear",
+          "cantidad": 10,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 1,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 55,
+        "estufa": 0,
+        "batidora": 10
+      },
+      "horas_trabajo": 1.5,
+      "nota": "Rico solo, con glaseado de naranja o relleno de crema chantilly. Horno a 175 °C."
+    },
+    {
+      "nombre": "Torta de zanahoria",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "1 molde de 24 cm (≈1,5 kg)",
+      "porciones": 14,
+      "ingredientes": [
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 280,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar morena",
+          "cantidad": 150,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 150,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Aceite vegetal",
+          "cantidad": 240,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 4,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Zanahoria",
+          "cantidad": 300,
+          "unidad": "g",
+          "detalle": "rallada fina"
+        },
+        {
+          "nombre": "Nueces",
+          "cantidad": 80,
+          "unidad": "g",
+          "detalle": "picadas"
+        },
+        {
+          "nombre": "Uvas pasas",
+          "cantidad": 60,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Canela molida",
+          "cantidad": 5,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Bicarbonato de sodio",
+          "cantidad": 5,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Polvo de hornear",
+          "cantidad": 5,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 2,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 60,
+        "estufa": 0,
+        "batidora": 6
+      },
+      "horas_trabajo": 1.5,
+      "nota": "Cúbrela con frosting de queso crema. Sin nueces baja bastante el costo. Horno a 170 °C."
+    },
+    {
+      "nombre": "Bizcocho esponjoso para tres leches",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "1 molde rectangular de 30 × 20 cm (≈650 g)",
+      "porciones": 15,
+      "ingredientes": [
+        {
+          "nombre": "Huevos",
+          "cantidad": 6,
+          "unidad": "u",
+          "detalle": "claras y yemas por separado"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 200,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 200,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Polvo de hornear",
+          "cantidad": 6,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 60,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        }
+      ],
+      "minutos": {
+        "horno": 40,
+        "estufa": 0,
+        "batidora": 12
+      },
+      "horas_trabajo": 1,
+      "nota": "Bizcocho seco y aireado que absorbe sin deshacerse; úsalo para tres leches o tortas mojadas. Horno a 180 °C."
+    },
+    {
+      "nombre": "Ponqué tradicional",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "1 molde de 24 cm o ponquera (≈1,3 kg)",
+      "porciones": 14,
+      "ingredientes": [
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 250,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 250,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 5,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 250,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Polvo de hornear",
+          "cantidad": 5,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 60,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Limones",
+          "cantidad": 1,
+          "unidad": "u",
+          "detalle": "solo la ralladura"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 10,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 1,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 65,
+        "estufa": 0,
+        "batidora": 15
+      },
+      "horas_trabajo": 1.5,
+      "nota": "Miga cerrada y firme: ideal para tortas forradas en fondant o para vender en tajadas. Horno a 170 °C."
+    },
+    {
+      "nombre": "Torta negra",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "1 molde de 24 cm (≈1,8 kg)",
+      "porciones": 16,
+      "ingredientes": [
+        {
+          "nombre": "Uvas pasas",
+          "cantidad": 150,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Ciruelas pasas sin semilla",
+          "cantidad": 150,
+          "unidad": "g",
+          "detalle": "picadas"
+        },
+        {
+          "nombre": "Frutas confitadas",
+          "cantidad": 150,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Vino tinto dulce",
+          "cantidad": 375,
+          "unidad": "ml",
+          "detalle": "para macerar las frutas"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 100,
+          "unidad": "g",
+          "detalle": "para el caramelo quemado (melao)"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 250,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar morena",
+          "cantidad": 250,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 5,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 250,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Polvo de hornear",
+          "cantidad": 5,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Bicarbonato de sodio",
+          "cantidad": 3,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Canela molida",
+          "cantidad": 3,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 130,
+        "estufa": 10,
+        "batidora": 10
+      },
+      "horas_trabajo": 3,
+      "nota": "La de diciembre y matrimonios: macera las frutas mínimo 1 noche. Horno bajo, 150 °C; báñala con vino al sacarla."
+    },
+    {
+      "nombre": "Torta de banano",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "1 ponquera de 25 × 11 cm (≈1 kg)",
+      "porciones": 10,
+      "ingredientes": [
+        {
+          "nombre": "Bananos maduros",
+          "cantidad": 3,
+          "unidad": "u",
+          "detalle": "bien maduros, triturados"
+        },
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 250,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar morena",
+          "cantidad": 180,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Aceite vegetal",
+          "cantidad": 120,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 2,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Bicarbonato de sodio",
+          "cantidad": 5,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Polvo de hornear",
+          "cantidad": 4,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Canela molida",
+          "cantidad": 3,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 2,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 65,
+        "estufa": 0,
+        "batidora": 5
+      },
+      "horas_trabajo": 1,
+      "nota": "Aprovecha el banano pasado; agrega nueces o chips de chocolate para la versión premium. Horno a 175 °C."
+    },
+    {
+      "nombre": "Brownies",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "1 molde de 20 × 30 cm, 20 cuadros",
+      "porciones": 20,
+      "ingredientes": [
+        {
+          "nombre": "Chocolate de cobertura",
+          "cantidad": 200,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 180,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 300,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 4,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 120,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Cacao en polvo",
+          "cantidad": 30,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 2,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 38,
+        "estufa": 5,
+        "batidora": 4
+      },
+      "horas_trabajo": 1,
+      "nota": "Chocolate y mantequilla se derriten a baño María. Véndelos solos, en caja surtida o con arequipe. Horno a 175 °C."
+    },
+    {
+      "nombre": "Cupcakes de vainilla",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "18 cupcakes",
+      "porciones": 18,
+      "ingredientes": [
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 240,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 200,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 115,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 2,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 180,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Polvo de hornear",
+          "cantidad": 8,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 8,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 1,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Capacillos para cupcake",
+          "cantidad": 18,
+          "unidad": "u"
+        }
+      ],
+      "minutos": {
+        "horno": 32,
+        "estufa": 0,
+        "batidora": 8
+      },
+      "horas_trabajo": 1.5,
+      "nota": "Decora con crema de mantequilla o merengue suizo; la cobertura se costea aparte. Horno a 175 °C."
+    },
+    {
+      "nombre": "Cupcakes de chocolate",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "20 cupcakes",
+      "porciones": 20,
+      "ingredientes": [
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 180,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Cacao en polvo",
+          "cantidad": 50,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 220,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 2,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Aceite vegetal",
+          "cantidad": 120,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 180,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Bicarbonato de sodio",
+          "cantidad": 4,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Polvo de hornear",
+          "cantidad": 4,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 1,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Capacillos para cupcake",
+          "cantidad": 20,
+          "unidad": "u"
+        }
+      ],
+      "minutos": {
+        "horno": 30,
+        "estufa": 0,
+        "batidora": 5
+      },
+      "horas_trabajo": 1.5,
+      "nota": "Lleva además 120 ml de agua caliente. Van perfectos con ganache batida. Horno a 175 °C."
+    },
+    {
+      "nombre": "Galletas de mantequilla para decorar",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "≈35 galletas de 7 cm",
+      "porciones": 35,
+      "ingredientes": [
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 225,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar pulverizada",
+          "cantidad": 200,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 1,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 450,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 2,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 40,
+        "estufa": 0,
+        "batidora": 6
+      },
+      "horas_trabajo": 2,
+      "nota": "No se esparcen al hornear: aptas para cortador y glaseado real. 3 bandejas de 10 min a 170 °C."
+    },
+    {
+      "nombre": "Galletas con chips de chocolate",
+      "categoria": "Bizcochos, tortas y horneados",
+      "rinde": "≈24 galletas grandes (45 g)",
+      "porciones": 24,
+      "ingredientes": [
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 170,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar morena",
+          "cantidad": 150,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 100,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 1,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 280,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Bicarbonato de sodio",
+          "cantidad": 5,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 3,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Chips de chocolate",
+          "cantidad": 250,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 34,
+        "estufa": 0,
+        "batidora": 4
+      },
+      "horas_trabajo": 1,
+      "nota": "Puedes congelar la masa en bolitas y hornear por pedido. 2 bandejas de 12 min a 180 °C."
+    },
+    {
+      "nombre": "Arequipe casero",
+      "categoria": "Rellenos, cremas y coberturas",
+      "rinde": "≈800 g",
+      "porciones": 1,
+      "ingredientes": [
+        {
+          "nombre": "Leche",
+          "cantidad": 2000,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 500,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Bicarbonato de sodio",
+          "cantidad": 2,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Canela en astilla",
+          "cantidad": 3,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 120,
+        "batidora": 0
+      },
+      "horas_trabajo": 2.5,
+      "nota": "Rellena bizcochos de vainilla y chocolate, brownies y obleas. Compara su costo con el de comprarlo hecho."
+    },
+    {
+      "nombre": "Crema de mantequilla (buttercream sencilla)",
+      "categoria": "Rellenos, cremas y coberturas",
+      "rinde": "≈780 g (rellena y cubre una torta de 22 cm)",
+      "porciones": 1,
+      "ingredientes": [
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 250,
+          "unidad": "g",
+          "detalle": "a temperatura ambiente"
+        },
+        {
+          "nombre": "Azúcar pulverizada",
+          "cantidad": 500,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Leche",
+          "cantidad": 30,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 1,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 0,
+        "batidora": 10
+      },
+      "horas_trabajo": 0.5,
+      "nota": "Rápida y firme para cupcakes y bordes; se tiñe fácil con colorante en gel."
+    },
+    {
+      "nombre": "Buttercream de merengue suizo",
+      "categoria": "Rellenos, cremas y coberturas",
+      "rinde": "≈900 g",
+      "porciones": 1,
+      "ingredientes": [
+        {
+          "nombre": "Huevos",
+          "cantidad": 5,
+          "unidad": "u",
+          "detalle": "solo las claras (≈150 g)"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 300,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 450,
+          "unidad": "g",
+          "detalle": "en cubos, a temperatura ambiente"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Sal",
+          "cantidad": 1,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 10,
+        "batidora": 20
+      },
+      "horas_trabajo": 1,
+      "nota": "Menos dulce y más sedosa: la de tortas premium y bordes lisos. Las yemas sirven para crema pastelera."
+    },
+    {
+      "nombre": "Ganache de chocolate",
+      "categoria": "Rellenos, cremas y coberturas",
+      "rinde": "≈600 g",
+      "porciones": 1,
+      "ingredientes": [
+        {
+          "nombre": "Chocolate de cobertura",
+          "cantidad": 300,
+          "unidad": "g",
+          "detalle": "picado"
+        },
+        {
+          "nombre": "Crema de leche (para batir)",
+          "cantidad": 300,
+          "unidad": "ml"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 5,
+        "batidora": 0
+      },
+      "horas_trabajo": 0.5,
+      "nota": "1:1 para relleno y goteo; 2 partes de chocolate por 1 de crema para cubrir bajo fondant."
+    },
+    {
+      "nombre": "Crema chantilly estabilizada",
+      "categoria": "Rellenos, cremas y coberturas",
+      "rinde": "≈550 g",
+      "porciones": 1,
+      "ingredientes": [
+        {
+          "nombre": "Crema de leche (para batir)",
+          "cantidad": 500,
+          "unidad": "ml",
+          "detalle": "bien fría"
+        },
+        {
+          "nombre": "Azúcar pulverizada",
+          "cantidad": 60,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Gelatina sin sabor",
+          "cantidad": 5,
+          "unidad": "g",
+          "detalle": "hidratada en 25 ml de agua y derretida"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 2,
+        "batidora": 6
+      },
+      "horas_trabajo": 0.5,
+      "nota": "Aguanta en nevera sin aguarse: para tres leches, merengón y tortas de frutas."
+    },
+    {
+      "nombre": "Crema pastelera",
+      "categoria": "Rellenos, cremas y coberturas",
+      "rinde": "≈650 g",
+      "porciones": 1,
+      "ingredientes": [
+        {
+          "nombre": "Leche",
+          "cantidad": 500,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 4,
+          "unidad": "u",
+          "detalle": "solo las yemas"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 100,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Fécula de maíz",
+          "cantidad": 40,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 25,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 15,
+        "batidora": 0
+      },
+      "horas_trabajo": 0.75,
+      "nota": "Relleno clásico de bizcocho de vainilla, milhojas y tartaletas; batida con chantilly queda más liviana."
+    },
+    {
+      "nombre": "Mermelada de mora",
+      "categoria": "Rellenos, cremas y coberturas",
+      "rinde": "≈550 g",
+      "porciones": 1,
+      "ingredientes": [
+        {
+          "nombre": "Mora de Castilla",
+          "cantidad": 500,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 300,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Limones",
+          "cantidad": 1,
+          "unidad": "u",
+          "detalle": "solo el jugo"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 35,
+        "batidora": 0
+      },
+      "horas_trabajo": 1,
+      "nota": "Para rellenar bizcocho de vainilla o cubrir cheesecake; guárdala en frasco esterilizado."
+    },
+    {
+      "nombre": "Frosting de queso crema",
+      "categoria": "Rellenos, cremas y coberturas",
+      "rinde": "≈650 g",
+      "porciones": 1,
+      "ingredientes": [
+        {
+          "nombre": "Queso crema",
+          "cantidad": 250,
+          "unidad": "g",
+          "detalle": "frío"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 115,
+          "unidad": "g",
+          "detalle": "a temperatura ambiente"
+        },
+        {
+          "nombre": "Azúcar pulverizada",
+          "cantidad": 300,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 0,
+        "batidora": 6
+      },
+      "horas_trabajo": 0.5,
+      "nota": "El acompañante de red velvet y torta de zanahoria. Mantenlo refrigerado."
+    },
+    {
+      "nombre": "Glaseado real",
+      "categoria": "Rellenos, cremas y coberturas",
+      "rinde": "≈450 g",
+      "porciones": 1,
+      "ingredientes": [
+        {
+          "nombre": "Huevos",
+          "cantidad": 2,
+          "unidad": "u",
+          "detalle": "solo las claras"
+        },
+        {
+          "nombre": "Azúcar pulverizada",
+          "cantidad": 400,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Limones",
+          "cantidad": 0.5,
+          "unidad": "u",
+          "detalle": "solo el jugo"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 0,
+        "batidora": 6
+      },
+      "horas_trabajo": 0.5,
+      "nota": "Para decorar galletas de mantequilla; ajusta la consistencia con gotas de agua."
+    },
+    {
+      "nombre": "Fondant casero de masmelos",
+      "categoria": "Rellenos, cremas y coberturas",
+      "rinde": "≈780 g (cubre una torta de 22 cm)",
+      "porciones": 1,
+      "ingredientes": [
+        {
+          "nombre": "Masmelos",
+          "cantidad": 250,
+          "unidad": "g",
+          "detalle": "blancos"
+        },
+        {
+          "nombre": "Azúcar pulverizada",
+          "cantidad": 500,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 20,
+          "unidad": "g",
+          "detalle": "para engrasar manos y mesón"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 5,
+        "batidora": 0
+      },
+      "horas_trabajo": 1,
+      "nota": "Masmelos + 30 ml de agua derretidos a baño María (o 1 min en microondas), luego se amasa con el azúcar."
+    },
+    {
+      "nombre": "Tres leches",
+      "categoria": "Postres en vaso o porción",
+      "rinde": "12 vasos de 9 oz o 1 refractario de 30 × 20 cm",
+      "porciones": 12,
+      "ingredientes": [
+        {
+          "nombre": "Huevos",
+          "cantidad": 5,
+          "unidad": "u",
+          "detalle": "para el bizcocho"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 150,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Harina de trigo",
+          "cantidad": 150,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Polvo de hornear",
+          "cantidad": 5,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Leche condensada",
+          "cantidad": 397,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Leche evaporada",
+          "cantidad": 410,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Crema de leche (para batir)",
+          "cantidad": 500,
+          "unidad": "ml",
+          "detalle": "200 ml para la mezcla y 300 ml para la cubierta"
+        },
+        {
+          "nombre": "Azúcar pulverizada",
+          "cantidad": 40,
+          "unidad": "g",
+          "detalle": "para la cubierta"
+        },
+        {
+          "nombre": "Canela molida",
+          "cantidad": 2,
+          "unidad": "g",
+          "detalle": "para espolvorear"
+        }
+      ],
+      "minutos": {
+        "horno": 35,
+        "estufa": 0,
+        "batidora": 15
+      },
+      "horas_trabajo": 2,
+      "nota": "Remoja el bizcocho tibio con las tres leches y cubre con chantilly. Horno a 180 °C."
+    },
+    {
+      "nombre": "Mousse de maracuyá",
+      "categoria": "Postres en vaso o porción",
+      "rinde": "10 vasos de 7 oz",
+      "porciones": 10,
+      "ingredientes": [
+        {
+          "nombre": "Pulpa de maracuyá",
+          "cantidad": 350,
+          "unidad": "g",
+          "detalle": "250 g para el mousse y 100 g para la salsa"
+        },
+        {
+          "nombre": "Leche condensada",
+          "cantidad": 397,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Crema de leche (para batir)",
+          "cantidad": 400,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Gelatina sin sabor",
+          "cantidad": 10,
+          "unidad": "g",
+          "detalle": "hidratada en 50 ml de agua"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 50,
+          "unidad": "g",
+          "detalle": "para la salsa"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 8,
+        "batidora": 6
+      },
+      "horas_trabajo": 1,
+      "nota": "Sin horno y de los más vendidos. Cuaja mínimo 4 horas en nevera."
+    },
+    {
+      "nombre": "Postre de natas (base)",
+      "categoria": "Postres en vaso o porción",
+      "rinde": "8 vasos de 5 oz",
+      "porciones": 8,
+      "ingredientes": [
+        {
+          "nombre": "Leche",
+          "cantidad": 3000,
+          "unidad": "ml",
+          "detalle": "entera"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 350,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 4,
+          "unidad": "u",
+          "detalle": "solo las yemas"
+        },
+        {
+          "nombre": "Uvas pasas",
+          "cantidad": 80,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Vino tinto dulce",
+          "cantidad": 60,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Canela en astilla",
+          "cantidad": 3,
+          "unidad": "g"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 120,
+        "batidora": 0
+      },
+      "horas_trabajo": 3,
+      "nota": "Se hierve la leche y se recogen las natas varias veces; es largo, así que cóbralo como postre especial."
+    },
+    {
+      "nombre": "Cheesecake de frutos rojos",
+      "categoria": "Postres en vaso o porción",
+      "rinde": "1 molde de 22 cm",
+      "porciones": 12,
+      "ingredientes": [
+        {
+          "nombre": "Galletas tipo María",
+          "cantidad": 200,
+          "unidad": "g",
+          "detalle": "trituradas, para la base"
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 90,
+          "unidad": "g",
+          "detalle": "derretida"
+        },
+        {
+          "nombre": "Queso crema",
+          "cantidad": 600,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 260,
+          "unidad": "g",
+          "detalle": "180 g para el relleno y 80 g para la salsa"
+        },
+        {
+          "nombre": "Huevos",
+          "cantidad": 3,
+          "unidad": "u"
+        },
+        {
+          "nombre": "Crema de leche (para batir)",
+          "cantidad": 200,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Fécula de maíz",
+          "cantidad": 15,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Frutos rojos congelados",
+          "cantidad": 300,
+          "unidad": "g",
+          "detalle": "para la salsa"
+        },
+        {
+          "nombre": "Limones",
+          "cantidad": 0.5,
+          "unidad": "u",
+          "detalle": "solo el jugo"
+        }
+      ],
+      "minutos": {
+        "horno": 70,
+        "estufa": 12,
+        "batidora": 6
+      },
+      "horas_trabajo": 1.5,
+      "nota": "Horneado a baño María a 160 °C y enfriado de un día para otro; la salsa puede ser la mermelada de mora."
+    },
+    {
+      "nombre": "Tiramisú (versión sin mascarpone)",
+      "categoria": "Postres en vaso o porción",
+      "rinde": "10 vasos de 7 oz o 1 refractario de 20 × 30 cm",
+      "porciones": 10,
+      "ingredientes": [
+        {
+          "nombre": "Galletas tipo soleta (deditos)",
+          "cantidad": 200,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Café instantáneo",
+          "cantidad": 10,
+          "unidad": "g",
+          "detalle": "disuelto en 300 ml de agua"
+        },
+        {
+          "nombre": "Queso crema",
+          "cantidad": 400,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Crema de leche (para batir)",
+          "cantidad": 400,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Azúcar pulverizada",
+          "cantidad": 120,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Esencia de vainilla",
+          "cantidad": 5,
+          "unidad": "ml"
+        },
+        {
+          "nombre": "Cacao en polvo",
+          "cantidad": 15,
+          "unidad": "g",
+          "detalle": "para espolvorear"
+        }
+      ],
+      "minutos": {
+        "horno": 0,
+        "estufa": 0,
+        "batidora": 8
+      },
+      "horas_trabajo": 1,
+      "nota": "Queso crema + crema batida reemplazan el mascarpone y bajan mucho el costo. Reposa 6 horas en nevera."
+    },
+    {
+      "nombre": "Merengón (base de merengue)",
+      "categoria": "Postres en vaso o porción",
+      "rinde": "2 discos de 22 cm o 20 merengues individuales",
+      "porciones": 12,
+      "ingredientes": [
+        {
+          "nombre": "Huevos",
+          "cantidad": 6,
+          "unidad": "u",
+          "detalle": "solo las claras (≈180 g)"
+        },
+        {
+          "nombre": "Azúcar",
+          "cantidad": 360,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Fécula de maíz",
+          "cantidad": 10,
+          "unidad": "g"
+        },
+        {
+          "nombre": "Vinagre blanco",
+          "cantidad": 5,
+          "unidad": "ml"
+        }
+      ],
+      "minutos": {
+        "horno": 130,
+        "estufa": 0,
+        "batidora": 12
+      },
+      "horas_trabajo": 1.5,
+      "nota": "Horno muy bajo (100 °C) por 2 horas; arma con chantilly y fruta (fresa, guanábana o mora)."
+    }
+  ]
+}
