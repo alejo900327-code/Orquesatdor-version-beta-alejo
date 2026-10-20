@@ -1,6 +1,6 @@
 // Service worker simple: red primero (para recibir actualizaciones) y caché si no hay internet.
-var CACHE = "cuantocobro-app-v1";
-var BASICOS = ["./", "index.html", "app.js", "app.css", "../estilos.css", "manifest.json", "iconos/icono-192.png", "iconos/icono-512.png"];
+var CACHE = "cuantocobro-app-v2";
+var BASICOS = ["./", "index.html", "app.js", "app.css", "../estilos.css", "../servicios.js", "manifest.json", "iconos/icono-192.png", "iconos/icono-512.png"];
 
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(BASICOS); }).then(function () { return self.skipWaiting(); }));

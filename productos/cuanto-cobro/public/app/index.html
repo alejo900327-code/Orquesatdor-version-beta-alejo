@@ -95,8 +95,42 @@
     </form>
   </dialog>
 
+  <!-- Hoja para calcular gas, luz y agua por minutos -->
+  <dialog class="hoja" id="hoja-servicios">
+    <form method="dialog" id="form-servicios" novalidate>
+      <h2>Gas, luz y agua de esta receta</h2>
+      <p class="ayuda-chica">Nadie sabe cuánto gas gastó en una torta, pero sí cuánto rato prendió el horno. Pon los minutos y la app lo convierte con el valor aproximado de tu país.</p>
+      <div class="campos campos-2">
+        <div>
+          <label for="sv-horno">Minutos de horno (con precalentado)</label>
+          <input id="sv-horno" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej. 60">
+        </div>
+        <div>
+          <label for="sv-tipo">Tu horno es</label>
+          <select id="sv-tipo"><option value="gas">A gas</option><option value="elec">Eléctrico</option></select>
+        </div>
+        <div>
+          <label for="sv-estufa">Minutos de estufa / hornilla</label>
+          <input id="sv-estufa" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej. 20">
+        </div>
+        <div>
+          <label for="sv-batidora">Minutos de batidora o licuadora</label>
+          <input id="sv-batidora" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej. 15">
+        </div>
+      </div>
+      <label class="check"><input id="sv-lavado" type="checkbox" checked> Sumar agua y jabón del lavado</label>
+      <div class="desglose" id="sv-desglose"></div>
+      <p class="ayuda-chica" id="sv-tarifas"></p>
+      <div class="hoja-acciones">
+        <button class="boton boton-principal" id="sv-usar" type="button">Usar este valor</button>
+        <button class="boton boton-secundario" type="submit" value="cancelar">Cancelar</button>
+      </div>
+    </form>
+  </dialog>
+
   <input type="file" id="archivo-respaldo" accept="application/json,.json" hidden>
 
+  <script src="../servicios.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

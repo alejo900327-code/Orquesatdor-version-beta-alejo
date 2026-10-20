@@ -140,6 +140,12 @@
     if (!base) return { costo: 0, ok: false, error: "Falta el precio de " + ing.nombre.toLowerCase() + " en Ingredientes." };
     return { costo: base * cant * u.f, ok: true };
   }
+  // Gas, luz y agua: si la receta tiene minutos de horno/estufa, se calcula con las tarifas (y se recalcula si cambian).
+  function tarifasServicios() { return CCServicios.tarifas(estado.pais, estado.servicios); }
+  function servicios(r) { return r.servicios ? CCServicios.calcular(r.servicios, tarifasServicios()) : null; }
+  function gasDe(r) { var sv = servicios(r); return sv ? sv.total : num(r.gas); }
+  function redondo(v) { var f = Math.pow(10, pais().decimales); return Math.round(v * f) / f; }
+
   function calcular(r) {
     var totalIng = 0, completos = 0;
     (r.items || []).forEach(function (l) {
@@ -149,7 +155,7 @@
     var porciones = Math.max(1, Math.round(num(r.porciones)) || 1);
     var desperdicio = Math.min(r.desperdicio === "" || r.desperdicio === undefined ? 5 : num(r.desperdicio), 100) / 100;
     var margen = Math.min(r.margen === "" || r.margen === undefined ? 30 : num(r.margen), 90) / 100;
-    var extras = num(r.empaque) + num(r.gas);
+    var extras = num(r.empaque) + gasDe(r);
     var trabajo = num(r.horas) * num(r.tarifa);
     var ingConMerma = totalIng * (1 + desperdicio);
     var minimo = ingConMerma + extras + trabajo;
@@ -326,7 +332,9 @@
       '<button class="boton boton-secundario boton-chico" id="agregar-linea" type="button">+ Agregar ingrediente</button></section>' +
       '<section class="bloque"><h2>Lo que casi todas olvidan</h2><p class="ayuda">Si no lo sumas, lo pagas tú.</p><div class="campos campos-2">' +
       campo("r-empaque", "Empaque (caja, base, cinta, etiqueta)", r.empaque, { dinero: true }) +
-      campo("r-gas", "Gas, luz y agua de esta receta", r.gas, { dinero: true }) +
+      '<div class="campo-gas">' + campo("r-gas", "Gas, luz y agua de esta receta", r.servicios ? redondo(gasDe(r)) : r.gas, { dinero: true }) +
+      '<p class="ayuda-chica" id="gas-detalle"></p>' +
+      '<button class="enlace-boton" id="calc-servicios" type="button">¿No sabes cuánto? Calcúlalo por minutos de horno</button></div>' +
       campo("r-horas", "Horas que te toma", r.horas, { ph: "Ej. 3" }) +
       campo("r-tarifa", "¿Cuánto quieres ganar por hora?", r.tarifa, { dinero: true, ph: "Ej. " + pais().tarifa }) +
       campo("r-desperdicio", "Merma o desperdicio (%)", r.desperdicio, { ph: "5" }) +
@@ -367,6 +375,8 @@
         out.className = "l-costo mini-total" + (res.error ? " error" : "");
         out.innerHTML = res.error ? esc(res.error) : res.ok ? "En esta receta: <strong>" + esc(formato(res.costo)) + "</strong>" : "";
       });
+      var sv = servicios(r);
+      $("gas-detalle").textContent = sv ? "Calculado: " + sv.partes.map(function (p) { return p.txt; }).join(" + ") + "." : "";
       if (!c.listo) return;
       $("res-ing").textContent = formato(c.ingConMerma);
       $("res-extras").textContent = formato(c.extras);
@@ -387,7 +397,7 @@
 
     form.addEventListener("input", function (e) {
       var t = e.target;
-      if (mapa[t.id]) { r[mapa[t.id]] = t.value; }
+      if (mapa[t.id]) { r[mapa[t.id]] = t.value; if (t.id === "r-gas") r.servicios = null; }
       else if (t.classList.contains("l-cant")) { r.items[+t.closest(".linea").getAttribute("data-idx")].cant = t.value; }
       actualizar();
     });
@@ -444,9 +454,43 @@
       ir("#/recetas");
     };
     $("cotizar").onclick = function () { abrirCotizar(r); };
+    $("calc-servicios").onclick = function () {
+      abrirServicios(r, function () { $("r-gas").value = redondo(gasDe(r)); actualizar(); });
+    };
     $("resumen-fijo").onclick = function () { document.querySelector(".resultado").scrollIntoView({ behavior: "smooth", block: "start" }); };
     if (!r.nombre) $("r-nombre").focus();
     actualizar();
+  }
+
+  // ---------- Gas, luz y agua por minutos ----------
+  function abrirServicios(r, alAplicar) {
+    var d = r.servicios || { horno: "", tipo: "gas", estufa: "", batidora: "", lavado: true };
+    var campos = { horno: $("sv-horno"), estufa: $("sv-estufa"), batidora: $("sv-batidora") };
+    Object.keys(campos).forEach(function (k) { campos[k].value = d[k] || ""; });
+    $("sv-tipo").value = d.tipo || "gas";
+    $("sv-lavado").checked = d.lavado !== false;
+    function leer() {
+      return { horno: campos.horno.value, tipo: $("sv-tipo").value, estufa: campos.estufa.value, batidora: campos.batidora.value, lavado: $("sv-lavado").checked };
+    }
+    function pintar() {
+      var t = tarifasServicios(), datos = leer(), res = CCServicios.calcular(datos, t);
+      $("sv-desglose").innerHTML = res.partes.length
+        ? res.partes.map(function (p) { return '<div class="fila"><span>' + esc(p.txt) + '</span><strong>' + esc(formato(p.valor)) + '</strong></div>'; }).join("") +
+          '<div class="fila fila-total"><span>Total para esta receta</span><strong>' + esc(formato(redondo(res.total))) + '</strong></div>'
+        : '<p class="ayuda-chica">Pon al menos los minutos de horno.</p>';
+      $("sv-tarifas").textContent = "Valores aproximados de " + pais().nombre + ": 1 hora de horno " + (datos.tipo === "elec" ? "eléctrico " + formato(t.hornoElec) : "a gas " + formato(t.hornoGas)) +
+        ", estufa " + formato(t.estufa) + ", batidora " + formato(t.batidora) + ", lavado " + formato(t.agua) + ". Puedes ajustarlos con tu recibo en Ajustes.";
+      $("sv-usar").disabled = !res.partes.length;
+    }
+    $("form-servicios").oninput = $("form-servicios").onchange = pintar;
+    $("sv-usar").onclick = function () {
+      r.servicios = leer();
+      guardar();
+      $("hoja-servicios").close();
+      if (alAplicar) alAplicar();
+    };
+    pintar();
+    $("hoja-servicios").showModal();
   }
 
   // ---------- Cotizar por WhatsApp ----------
@@ -618,7 +662,7 @@
       '<div class="bloque guia"><h2>Las 4 cosas que olvidas al poner precio</h2><ol>' +
       '<li><strong>El ingrediente que se pierde.</strong> Súmale un 5 % por desperdicio (la app ya lo hace).</li>' +
       '<li><strong>El empaque y la decoración.</strong> Caja, base, cinta, toppers: anótalo en cada receta.</li>' +
-      '<li><strong>El gas y la luz.</strong> Divide tu recibo del mes entre las horas que horneaste, o pon un valor fijo y ajústalo después.</li>' +
+      '<li><strong>El gas y la luz.</strong> No necesitas saber cuánto gastaste: en cada receta pon los minutos de horno, estufa y batidora y la app lo calcula. Para afinarlo, divide tu recibo del mes entre las horas que horneaste.</li>' +
       '<li><strong>Tu tiempo.</strong> Comprar, hornear, decorar, lavar y entregar. Si no lo cobras, trabajas gratis.</li></ol></div>';
     vista.querySelectorAll("[data-copiar]").forEach(function (b) {
       b.onclick = function () {
@@ -641,6 +685,23 @@
       '<div><label for="aj-tarifa">Tu tarifa por hora para recetas nuevas</label><div class="con-prefijo"><span class="simbolo">' + simbolo() + '</span><input id="aj-tarifa" type="number" inputmode="decimal" min="0" step="any" value="' + esc(estado.tarifa) + '"></div></div>' +
       '<div><label for="aj-pais">País y moneda</label><select id="aj-pais">' + opciones + '</select></div>' +
       '</div></section>' +
+      '<section class="bloque"><h2>Gas, luz y agua</h2>' +
+      '<p class="ayuda">Con estos valores la app convierte los minutos de horno, estufa y batidora de cada receta en dinero. Vienen aproximados para ' + esc(pais().nombre) + '; si los cambias, se recalculan todas tus recetas.</p>' +
+      '<div class="campos campos-2">' + Object.keys(CCServicios.ETIQUETAS).map(function (k) {
+        var base = CCServicios.TARIFAS[estado.pais][k];
+        var propio = estado.servicios && estado.servicios[k];
+        return '<div><label for="aj-sv-' + k + '">' + esc(CCServicios.ETIQUETAS[k]) + '</label><div class="con-prefijo"><span class="simbolo">' + simbolo() + '</span>' +
+          '<input id="aj-sv-' + k + '" data-sv="' + k + '" type="number" inputmode="decimal" min="0" step="any" placeholder="' + base + '" value="' + esc(propio || "") + '"></div></div>';
+      }).join("") + '</div>' +
+      '<details class="recibo"><summary>Calcúlalo con tu recibo</summary>' +
+      '<p class="ayuda">Fórmula: <strong>recibo del mes ÷ horas de horno del mes = lo que te cuesta 1 hora de horno.</strong> Ej.: $330 de gas ÷ 60 horas = $5,50 por hora. Si en tu casa se cocina mucho más que lo que horneas, usa solo una parte del recibo.</p>' +
+      '<div class="campos campos-3">' +
+      '<div><label for="rc-tipo">Recibo de</label><select id="rc-tipo"><option value="hornoGas">Gas (horno a gas)</option><option value="hornoElec">Luz (horno eléctrico)</option></select></div>' +
+      '<div><label for="rc-recibo">Valor del recibo del mes</label><div class="con-prefijo"><span class="simbolo">' + simbolo() + '</span><input id="rc-recibo" type="number" inputmode="decimal" min="0" step="any"></div></div>' +
+      '<div><label for="rc-horas">Horas de horno en el mes</label><input id="rc-horas" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej. 60"></div>' +
+      '</div><p class="costo-base" id="rc-resultado"></p>' +
+      '<button class="boton boton-secundario boton-chico" id="rc-usar" type="button" disabled>Usar este valor</button></details>' +
+      '</section>' +
       '<section class="bloque"><h2>Copia de seguridad</h2><p class="ayuda">Tus recetas viven en este teléfono. Si cambias de celular o borras el navegador, se pierden: descarga una copia de vez en cuando y guárdala (por ejemplo, mándatela por WhatsApp o correo).</p>' +
       '<div class="acciones"><button class="boton boton-principal boton-chico" id="exportar" type="button">Descargar copia</button>' +
       '<button class="boton boton-secundario boton-chico" id="importar" type="button">Restaurar desde copia</button></div></section>' +
@@ -654,10 +715,33 @@
 
     $("aj-negocio").oninput = function (e) { estado.negocio = e.target.value; guardar(); };
     $("aj-tarifa").oninput = function (e) { estado.tarifa = e.target.value; guardar(); };
+    vista.querySelectorAll("[data-sv]").forEach(function (inp) {
+      inp.oninput = function () {
+        estado.servicios = estado.servicios || {};
+        estado.servicios[inp.getAttribute("data-sv")] = inp.value;
+        guardar();
+      };
+    });
+    function recibo() {
+      var v = CCServicios.desdeRecibo($("rc-recibo").value, $("rc-horas").value);
+      $("rc-resultado").textContent = v ? "1 hora de horno te cuesta " + formato(v) + "." : "";
+      $("rc-usar").disabled = !v;
+      return v;
+    }
+    $("rc-recibo").oninput = $("rc-horas").oninput = recibo;
+    $("rc-usar").onclick = function () {
+      var v = recibo(), k = $("rc-tipo").value;
+      if (!v) return;
+      estado.servicios = estado.servicios || {};
+      estado.servicios[k] = Math.round(v * 100) / 100;
+      guardar();
+      $("aj-sv-" + k).value = estado.servicios[k];
+      avisar("Listo: 1 hora de " + (k === "hornoGas" ? "horno a gas" : "horno eléctrico") + " ahora vale " + esc(formato(v)) + ". Tus recetas ya están recalculadas.", "verde", 6000);
+    };
     $("aj-pais").onchange = function (e) {
       var nuevo = e.target.value;
       if (!confirm("Cambiar a " + PAISES[nuevo].nombre + " (" + PAISES[nuevo].moneda + ")? Tus precios NO se convierten: solo cambia la moneda con la que se muestran.")) { e.target.value = estado.pais; return; }
-      estado.pais = nuevo; guardar(); render();
+      estado.pais = nuevo; estado.servicios = null; guardar(); render();
       if (confirm("¿Quieres agregar los ingredientes comunes de " + PAISES[nuevo].nombre + " que te falten?")) agregarComunes();
     };
     $("exportar").onclick = exportar;

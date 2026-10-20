@@ -21,7 +21,7 @@
   // Precios de EJEMPLO (no son referencia de mercado): solo para mostrar cómo se llena.
   var EJEMPLO = {
     pais: "MX", nombre: "Torta de chocolate (ejemplo)", porciones: 12,
-    empaque: 35, gas: 20, horas: 3, tarifa: 80, desperdicio: 5, margen: 30, precioActual: 380,
+    empaque: 45, gas: 10, horas: 3, tarifa: 80, desperdicio: 5, margen: 30, precioActual: 380,
     ingredientes: [
       { nombre: "Harina de trigo", compra: 1, compraU: "kg", precio: 28, usa: 300, usaU: "g" },
       { nombre: "Azúcar", compra: 1, compraU: "kg", precio: 32, usa: 250, usaU: "g" },
@@ -227,6 +227,23 @@
   function medir(evento, datos) {
     try { (window.dataLayer = window.dataLayer || []).push(Object.assign({ event: evento }, datos || {})); } catch (e) {}
   }
+
+  // Gas, luz y agua por minutos: llena el campo "gas" con los minutos de horno, estufa y batidora.
+  // Sus campos no se guardan en el borrador; solo el valor que dejan en "gas".
+  function calcularServicios() {
+    var datos = { horno: $("sv-horno").value, tipo: $("sv-tipo").value, estufa: $("sv-estufa").value, batidora: $("sv-batidora").value, lavado: $("sv-lavado").checked };
+    var p = PAISES[$("pais").value] || PAISES.MX;
+    var res = CCServicios.calcular(datos, CCServicios.tarifas($("pais").value));
+    if (!num(datos.horno) && !num(datos.estufa) && !num(datos.batidora)) { $("sv-resultado").textContent = ""; return; }
+    var f = Math.pow(10, p.decimales);
+    $("gas").value = Math.round(res.total * f) / f;
+    $("sv-resultado").innerHTML = res.partes.map(function (x) { return x.txt; }).join(" + ") + " = <strong>" + formato(res.total) + "</strong> (ya lo pusimos arriba)";
+  }
+  ["sv-horno", "sv-tipo", "sv-estufa", "sv-batidora", "sv-lavado"].forEach(function (id) {
+    $(id).addEventListener("input", calcularServicios);
+    $(id).addEventListener("change", calcularServicios);
+  });
+  $("pais").addEventListener("change", calcularServicios);
 
   // Eventos
   $("formulario").addEventListener("input", calcular);

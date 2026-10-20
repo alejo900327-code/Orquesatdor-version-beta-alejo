@@ -76,6 +76,19 @@
               <div>
                 <label for="gas">Gas, luz y agua de esta receta</label>
                 <div class="con-prefijo"><span class="simbolo">$</span><input id="gas" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+                <details class="servicios" id="servicios">
+                  <summary>¿No sabes cuánto? Calcúlalo por minutos</summary>
+                  <p class="ayuda">Nadie sabe cuánto gas gastó en una torta, pero sí cuánto rato prendió el horno. Pon los minutos y lo convertimos con un valor aproximado de tu país.</p>
+                  <div class="campos campos-2">
+                    <div><label for="sv-horno">Minutos de horno (con precalentado)</label><input id="sv-horno" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej. 60"></div>
+                    <div><label for="sv-tipo">Tu horno es</label><select id="sv-tipo"><option value="gas">A gas</option><option value="elec">Eléctrico</option></select></div>
+                    <div><label for="sv-estufa">Minutos de estufa / hornilla</label><input id="sv-estufa" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej. 20"></div>
+                    <div><label for="sv-batidora">Minutos de batidora</label><input id="sv-batidora" type="number" inputmode="decimal" min="0" step="any" placeholder="Ej. 15"></div>
+                  </div>
+                  <label class="check"><input id="sv-lavado" type="checkbox" checked> Sumar agua y jabón del lavado</label>
+                  <p class="mini-total" id="sv-resultado"></p>
+                  <p class="nota" style="margin-top:4px">Para afinarlo: recibo del mes ÷ horas de horno del mes = lo que te cuesta 1 hora de horno.</p>
+                </details>
               </div>
               <div>
                 <label for="horas">Horas que te toma (comprar, hornear, decorar)</label>
@@ -177,6 +190,7 @@
     </div>
   </template>
 
+  <script src="../servicios.js"></script>
   <script src="calculadora.js"></script>
 </body>
 </html>

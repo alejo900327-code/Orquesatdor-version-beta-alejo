@@ -31,7 +31,8 @@
   tr.total td { border-bottom:none; font-weight:700; color:var(--acento); font-size:12.5pt; }
   .msg { background:#fff; border-left:4px solid var(--acento); border-radius:6px; padding:3.5mm 5mm; margin:3mm 0; font-size:11pt; }
   .msg b { display:block; color:var(--gris); font-size:9.5pt; text-transform:uppercase; letter-spacing:.04em; margin-bottom:1mm; }
-  .pie { position:absolute; bottom:10mm; left:20mm; right:20mm; font-size:8.5pt; color:var(--gris); display:flex; justify-content:space-between; }
+  .compacta { font-size:10.5pt; padding-top:16mm; } .compacta h3 { margin-top:.7em; } .compacta td { padding:1.5mm 0; }
+ .pie { position:absolute; bottom:10mm; left:20mm; right:20mm; font-size:8.5pt; color:var(--gris); display:flex; justify-content:space-between; }
 </style>
 </head>
 <body>
@@ -62,7 +63,7 @@
   <h3>Tus primeros 5 minutos</h3>
   <p><span class="num">1</span>Elige tu país: verás ingredientes comunes ya cargados.</p>
   <p><span class="num">2</span>Corrige los precios con lo que <em>tú</em> pagas: "1 kg de harina a $28".</p>
-  <p><span class="num">3</span>Arma tu receta más vendida y suma empaque, gas y tus horas.</p>
+  <p><span class="num">3</span>Arma tu receta más vendida y suma empaque, tus horas y el gas (si no sabes cuánto, pon los minutos de horno y la app lo calcula).</p>
   <p><span class="num">4</span>Mira tu precio mínimo y tu precio sugerido. Si quieres, manda la cotización por WhatsApp.</p>
 
   <div class="caja">
@@ -72,7 +73,7 @@
   <div class="pie"><span>¿Cuánto Cobro? · Receta Rentable</span><span>2</span></div>
 </section>
 
-<section class="hoja">
+<section class="hoja compacta">
   <h2>2. Las 4 cosas que olvidas al poner precio</h2>
   <p>Casi todas las reposteras ponen precio sumando solo los ingredientes "grandes". Estas cuatro cosas son las que se comen la ganancia sin que lo notes.</p>
 
@@ -82,8 +83,10 @@
   <h3>2 · El empaque y la decoración</h3>
   <p>Caja, base, cinta, sticker, toppers, velitas. Una caja con base puede costar más que la harina de la torta. Anótalo en cada receta.</p>
 
-  <h3>3 · El gas y la luz</h3>
-  <p>Una hora de horno no es gratis. Si no sabes cuánto es, divide tu recibo del mes entre las horas que horneaste, o empieza con un valor fijo por receta y ajústalo después.</p>
+  <h3>3 · El gas, la luz y el agua</h3>
+  <p>Nadie sabe cuánto gas gastó en una torta, pero sí cuánto rato prendió el horno. En cada receta toca <strong>"¿No sabes cuánto? Calcúlalo por minutos de horno"</strong> y pon los minutos de horno (con precalentado), estufa y batidora: la app los convierte en dinero con un valor aproximado de tu país y suma el agua del lavado.</p>
+  <p style="font-size:10.5pt">Ej.: horno a gas 60 min ($5.50) + estufa 20 min ($0.83) + batidora 15 min ($0.20) + lavado ($3.00) = <strong>$9.53</strong>.<br>
+  ¿Lo quieres exacto? <strong>Recibo del mes ÷ horas de horno del mes = lo que te cuesta 1 hora de horno</strong> (ej.: $330 ÷ 60 h = $5.50). Ponlo en Ajustes → "Gas, luz y agua" y todas tus recetas se recalculan.</p>
 
   <h3>4 · Tu tiempo</h3>
   <p>Comprar, hornear, decorar, lavar y entregar. Ponle un valor a tu hora (lo que te pagarían por hacer ese trabajo) y multiplícalo por las horas reales. <strong>Si no cobras tu tiempo, estás trabajando gratis.</strong></p>
@@ -92,7 +95,8 @@
     <p style="margin-bottom:2mm"><strong>Ejemplo: torta de chocolate para 12</strong></p>
     <table>
       <tr><td>Ingredientes (con 5 % de desperdicio)</td><td>$159</td></tr>
-      <tr><td>Empaque + gas</td><td>$55</td></tr>
+      <tr><td>Empaque (caja, base, cinta)</td><td>$45</td></tr>
+      <tr><td>Gas, luz y agua ($9.53, redondeado)</td><td>$10</td></tr>
       <tr><td>Tu trabajo (3 h × $80)</td><td>$240</td></tr>
       <tr class="total"><td>Precio mínimo (no pierdes)</td><td>$454</td></tr>
       <tr class="total"><td>Precio sugerido (deja 30 % de ganancia)</td><td>$648</td></tr>

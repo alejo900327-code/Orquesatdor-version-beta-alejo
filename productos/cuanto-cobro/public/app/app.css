@@ -144,3 +144,12 @@ textarea:focus { border-color: var(--frambuesa); outline: none; }
 @media (min-width: 940px) { .resumen-fijo { display: none; } }
 .app:has(.resumen-fijo:not([hidden])) { padding-bottom: 96px; }
 .bienvenida h1 { margin-bottom: 12px; }
+
+/* Gas, luz y agua por minutos */
+.campo-gas .ayuda-chica:empty { display: none; }
+.campo-gas .enlace-boton { margin-top: 6px; text-align: left; font-size: .9rem; }
+.desglose { margin-top: 10px; background: var(--crema); border-radius: 12px; padding: 6px 14px; }
+.desglose .fila:last-child { border-bottom: 0; }
+.fila-total { font-weight: 700; color: var(--frambuesa); }
+details.recibo { margin-top: 14px; background: var(--crema); }
+details.recibo .boton { margin-bottom: 14px; }
