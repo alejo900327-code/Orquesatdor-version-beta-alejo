@@ -10,4 +10,5 @@ directory = "./public"
 # Dominio: vendedecasa.com (dominio paraguas, zona en el Cloudflare personal). Requiere que la zona exista antes del deploy.
 [[routes]]
 pattern = "cuantocobro.vendedecasa.com"
+zone_name = "vendedecasa.com"
 custom_domain = true
