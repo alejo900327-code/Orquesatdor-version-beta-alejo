@@ -1,0 +1,13 @@
+# Producto: vendedecasa — Cloudflare PERSONAL. No cambiar account_id.
+name = "vendedecasa"
+compatibility_date = "2026-10-01"
+account_id = "ff989b53c26e6dbfa506425033548f68"
+workers_dev = true
+
+[assets]
+directory = "./public"
+
+[[routes]]
+pattern = "vendedecasa.com"
+zone_name = "vendedecasa.com"
+custom_domain = true
