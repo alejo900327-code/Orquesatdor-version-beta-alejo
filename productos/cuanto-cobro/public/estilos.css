@@ -175,3 +175,24 @@ label.check input { width: 22px; min-height: 22px; height: 22px; accent-color: v
 .servicios-ejemplo { margin-top: 24px; }
 .servicios-ejemplo table { margin: 8px 0 4px; }
 .servicios-ejemplo td:last-child, .servicios-ejemplo th:last-child { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* Landing v2 */
+.pie-telefono { text-align: center; max-width: 320px; margin: 14px auto 0; }
+.remate { font-family: var(--display); font-size: 1.25rem; font-weight: 600; line-height: 1.35; margin-top: 20px; }
+.escena { border-left: 4px solid var(--frambuesa); padding: 4px 0 4px 18px; margin: 26px 0; }
+.escena h3 { margin-bottom: 8px; }
+q { font-style: italic; color: var(--tinta-2); }
+.tabla-cuenta td:last-child, .tabla-cuenta th:last-child { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.tabla-cuenta .fila-fuga th { color: var(--rojo); background: var(--rojo-fondo); }
+.dos-numeros { margin: 20px 0 12px; }
+.dos-numeros h3 { color: var(--frambuesa); }
+.recalculo { margin-top: 24px; border-color: var(--frambuesa); }
+.tabla-ojo th:last-child, .tabla-ojo td:last-child { color: var(--verde); font-weight: 600; }
+.tabla-comparar td:last-child, .tabla-comparar th:last-child { background: var(--verde-fondo); font-weight: 600; }
+.tabla-comparar { min-width: 620px; }
+.ancla { margin-top: 18px; }
+.garantia { text-align: center; }
+.cierre ol { padding-left: 20px; }
+.cierre li { margin-bottom: 8px; }
+.barra .boton-chico { white-space: nowrap; }
+@media (max-width: 420px) { .barra .boton-chico { padding: 8px 12px; font-size: .85rem; } .marca { font-size: 1.05rem; } }

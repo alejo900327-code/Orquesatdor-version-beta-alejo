@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>¿Cuánto Cobro? · Precio justo para tus tortas</title>
-  <meta name="description" content="La app en tu celular que calcula el costo real de tus recetas y te dice cuánto cobrar. Sin Excel. Preventa.">
+  <title>¿Cuánto Cobro? · Precio justo para tus pasteles</title>
+  <meta name="description" content="La app en tu celular que suma ingredientes, merma, empaque, gas y tu tiempo, y te dice tu precio mínimo y tu precio sugerido antes de cotizar. Acceso inmediato.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,167 +14,322 @@
   <header class="barra">
     <div class="contenedor">
       <a class="marca" href="./">¿Cuánto <span>Cobro?</span></a>
-      <a class="boton boton-principal boton-chico" href="calculadora/">Prueba gratis</a>
+      <a class="boton boton-principal boton-chico" href="calculadora/" data-evento="landing_a_calculadora">Calcula tu pastel gratis</a>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
+    <!-- 1 · Hero -->
     <section class="hero">
       <div class="contenedor">
         <div>
-          <span class="etiqueta">Para reposteras y emprendedoras que venden desde casa</span>
-          <h1>Deja de adivinar cuánto cobrar por tus tortas.</h1>
-          <p class="sub">Una app en tu celular que suma ingredientes, empaque, gas y <strong>tu tiempo</strong>, y te dice tu precio mínimo y tu precio sugerido en 2 minutos. Sin Excel.</p>
+          <span class="etiqueta">Para reposteras que ya venden pasteles y tortas por encargo</span>
+          <h1>Muchas reposteras venden bien y al final del mes no ven el dinero.</h1>
+          <p class="sub">Casi siempre es por lo que el precio deja fuera: las horas, el gas del horno, la caja y lo que se pierde en la receta. ¿Cuánto Cobro? lo suma desde tu celular y te da dos números antes de mandar el precio por WhatsApp: <strong>el mínimo, debajo del cual pierdes</strong>, y <strong>el que deja ganancia para tu negocio</strong>.</p>
           <div class="acciones">
-            <a class="boton boton-principal" href="calculadora/" data-evento="landing_a_calculadora">Calcula 1 receta gratis</a>
-            <a class="boton boton-secundario" href="#preventa">Quiero la app · USD 12</a>
+            <a class="boton boton-principal" href="calculadora/" data-evento="landing_a_calculadora">Ver si estoy cobrando de menos (gratis)</a>
+            <a class="boton boton-secundario" href="#preventa">Quiero cobrar lo justo · USD 12</a>
           </div>
-          <p class="nota">Pago único. Sin mensualidad. Garantía de 7 días.</p>
+          <p class="nota">Acceso inmediato a tu email · Pago único, sin mensualidad · Garantía de 7 días</p>
         </div>
 
-        <div class="telefono" aria-label="Ejemplo de resultado en la app">
-          <div class="pantalla">
-            <h4>Torta de chocolate</h4>
-            <div class="pequeno">12 porciones · datos de ejemplo</div>
-            <div class="fila"><span>Ingredientes</span><strong>$159</strong></div>
-            <div class="fila"><span>Empaque + gas</span><strong>$55</strong></div>
-            <div class="fila"><span>Tu trabajo (3 h)</span><strong>$240</strong></div>
-            <div class="fila"><span>Precio mínimo</span><strong>$454</strong></div>
-            <div class="fila"><span>Precio sugerido</span><strong>$648</strong></div>
-            <div class="pastilla pastilla-roja">La vendías a $380: estás $74 por debajo de tu mínimo.</div>
+        <div>
+          <div class="telefono" aria-label="Ejemplo de resultado en la app">
+            <div class="pantalla">
+              <h4>Torta de chocolate</h4>
+              <div class="pequeno">12 porciones · datos de ejemplo (MXN)</div>
+              <div class="fila"><span>Ingredientes</span><strong>$159</strong></div>
+              <div class="fila"><span>Empaque + gas</span><strong>$55</strong></div>
+              <div class="fila"><span>Tu trabajo (3 h)</span><strong>$240</strong></div>
+              <div class="fila"><span>Precio mínimo</span><strong>$454</strong></div>
+              <div class="fila"><span>Precio sugerido</span><strong>$648</strong></div>
+              <div class="pastilla pastilla-roja">La vendías a $380: estás $74 por debajo de tu mínimo.</div>
+            </div>
           </div>
+          <p class="nota pie-telefono">En este ejemplo, cada pastel vendido a $380 son $74 que pone la repostera. Con 10 pedidos así al mes, serían $740.</p>
         </div>
       </div>
     </section>
 
-    <!-- Problema -->
+    <!-- 2 · Haz la cuenta -->
     <section class="seccion seccion-alt">
-      <div class="contenedor">
-        <span class="etiqueta">¿Te pasa?</span>
-        <h2>Vendes bien, pero al final del mes no ves la plata.</h2>
-        <div class="rejilla rejilla-3" style="margin-top:24px">
-          <div class="tarjeta">
-            <h3>Copias el precio de otra</h3>
-            <p>Pero ella no compra donde tú compras, no usa tus ingredientes y no tarda lo que tú tardas.</p>
-          </div>
-          <div class="tarjeta">
-            <h3>Subió la mantequilla… y tú no subiste</h3>
-            <p>Cada aumento que no pasas a tu precio sale de tu bolsillo, pedido tras pedido, sin que lo notes.</p>
-          </div>
-          <div class="tarjeta">
-            <h3>Nunca cobras tu tiempo</h3>
-            <p>Comprar, hornear, decorar, entregar. Si no lo sumas, estás trabajando gratis.</p>
-          </div>
+      <div class="contenedor estrecho">
+        <span class="etiqueta">Haz la cuenta</span>
+        <h2>Un pastel que se vende a $380 puede costar $454 hacerlo bien.</h2>
+        <p>Mira el ejemplo de arriba. La repostera no cobraba mal "porque sí". Cobraba lo que le parecía razonable, lo que cobraban otras y lo que la clienta no le iba a discutir.</p>
+        <p>Pero cuando se suma todo, la cuenta queda así:</p>
+        <div class="tabla-wrap">
+          <table class="tabla-cuenta">
+            <thead><tr><th>Lo que pone en el pastel</th><th>Cuánto</th></tr></thead>
+            <tbody>
+              <tr><td>Ingredientes (con un 5 % de merma)</td><td>$159</td></tr>
+              <tr><td>Caja, base, gas del horno, luz, agua</td><td>$55</td></tr>
+              <tr><td>Sus 3 horas de trabajo, a $80 la hora</td><td>$240</td></tr>
+              <tr><th>Lo mínimo para no perder</th><th>$454</th></tr>
+              <tr><td>Lo que cobraba</td><td>$380</td></tr>
+              <tr class="fila-fuga"><th>Lo que ponía ella, en cada pedido</th><th>$74</th></tr>
+            </tbody>
+          </table>
         </div>
+        <p class="remate">No es una tragedia en un pastel. Es una fuga en todos.</p>
+        <div class="acciones">
+          <a class="boton boton-principal" href="calculadora/" data-evento="landing_a_calculadora">Hacer la cuenta con mi receta (gratis)</a>
+        </div>
+        <p class="nota">Sin registro. Tarda unos minutos. Tus recetas y precios se quedan en tu teléfono.</p>
       </div>
     </section>
 
-    <!-- Cómo funciona -->
+    <!-- 3 · Escenas -->
+    <section class="seccion">
+      <div class="contenedor estrecho">
+        <span class="etiqueta">¿Te ha pasado?</span>
+        <h2>Lo que nadie ve de tu negocio de pasteles.</h2>
+
+        <div class="escena">
+          <h3>El precio que da miedo mandar</h3>
+          <p>Ya tienes la foto de referencia, el sabor y la fecha. La clienta espera. Escribes el precio. Lo borras. Le bajas un poco "para que no se asuste". Lo mandas y dejas el teléfono boca abajo, esperando el visto.</p>
+          <p data-cita="3.2">Una repostera lo escribió así en un blog: <q>Cada vez que doy un presupuesto es mucha la ansiedad o nervios por la respuesta…</q> <span data-cita="3.3">En el mismo blog, otra escribió: <q>Pensé que era la única con temor a dar costos…</q></span></p>
+          <p><strong>No eres la única.</strong></p>
+        </div>
+
+        <div class="escena">
+          <h3>"¿En cuánto me lo dejas?"</h3>
+          <p>Te comparan con el pastel del supermercado. Te piden "uno parecido, pero más sencillo" por la mitad. Y tú, sin un número que te respalde, terminas bajando. No porque quieras: porque no tienes con qué decir que no.</p>
+          <p data-cita="2.2">Como lo dijo una repostera: <q>las personas pretenden comparar el precio de una torta personalizada con una torta de pastelería.</q></p>
+        </div>
+
+        <div class="escena">
+          <h3>El mes que no paraste… y no te alcanzó</h3>
+          <p>Diciembre, Día de las Madres, la temporada de fiestas. Horneaste todos los fines de semana, entregaste todo a tiempo, las fotos quedaron preciosas. Y cuando fuiste a comprar los insumos del siguiente pedido, el dinero no alcanzaba.</p>
+          <p>¿Cómo se puede vender tanto y que no quede nada? Pasa cuando cada pedido sale un poco por debajo de lo que cuesta: entre más vendes, más pones tú.</p>
+        </div>
+
+        <div class="escena">
+          <h3>Las 8 horas que cobraste como 3</h3>
+          <p>Calculaste una tarde. Fue el día entero: comprar, hornear, esperar que enfríe, rellenar, decorar, lavar todo, entregar.</p>
+          <p data-cita="5.2">Una repostera lo contó perfecto: <q>crees que vas a tardar como 3 o 4 horas en un pastel, pero pasas como 8 horas y el pastel te sale más caro de lo que pediste por el pastel.</q></p>
+          <p>Esas horas también son trabajo. Si no están en el precio, las regalaste.</p>
+        </div>
+
+        <p class="remate">Lo peor no es el cansancio. Es la duda que se queda después de entregar: <em>¿estuvo caro o barato?</em> Y nadie te la responde.</p>
+      </div>
+    </section>
+
+    <!-- 4 · No es tu culpa -->
+    <section class="seccion seccion-alt">
+      <div class="contenedor estrecho">
+        <span class="etiqueta">No es tu culpa</span>
+        <h2>Nadie te enseñó a ponerle precio a tu trabajo.</h2>
+        <p>Aprendiste a hornear con tu mamá, con tu abuela, con YouTube o con cursos que te costaron. En ninguno te enseñaron a costear. Y cuando preguntaste, te dieron una de estas tres respuestas:</p>
+        <div class="rejilla">
+          <div class="tarjeta">
+            <h3>1. "Copia lo que cobra la de al lado."</h3>
+            <p>Pero ella no compra donde tú compras, no usa tus ingredientes, no tarda lo que tú tardas y no paga tu gas. Si cobra mucho menos con la misma calidad, lo más probable es que alguien esté perdiendo… y puede ser ella.</p>
+          </div>
+          <div class="tarjeta">
+            <h3>2. "Suma los ingredientes y multiplica por 2 (o por 3)."</h3>
+            <p>Suena a mucho, pero ese número no sabe cuántas horas te tomó la decoración ni cuánto costó la caja.<span data-cita="1.3"> Una repostera lo descubrió así: <q>Yo solo cobraba los costos directos por 3, he estado regalando una parte de mi trabajo.</q></span></p>
+          </div>
+          <div class="tarjeta">
+            <h3>3. "Ponle un precio y ya."</h3>
+            <p>Y lo pusiste hace un año. Desde entonces cambió el precio de la harina, del huevo, del chocolate o de la caja, y tu precio sigue igual. No hiciste nada mal: tu precio es de otra época.</p>
+          </div>
+        </div>
+        <p class="remate">El problema no eres tú. Es que estabas cobrando a ojo, con reglas que no salen de <em>tu</em> receta. Lo que te falta no es valor para cobrar. Es un número que te respalde.</p>
+      </div>
+    </section>
+
+    <!-- 5 · Mecanismo -->
     <section class="seccion">
       <div class="contenedor">
         <span class="etiqueta">Cómo funciona</span>
-        <h2>Tres pasos, desde tu celular.</h2>
+        <h2>Dos números que te dan seguridad antes de mandar cualquier precio.</h2>
+        <p class="sub">¿Cuánto Cobro? hace con <em>tus</em> ingredientes, <em>tus</em> horas y <em>tu</em> gas la cuenta que nadie te enseñó. Al final te da dos números:</p>
+        <div class="rejilla rejilla-2 dos-numeros">
+          <div class="tarjeta"><h3>Tu piso</h3><p>El precio mínimo. Debajo de este número, pierdes dinero en ese pedido.</p></div>
+          <div class="tarjeta"><h3>Tu precio</h3><p>El sugerido, que además de pagarte tu trabajo deja ganancia para tu negocio: para la próxima batidora, para los insumos del mes que viene, para crecer.</p></div>
+        </div>
+        <p>Tu sueldo y la ganancia del negocio son cosas distintas. La app las separa para que dejes de confundirlas.</p>
+
         <div class="rejilla rejilla-3" style="margin-top:24px">
           <div class="tarjeta">
             <div class="numero">1</div>
-            <h3>Carga tus ingredientes una vez</h3>
-            <p>Lo que compras y lo que pagas: "1 kg de harina a $28". La app calcula el costo por gramo.</p>
+            <h3>Pon lo que compras, una sola vez</h3>
+            <p>"1 kg de harina a $28." Ya vienen 16 ingredientes comunes con un precio de referencia aproximado en tu moneda; solo corriges lo que tú pagas. La app calcula cuánto te cuesta cada gramo.</p>
           </div>
           <div class="tarjeta">
             <div class="numero">2</div>
-            <h3>Arma tus recetas</h3>
-            <p>Elige ingredientes y cantidades. Suma empaque, gas y tus horas de trabajo.</p>
+            <h3>Arma tu receta con lo que casi todas olvidan</h3>
+            <p>Eliges ingredientes y cantidades, y sumas la caja, la base, tus horas y la merma. El gas y la luz los pones en minutos de horno (abajo te mostramos cómo).</p>
           </div>
           <div class="tarjeta">
             <div class="numero">3</div>
-            <h3>Cotiza con seguridad</h3>
-            <p>Ves tu precio mínimo y sugerido, y mandas la cotización lista por WhatsApp.</p>
+            <h3>Cotiza tranquila</h3>
+            <p>Ves tu piso y tu precio, también por porción. Mandas la cotización lista por WhatsApp, con el nombre de tu negocio. Y si por nervios escribes un precio por debajo de tu mínimo, la app te avisa antes de enviarlo.</p>
           </div>
         </div>
+
+        <div class="tarjeta recalculo">
+          <h3>Y cuando cambia un precio…</h3>
+          <p>Cambias el precio de la mantequilla, del huevo o de la caja, y <strong>todas las recetas que la usan se recalculan solas</strong>. La app te muestra cuánto subió cada una, por ejemplo: "Pastel de chocolate: $612 → $648" <em>(ejemplo)</em>. Así tu precio nunca vuelve a quedarse en otra época.</p>
+        </div>
+
         <div class="tarjeta servicios-ejemplo">
           <h3>¿Y el gas, la luz y el agua? No tienes que adivinarlo.</h3>
-          <p>Nadie sabe cuánto gas gastó en una torta, pero sí cuánto rato prendió el horno. La app te pregunta los <strong>minutos</strong> de horno, estufa y batidora y los convierte en dinero con un valor aproximado de tu país.</p>
+          <p>Nadie sabe cuánto gas gastó en un pastel, pero sí cuánto rato prendió el horno. La app te pregunta los <strong>minutos</strong> de horno, estufa y batidora y los convierte en dinero con un valor aproximado de tu país.</p>
           <div class="tabla-wrap">
             <table>
-              <thead><tr><th>Torta de chocolate (ejemplo)</th><th>Cuesta</th></tr></thead>
+              <thead><tr><th>Pastel de chocolate (ejemplo)</th><th>Cuesta</th></tr></thead>
               <tbody>
                 <tr><td>Horno a gas, 60 min (con precalentado)</td><td>$5.50</td></tr>
                 <tr><td>Estufa, 20 min (ganache)</td><td>$0.83</td></tr>
                 <tr><td>Batidora, 15 min</td><td>$0.20</td></tr>
                 <tr><td>Agua y jabón del lavado</td><td>$3.00</td></tr>
-                <tr><th>Gas, luz y agua de esta torta</th><th>$9.53</th></tr>
+                <tr><th>Gas, luz y agua de este pastel</th><th>$9.53</th></tr>
               </tbody>
             </table>
           </div>
           <p class="nota"><strong>¿Lo quieres exacto?</strong> Recibo de gas del mes ÷ horas de horno del mes = lo que te cuesta 1 hora de horno. Ej.: $330 ÷ 60 horas = $5.50 por hora. Lo pones una vez y todas tus recetas se recalculan.</p>
         </div>
         <div class="acciones">
-          <a class="boton boton-secundario" href="calculadora/" data-evento="landing_a_calculadora">Pruébalo gratis con 1 receta</a>
+          <a class="boton boton-secundario" href="calculadora/" data-evento="landing_a_calculadora">Probarlo gratis con 1 receta</a>
         </div>
       </div>
     </section>
 
-    <!-- Comparación -->
+    <!-- 6 · Imagina -->
     <section class="seccion seccion-alt">
       <div class="contenedor estrecho">
-        <span class="etiqueta">Por qué una app y no otra plantilla</span>
-        <h2>La plantilla que vive en tu celular.</h2>
-        <div class="tabla-wrap" style="margin-top:20px">
-          <table>
-            <thead><tr><th></th><th>Plantilla de Excel</th><th>¿Cuánto Cobro?</th></tr></thead>
+        <span class="etiqueta">Imagina</span>
+        <h2>Mandar tu precio sin que te tiemblen las manos.</h2>
+        <p>Imagina el próximo pedido. Te escriben, abres la app, ves tu piso y tu precio, y respondes en dos minutos. Sin borrar el número tres veces. Sin dejar el teléfono boca abajo.</p>
+        <div class="tabla-wrap">
+          <table class="tabla-ojo">
+            <thead><tr><th>Cobrando a ojo</th><th>Con tus números</th></tr></thead>
             <tbody>
-              <tr><td>Desde el celular</td><td>Difícil</td><td>Hecha para el celular</td></tr>
-              <tr><td>Cuando sube un ingrediente</td><td>Buscar y corregir a mano</td><td>Cambias un precio y se recalculan todas tus recetas</td></tr>
-              <tr><td>Tu tiempo y el empaque</td><td>Si te acuerdas</td><td>Siempre incluidos</td></tr>
-              <tr><td>Cotizar un pedido</td><td>Copiar números al chat</td><td>Mensaje listo para WhatsApp</td></tr>
-              <tr><td>Necesitas</td><td>Excel o computador</td><td>Solo el navegador de tu teléfono</td></tr>
+              <tr><td>"¿Estuvo caro o barato?"</td><td>Sabes cuánto te deja cada pedido, antes de aceptarlo.</td></tr>
+              <tr><td>Le bajas al precio para que no se asuste.</td><td>Mandas tu precio con un número que lo respalda.</td></tr>
+              <tr><td>Cobras 3 horas por un pastel de 8.</td><td>Tu tiempo está en el precio, siempre.</td></tr>
+              <tr><td>Te dicen "está caro" y te quedas sin palabras.</td><td>Tienes 5 respuestas amables listas para copiar y pegar.</td></tr>
+              <tr><td>Copias la lista de precios de otra.</td><td>Tus precios salen de tu receta, tu horno y tus horas.</td></tr>
+              <tr><td>Tu precio es de hace un año.</td><td>Cambias un ingrediente y todo se recalcula.</td></tr>
+              <tr><td>La clienta quiere pagar menos y tú regalas el trabajo.</td><td>Le ofreces una versión más pequeña o más sencilla que sí te deja algo.</td></tr>
+              <tr><td>Tu repostería se siente como un hobby caro.</td><td>Tu repostería se siente como un negocio.</td></tr>
             </tbody>
           </table>
         </div>
+        <p class="remate">No te prometemos que todas las clientas digan que sí. Eso no lo promete nadie honesto. Lo que sí cambia es que, a partir de ahora, cuando digas un precio vas a saber por qué es ese y no otro. Y puedes explicar tu precio sin pedir disculpas.</p>
       </div>
     </section>
 
-    <!-- Qué incluye + preventa -->
-    <section class="seccion" id="preventa">
+    <!-- 7 · Comparación -->
+    <section class="seccion">
+      <div class="contenedor">
+        <span class="etiqueta">Por qué una app y no otra plantilla</span>
+        <h2>La cuenta que vive en tu celular, no en un cuaderno ni en la computadora.</h2>
+        <div class="tabla-wrap" style="margin-top:20px">
+          <table class="tabla-comparar">
+            <thead><tr><th></th><th>Cuaderno o "×3"</th><th>Plantilla de Excel</th><th>¿Cuánto Cobro?</th></tr></thead>
+            <tbody>
+              <tr><td>Cuenta tus horas</td><td>Casi nunca</td><td>Si te acuerdas</td><td>Siempre (y te avisa si las olvidas)</td></tr>
+              <tr><td>Gas, luz y empaque</td><td>A ojo</td><td>Tienes que saber cuánto gastaste</td><td>Por minutos de horno, con valor de tu país</td></tr>
+              <tr><td>Desde el celular</td><td>Sí, pero sin cuentas</td><td>Difícil</td><td>Hecha para el celular</td></tr>
+              <tr><td>Cuando sube un ingrediente</td><td>Rehacer todo</td><td>Buscar y corregir a mano</td><td>Cambias un precio y se recalculan todas tus recetas</td></tr>
+              <tr><td>Precio por porción</td><td>Calculadora aparte</td><td>Si la plantilla lo trae</td><td>Automático</td></tr>
+              <tr><td>Cotizar un pedido</td><td>Escribir el mensaje</td><td>Copiar números al chat</td><td>Mensaje listo para WhatsApp</td></tr>
+              <tr><td>Si cotizas por debajo de tu mínimo</td><td>No te enteras</td><td>Solo si la plantilla lo trae</td><td>Te avisa antes de enviar</td></tr>
+              <tr><td>Necesitas</td><td>Papel y paciencia</td><td>Excel o computador</td><td>Solo el navegador de tu teléfono</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:16px">¿No estás segura? No nos creas: haz la cuenta de tu pastel en la calculadora gratis y compárala con lo que cobras hoy.</p>
+        <a class="boton boton-secundario" href="calculadora/" data-evento="landing_a_calculadora">Comparar con mi pastel (gratis)</a>
+      </div>
+    </section>
+
+    <!-- 8 · Oferta -->
+    <section class="seccion seccion-alt" id="preventa">
       <div class="contenedor">
         <div class="rejilla rejilla-2" style="align-items:start;gap:32px">
           <div>
-            <span class="etiqueta">Preventa</span>
-            <h2>Qué recibes</h2>
+            <span class="etiqueta">Lo que recibes hoy</span>
+            <h2>Todo lo que necesitas para cobrar con números, en tu celular.</h2>
             <ul class="lista-check">
-              <li><strong>App ¿Cuánto Cobro?</strong> con acceso de por vida y actualizaciones incluidas.</li>
-              <li><strong>Ingredientes comunes precargados</strong> para tu país, para empezar en minutos.</li>
-              <li><strong>Guía de 10 minutos:</strong> las 4 cosas que casi todas olvidan al poner precio.</li>
-              <li><strong>Mensajes listos</strong> para responder cuando te dicen "está caro".</li>
-              <li><strong>Garantía de 7 días:</strong> si no logras costear tu primera receta, te devolvemos tu dinero.</li>
+              <li><strong>La app ¿Cuánto Cobro?</strong> Tus ingredientes, tus recetas, tu piso y tu precio, también por porción. Funciona en el navegador de tu celular y la puedes dejar como ícono en tu pantalla de inicio. Pago único: es tuya, sin mensualidad.</li>
+              <li><strong>16 ingredientes comunes ya cargados</strong>, con un precio de referencia aproximado en tu moneda, para empezar en minutos.</li>
+              <li><strong>Gas, luz y agua por minutos de horno</strong>, con valores aproximados de tu país que puedes afinar con tu recibo.</li>
+              <li><strong>Recálculo automático:</strong> cambias un precio y ves cuánto subió cada receta.</li>
+              <li><strong>Cotización lista para WhatsApp</strong>, con el nombre de tu negocio y aviso si vas por debajo de tu mínimo.</li>
+              <li><strong>Guía rápida "Las 4 cosas que olvidas al poner precio"</strong>, dentro de la app.</li>
+              <li><strong>5 mensajes para cuando te dicen "está caro"</strong>: explicar el valor, ofrecer otra opción sin bajar tu precio, responder cuando te comparan, avisar que subes precios y cerrar con amabilidad.</li>
+              <li><strong>Garantía de 7 días.</strong></li>
             </ul>
           </div>
-          <div class="precio-caja">
-            <span class="etiqueta">Precio de preventa</span>
-            <div class="precio">USD 12 <small>pago único</small></div>
-            <p>Precio al lanzar: <span class="tachado">USD 17</span></p>
-            <p class="nota" style="margin-top:0">Pagas en tu moneda local. Sin mensualidad.</p>
-            <!-- PENDIENTE: reemplazar por el enlace de checkout de Hotmart antes de publicar -->
-            <a class="boton boton-principal" style="width:100%;margin-top:8px" href="https://pay.hotmart.com/D108114823S" id="boton-comprar" data-evento="clic_comprar_preventa">Reservar mi acceso</a>
-            <p class="nota"><strong>Cómo funciona la preventa:</strong> pagas hoy al precio de preventa y recibes el acceso por email y WhatsApp a más tardar el <strong id="fecha-entrega">30 de noviembre de 2026</strong>. Si no llega, o no te sirve, te devolvemos el 100&nbsp;%.</p>
+          <div>
+            <div class="precio-caja">
+              <span class="etiqueta">Precio de lanzamiento</span>
+              <div class="precio">USD 12 <small>pago único</small></div>
+              <p class="nota" style="margin-top:0">Pagas por Hotmart en tu moneda local, con los medios disponibles en tu país. Sin mensualidad.</p>
+              <a class="boton boton-principal" style="width:100%;margin-top:8px" href="https://pay.hotmart.com/D108114823S" id="boton-comprar" data-evento="clic_comprar_preventa">Quiero cobrar lo justo · USD 12</a>
+              <p class="nota"><strong>Acceso inmediato:</strong> apenas pagas, te llega a tu email el enlace a la app y la guía de inicio.</p>
+            </div>
+            <p class="nota ancla">USD 12 es menos de lo que cuestan los ingredientes de un pastel. ¿Te conviene? No lo decidas por nosotros: haz primero <a href="calculadora/" data-evento="landing_a_calculadora">la cuenta gratis con tu receta</a> y mira tu propio número.</p>
+            <p class="nota"><strong>¿Por qué tan barato?</strong> Estamos lanzando. Preferimos que las primeras reposteras la usen, nos digan qué le falta y la mejoremos juntas.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- 9 · Garantía -->
+    <section class="seccion">
+      <div class="contenedor estrecho garantia">
+        <span class="etiqueta">Sin riesgo</span>
+        <h2>7 días para probarla. Si no te sirve, te devolvemos tu dinero.</h2>
+        <p>Tienes 7 días para probarla con tu receta de verdad. Si no te convence, por la razón que sea, pides el reembolso del 100 % desde Hotmart (o respondes al email de tu compra y te ayudamos a hacerlo). Sin preguntas incómodas.</p>
+        <p>Y si quieres estar segura antes de pagar, la calculadora gratis hace la cuenta de un pastel completo, con la misma fórmula que la app.</p>
+        <a class="boton boton-principal" href="https://pay.hotmart.com/D108114823S" data-evento="clic_comprar_preventa">Quiero cobrar lo justo · USD 12</a>
+      </div>
+    </section>
+
+    <!-- 10 · FAQ -->
     <section class="seccion seccion-alt">
       <div class="contenedor estrecho">
         <span class="etiqueta">Preguntas frecuentes</span>
-        <h2>Antes de reservar</h2>
+        <h2>Lo que te preguntas antes de cobrar distinto</h2>
+        <details><summary>¿Y si subo mi precio y me dejan de comprar?</summary><p>Es el miedo más común, y es válido. Por eso la app no te da un solo número: te da tu piso y tu precio. El piso es el mínimo para no perder; entre el piso y el sugerido tienes margen para decidir según tu clienta y tu zona. Y si alguien solo te compra por debajo de tu piso, ese pedido te cuesta dinero cada vez que lo haces. Cuando la clienta quiere pagar menos, puedes ofrecerle un tamaño más pequeño o una decoración más sencilla (duplicas la receta, cambias lo que necesites y ves su precio). No regalas tu trabajo: ajustas el pedido.</p></details>
+        <details><summary>Soy nueva, ¿puedo cobrar como si tuviera experiencia?</summary><p>Lo que cuesta tu pastel no depende de tu experiencia: la harina, la caja y el gas cuestan lo mismo si llevas un mes o diez años. Eso sí o sí tiene que estar en tu precio. Lo que sí puedes ajustar es cuánto cobras por hora; puedes empezar con una tarifa más baja y subirla cuando ganes rapidez y seguridad. Lo que no conviene es empezar perdiendo.</p></details>
+        <details><summary>La competencia cobra mucho menos que yo. ¿No me conviene igualarla?</summary><p>Ella no compra donde tú compras, no usa tus ingredientes ni tarda lo que tú tardas. Si cobra mucho menos con la misma calidad, o tiene costos muy distintos o está perdiendo dinero sin darse cuenta. Copiar su precio es copiar su cuenta, y tú no sabes cuál es. Con la app sabes la tuya.</p></details>
+        <details><summary>No soy buena con los números.</summary><p>No necesitas serlo. Pones lo que compras, cuánto pagaste y cuánto usas, como lo dirías en voz alta: "1 kg de harina a $28, uso 300 gramos". La app hace todas las cuentas y te muestra el resultado en grande.</p></details>
+        <details><summary>Mis clientas no pagarían lo que dice la app.</summary><p>Puede pasar, sobre todo cuando la economía está difícil. La app no te obliga a cobrar el sugerido: te muestra dónde está tu piso para que decidas sabiendo. Con eso puedes elegir qué versión del pedido sí te deja algo, y tienes mensajes amables para explicar tu precio sin pelear. Lo que no cambia es esto: un pedido que te hace perder no te ayuda a ti ni a tu negocio.</p></details>
+        <details><summary>¿Y con amigas y familia, qué hago?</summary><p>Tú decides si les haces un precio especial. La diferencia es que ahora vas a saber exactamente cuánto les estás regalando, y podrás decidirlo con cariño, no por compromiso.</p></details>
+        <details><summary>¿Cuándo la recibo?</summary><p>Al instante. Apenas pagas, te llega a tu email el enlace a la app y la guía de inicio.</p></details>
         <details><summary>¿Necesito saber Excel o contabilidad?</summary><p>No. Pones lo que compras, lo que pagas y lo que usas. La app hace las cuentas.</p></details>
-        <details><summary>¿Hay que descargar algo de la tienda?</summary><p>No. Se abre desde el navegador de tu celular y la puedes dejar como ícono en tu pantalla de inicio.</p></details>
-        <details><summary>¿Funciona en mi país?</summary><p>Sí: México, Colombia, Perú, Chile, Argentina y EE.&nbsp;UU., cada uno con su moneda.</p></details>
-        <details><summary>¿Es una suscripción?</summary><p>No. Pagas una vez y tienes acceso de por vida.</p></details>
-        <details><summary>¿Dónde quedan mis recetas?</summary><p>En tu teléfono. Puedes hacer una copia de seguridad cuando quieras.</p></details>
+        <details><summary>¿Hay que descargar algo de la tienda de apps?</summary><p>No. Se abre desde el navegador de tu celular y la puedes dejar como ícono en tu pantalla de inicio. No necesitas cuenta ni contraseña.</p></details>
+        <details><summary>¿Funciona en mi país?</summary><p>Sí: México, Colombia, Perú, Chile, Argentina y EE.&nbsp;UU., cada uno con su moneda, ingredientes comunes con precio aproximado y valores de gas y luz de referencia del país.</p></details>
+        <details><summary>¿Cómo pago si no tengo tarjeta?</summary><p>Pagas por Hotmart en tu moneda local, con los medios de pago disponibles en tu país.</p></details>
+        <details><summary>¿Es una suscripción?</summary><p>No. Pagas una vez y es tuya. Sin mensualidad.</p></details>
+        <details><summary>¿Dónde quedan mis recetas?</summary><p>En tu teléfono; no las enviamos a ningún servidor. Si cambias de celular, descargas una copia de seguridad desde Ajustes y la restauras en el nuevo.</p></details>
         <details><summary>¿Sirve solo para repostería?</summary><p>Está pensada para repostería, pero funciona igual para cualquier producto con receta: comida casera, velas, jabones.</p></details>
-        <details><summary>¿Y si no me sirve?</summary><p>Tienes 7 días de garantía. Si no logras costear tu primera receta, te devolvemos tu dinero.</p></details>
+        <details><summary>¿Y si no me sirve?</summary><p>Tienes 7 días de garantía. Si no te sirve, pides el reembolso del 100 % y listo.</p></details>
+      </div>
+    </section>
+
+    <!-- 11 · Cierre -->
+    <section class="seccion">
+      <div class="contenedor estrecho cierre">
+        <h2>Tu trabajo vale. Ahora vas a saber cuánto.</h2>
+        <p>Llevas meses (o años) horneando bien, entregando a tiempo y cobrando a ojo. No te falta talento ni ganas. Te faltaba la cuenta.</p>
+        <p>Hoy puedes empezar de dos maneras:</p>
+        <ol>
+          <li><strong>Haz la cuenta gratis</strong> de un pastel y mira si estás por encima o por debajo de tu mínimo.</li>
+          <li><strong>Lleva todas tus recetas a la app</strong> por USD 12, una sola vez, con 7 días de garantía.</li>
+        </ol>
+        <p>La próxima vez que te pregunten "¿cuánto cuesta?", que tu respuesta salga de tus números, no de tus nervios.</p>
+        <div class="acciones">
+          <a class="boton boton-principal" href="https://pay.hotmart.com/D108114823S" data-evento="clic_comprar_preventa">Empezar a cobrar con números · USD 12</a>
+          <a class="boton boton-secundario" href="calculadora/" data-evento="landing_a_calculadora">Primero quiero hacer la cuenta gratis</a>
+        </div>
+        <p class="nota">Acceso inmediato a tu email · Pago único · Garantía de 7 días</p>
       </div>
     </section>
   </main>
@@ -182,6 +337,7 @@
   <footer class="pie">
     <div class="contenedor">
       <p>¿Cuánto Cobro? es una herramienta de cálculo: los resultados dependen de los datos que ingresas y no garantizan ventas ni ingresos.</p>
+      <p>Las frases entre comillas son de reposteras en blogs públicos de repostería; no son clientas de la app.</p>
     </div>
   </footer>
 
