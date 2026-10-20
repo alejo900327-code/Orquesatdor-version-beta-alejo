@@ -73,12 +73,12 @@
       "nota": null
     },
     "hotmart": {
-      "estado": "borrador",
+      "estado": "en_revision",
       "producto_id": "8770692",
       "checkout_url": "https://pay.hotmart.com/D108114823S",
-      "en_revision": false,
+      "en_revision": true,
       "fecha": "2026-10-20",
-      "nota": "Cuenta Hotmart personal (titular Diana Marcela Saa Angarita, confirmada por Alejo). Creado por navegador (no hay MCP de Hotmart). 2026-10-20: contenido = PDF de acceso/guía, página de venta externa https://cuantocobro.vendedecasa.com/. Lista para 'Finalizar registro' (acepta el Término de Tratamiento de Datos: sí de Alejo). Afiliados sin configurar."
+      "nota": "Cuenta Hotmart personal (titular Diana Marcela Saa Angarita, confirmada por Alejo). Creado por navegador (no hay MCP de Hotmart). 2026-10-20: contenido = PDF de acceso/guía, página de venta externa https://cuantocobro.vendedecasa.com/. Registro finalizado 2026-10-20 con el sí de Alejo (aceptó el Término de Tratamiento de Datos); Hotmart lo analiza (~15 min, máx. 1 día). Afiliados sin configurar."
     }
   },
   "paraguas": {

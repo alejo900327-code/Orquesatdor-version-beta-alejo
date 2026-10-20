@@ -14,7 +14,7 @@ Modelo de negocio: `conocimiento/_COMPARTIDO/investigaciones/2026-10-micro-apps-
 - [x] ~~Alejo compra el dominio~~ 2026-10-20: `vendedecasa.com` (paraguas para todas las micro apps) → `cuantocobro.vendedecasa.com`.
 - [x] ~~App paga en `public/app/`~~ 2026-10-20: publicada en https://cuantocobro.vendedecasa.com/app/
 - [x] ~~Hotmart → Página de venta externa~~ 2026-10-20: https://cuantocobro.vendedecasa.com/ guardada; PDF reemplazado con la URL nueva.
-- [ ] Hotmart → Finalizar registro (acepta el Término de Datos: sí de Alejo) → aprobación.
+- [x] ~~Hotmart → Finalizar registro~~ 2026-10-20: enviado a análisis (sí de Alejo). Falta: aviso de aprobación de Hotmart → probar una compra real del checkout.
 - [x] ~~Fijar la fecha real de entrega en `#fecha-entrega`~~ 2026-10-20: 30 de noviembre de 2026 (decisión de Alejo). Es solo protocolo: la entrega es inmediata (PDF + /app/).
 - [ ] Conectar el píxel de Meta / analítica a los eventos de `dataLayer`.
 - [x] ~~Elegir dominio~~ 2026-10-20: `cuantocobro.vendedecasa.com` (dominio paraguas `vendedecasa.com`).
