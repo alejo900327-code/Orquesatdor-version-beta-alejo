@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>¿Cuánto Cobro? — Tu acceso y tu guía</title>
+<!-- Fuente del PDF que se sube a Hotmart (Contenido del Producto). Regenerar: bash entrega/generar-pdf.sh -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --fondo:#fbf6ef; --tinta:#2b1d16; --acento:#b8325a; --suave:#efe4d6; --gris:#6b5a50; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:Inter, system-ui, sans-serif; color:var(--tinta); font-size:11.5pt; line-height:1.5; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .hoja { width:210mm; min-height:297mm; padding:20mm 20mm 18mm; background:var(--fondo); page-break-after:always; position:relative; }
+  .hoja:last-child { page-break-after:auto; }
+  h1,h2,h3 { font-family:Fraunces, Georgia, serif; line-height:1.15; margin:0 0 .5em; }
+  h1 { font-size:34pt; } h2 { font-size:20pt; color:var(--acento); } h3 { font-size:13pt; margin-top:1em; }
+  p { margin:0 0 .7em; }
+  .marca { font-family:Fraunces, serif; font-weight:700; font-size:14pt; }
+  .marca span { color:var(--acento); }
+  .portada { display:flex; flex-direction:column; justify-content:center; text-align:center; }
+  .monograma { width:42mm; height:42mm; border-radius:50%; background:var(--acento); color:var(--fondo); display:flex; align-items:center; justify-content:center; font-family:Fraunces, serif; font-size:36pt; font-weight:700; margin:0 auto 10mm; }
+  .sub { font-size:14pt; color:var(--gris); }
+  .caja { background:#fff; border:1px solid var(--suave); border-radius:10px; padding:6mm 7mm; margin:4mm 0; }
+  .caja.acento { border:2px solid var(--acento); }
+  .boton { display:inline-block; background:var(--acento); color:#fff; text-decoration:none; font-weight:700; padding:3mm 7mm; border-radius:999px; font-size:13pt; }
+  .url { font-family:ui-monospace, Menlo, monospace; font-size:10.5pt; word-break:break-all; color:var(--acento); }
+  ol, ul { margin:0 0 .7em; padding-left:1.3em; } li { margin-bottom:.35em; }
+  .num { display:inline-flex; width:9mm; height:9mm; border-radius:50%; background:var(--acento); color:#fff; align-items:center; justify-content:center; font-weight:700; margin-right:3mm; font-size:11pt; }
+  table { width:100%; border-collapse:collapse; margin:2mm 0 4mm; }
+  td { padding:2mm 0; border-bottom:1px solid var(--suave); } td:last-child { text-align:right; font-weight:600; }
+  tr.total td { border-bottom:none; font-weight:700; color:var(--acento); font-size:12.5pt; }
+  .msg { background:#fff; border-left:4px solid var(--acento); border-radius:6px; padding:3.5mm 5mm; margin:3mm 0; font-size:11pt; }
+  .msg b { display:block; color:var(--gris); font-size:9.5pt; text-transform:uppercase; letter-spacing:.04em; margin-bottom:1mm; }
+  .pie { position:absolute; bottom:10mm; left:20mm; right:20mm; font-size:8.5pt; color:var(--gris); display:flex; justify-content:space-between; }
+</style>
+</head>
+<body>
+
+<section class="hoja portada">
+  <div class="monograma">¿$?</div>
+  <h1>¡Bienvenida a<br>¿Cuánto Cobro?!</h1>
+  <p class="sub">Tu acceso a la app + la guía de 10 minutos<br>"Las 4 cosas que olvidas al poner precio"</p>
+  <p style="margin-top:14mm" class="marca">¿Cuánto <span>Cobro?</span> · Receta Rentable</p>
+</section>
+
+<section class="hoja">
+  <h2>1. Entra a tu app</h2>
+  <div class="caja acento">
+    <p><strong>Tu app está aquí:</strong></p>
+    <p><a class="boton" href="{{URL_APP}}">Abrir ¿Cuánto Cobro?</a></p>
+    <p class="url">{{URL_APP}}</p>
+    <p style="margin:0">Ábrela desde el navegador de tu celular (Chrome o Safari). No necesitas descargar nada.</p>
+  </div>
+
+  <h3>Déjala en tu pantalla de inicio (30 segundos)</h3>
+  <ul>
+    <li><strong>Android (Chrome):</strong> menú ⋮ → "Agregar a la pantalla principal".</li>
+    <li><strong>iPhone (Safari):</strong> botón Compartir → "Agregar a inicio".</li>
+  </ul>
+  <p>Así queda como un ícono más y la abres igual que WhatsApp.</p>
+
+  <h3>Tus primeros 5 minutos</h3>
+  <p><span class="num">1</span>Elige tu país: verás ingredientes comunes ya cargados.</p>
+  <p><span class="num">2</span>Corrige los precios con lo que <em>tú</em> pagas: "1 kg de harina a $28".</p>
+  <p><span class="num">3</span>Arma tu receta más vendida y suma empaque, gas y tus horas.</p>
+  <p><span class="num">4</span>Mira tu precio mínimo y tu precio sugerido. Si quieres, manda la cotización por WhatsApp.</p>
+
+  <div class="caja">
+    <p style="margin:0"><strong>¿Algo no funciona?</strong> Responde el email de tu compra de Hotmart y te ayudamos.
+    Tienes <strong>7 días de garantía</strong>: si no logras costear tu primera receta, te devolvemos tu dinero.</p>
+  </div>
+  <div class="pie"><span>¿Cuánto Cobro? · Receta Rentable</span><span>2</span></div>
+</section>
+
+<section class="hoja">
+  <h2>2. Las 4 cosas que olvidas al poner precio</h2>
+  <p>Casi todas las reposteras ponen precio sumando solo los ingredientes "grandes". Estas cuatro cosas son las que se comen la ganancia sin que lo notes.</p>
+
+  <h3>1 · El ingrediente que se pierde</h3>
+  <p>La masa que queda en el bol, el chocolate que se quema, la torta que se rompe. Súmale un <strong>5 % a tus ingredientes</strong> por desperdicio. La app ya lo hace por ti.</p>
+
+  <h3>2 · El empaque y la decoración</h3>
+  <p>Caja, base, cinta, sticker, toppers, velitas. Una caja con base puede costar más que la harina de la torta. Anótalo en cada receta.</p>
+
+  <h3>3 · El gas y la luz</h3>
+  <p>Una hora de horno no es gratis. Si no sabes cuánto es, divide tu recibo del mes entre las horas que horneaste, o empieza con un valor fijo por receta y ajústalo después.</p>
+
+  <h3>4 · Tu tiempo</h3>
+  <p>Comprar, hornear, decorar, lavar y entregar. Ponle un valor a tu hora (lo que te pagarían por hacer ese trabajo) y multiplícalo por las horas reales. <strong>Si no cobras tu tiempo, estás trabajando gratis.</strong></p>
+
+  <div class="caja">
+    <p style="margin-bottom:2mm"><strong>Ejemplo: torta de chocolate para 12</strong></p>
+    <table>
+      <tr><td>Ingredientes (con 5 % de desperdicio)</td><td>$159</td></tr>
+      <tr><td>Empaque + gas</td><td>$55</td></tr>
+      <tr><td>Tu trabajo (3 h × $80)</td><td>$240</td></tr>
+      <tr class="total"><td>Precio mínimo (no pierdes)</td><td>$454</td></tr>
+      <tr class="total"><td>Precio sugerido (deja 30 % de ganancia)</td><td>$648</td></tr>
+    </table>
+    <p style="margin:0;font-size:10pt;color:var(--gris)">Precio sugerido = precio mínimo ÷ (1 − 30 %). Si la vendías a $380, estabas $74 por debajo de tu mínimo.</p>
+  </div>
+  <div class="pie"><span>¿Cuánto Cobro? · Receta Rentable</span><span>3</span></div>
+</section>
+
+<section class="hoja">
+  <h2>3. Cuando te dicen "está caro"</h2>
+  <p>Copia, pega y ajusta a tu estilo. La idea no es convencer a todas: es que quien valora tu trabajo entienda qué está pagando.</p>
+
+  <div class="msg"><b>Explicar el valor</b>
+  ¡Gracias por preguntar! 😊 Mi precio incluye ingredientes de calidad, el empaque y el tiempo de hacerla a mano, solo para ti. Por eso cada torta sale fresca y como la pediste.</div>
+
+  <div class="msg"><b>Ofrecer otra opción sin bajar tu precio</b>
+  Te entiendo. Si quieres algo más económico, puedo hacerte la versión de [tamaño menor / decoración sencilla] por [precio]. Tiene el mismo sabor, solo cambia el tamaño.</div>
+
+  <div class="msg"><b>Cuando comparan con otra</b>
+  Cada repostera trabaja distinto. Yo uso [ingrediente que te diferencia] y la hago el mismo día de la entrega. Si buscas ese resultado, con gusto te la preparo.</div>
+
+  <div class="msg"><b>Cuando subes precios</b>
+  Te cuento que desde el [fecha] actualizo mis precios porque subieron los ingredientes. Quiero seguir usando lo mismo de siempre y no bajar la calidad. ¡Gracias por seguir confiando en mí!</div>
+
+  <div class="msg"><b>Cerrar con amabilidad</b>
+  ¡No te preocupes! Si más adelante quieres pedirla, aquí estoy. Te dejo mi catálogo por si algo te gusta. 🎂</div>
+
+  <div class="caja" style="margin-top:6mm">
+    <p style="margin:0;font-size:9.5pt;color:var(--gris)">¿Cuánto Cobro? es una herramienta de cálculo: los resultados dependen de los datos que ingresas y no garantizan ventas ni ingresos.</p>
+  </div>
+  <div class="pie"><span>¿Cuánto Cobro? · Receta Rentable</span><span>4</span></div>
+</section>
+
+</body>
+</html>

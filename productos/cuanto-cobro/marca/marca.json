@@ -1,0 +1,143 @@
+{
+  "slug": "cuanto-cobro",
+  "nombre": "¿Cuánto Cobro?",
+  "tagline": "El precio justo de tus postres, desde tu celular",
+  "promesa": "Sabe en 2 minutos cuánto te cuesta de verdad cada receta y cuánto deberías cobrar, sin Excel.",
+  "colores": {
+    "fondo": "#fbf6ef",
+    "tinta": "#2b1d16",
+    "acento": "#b8325a"
+  },
+  "monograma": "¿$?",
+  "handles": {
+    "candidatos": [
+      "cuantocobro",
+      "cuantocobro.app",
+      "cuantocobroapp",
+      "cobrabien.app",
+      "micostoreal"
+    ],
+    "disponibles": [
+      "cuantocobro",
+      "cuantocobro.app",
+      "cuantocobroapp",
+      "cobrabien.app",
+      "micostoreal"
+    ],
+    "elegido": "",
+    "nota": "2026-10-19: los 5 dan 'Esta página no está disponible' en Instagram (sesión iniciada). Puede ser libre o reservado por una cuenta eliminada: la confirmación final la da IG al crear. Facebook no se pudo revisar: Chrome sin sesión de Facebook."
+  },
+  "instagram": {
+    "nombre": "¿Cuánto Cobro? · Costos repostería",
+    "bio": "Calcula el costo real de tus postres y cuánto cobrar 🎂\nDesde tu celular, sin Excel.\nCalculadora gratis 👇",
+    "link": "",
+    "categoria": "Aplicación de software (verificar en IG)"
+  },
+  "facebook": {
+    "nombre_pagina": "¿Cuánto Cobro?",
+    "categoria": "Aplicación (verificar en FB)",
+    "bio": "La app para reposteras y emprendedoras que venden desde casa: calcula el costo real de cada receta —ingredientes, empaque, gas y tu tiempo— y te dice tu precio mínimo y sugerido. Sin Excel, desde tu celular.",
+    "sitio_web": "",
+    "boton": "Más información"
+  },
+  "hotmart": {
+    "nombre": "¿Cuánto Cobro? — App de costos para repostería (preventa)",
+    "descripcion": "App web para el celular que calcula el costo real de tus recetas (ingredientes, empaque, gas y tu tiempo) y te da tu precio mínimo y tu precio sugerido. Cuando sube un ingrediente, recalcula todas tus recetas y te arma el mensaje de cotización para WhatsApp.\n\nIncluye: acceso de por vida a la app y sus actualizaciones, ingredientes comunes precargados para tu país, guía de 10 minutos 'Las 4 cosas que olvidas al poner precio' y mensajes para responder cuando te dicen 'está caro'.\n\nPREVENTA: recibes el acceso por email y WhatsApp a más tardar el 30 de noviembre de 2026. Garantía de 7 días: si no logras costear tu primera receta, te devolvemos tu dinero.\n\nHerramienta de cálculo: los resultados dependen de los datos que ingresas y no garantizan ventas ni ingresos.",
+    "categoria": "Culinaria y Gastronomía",
+    "formato": "Aplicación para teléfono celular (entrega: PDF con instrucciones de acceso)",
+    "precio": 12,
+    "moneda": "USD",
+    "pago": "unico",
+    "garantia_dias": 7,
+    "pagina_venta": "https://cuantocobro.vendedecasa.com/",
+    "pagina_gracias": "",
+    "soporte_email": "el de la cuenta Hotmart",
+    "pais_principal": "Colombia",
+    "fecha_entrega": "2026-11-30",
+    "entrega": "Inmediata: PDF entrega/cuanto-cobro-acceso-y-guia.pdf → https://cuantocobro.vendedecasa.com/app/ (la fecha 30-nov es solo protocolo, decisión de Alejo 2026-10-20)"
+  },
+  "activos": {
+    "facebook": {
+      "estado": "pendiente",
+      "url": null,
+      "id": null,
+      "fecha": null,
+      "nota": "Se reutiliza Chef.alejo.cocina en vez de crear página nueva (decisión de Alejo 2026-10-19)."
+    },
+    "instagram": {
+      "estado": "pendiente",
+      "url": null,
+      "handle": null,
+      "conectada_a_pagina": false,
+      "fecha": null,
+      "nota": null
+    },
+    "hotmart": {
+      "estado": "borrador",
+      "producto_id": "8770692",
+      "checkout_url": "https://pay.hotmart.com/D108114823S",
+      "en_revision": false,
+      "fecha": "2026-10-20",
+      "nota": "Cuenta Hotmart personal (titular Diana Marcela Saa Angarita, confirmada por Alejo). Creado por navegador (no hay MCP de Hotmart). Falta para 'Finalizar registro': página de venta, contenido del producto (PDF de acceso) y aceptar el Término de Tratamiento de Datos. Afiliados sin configurar. El checkout no vende hasta que Hotmart apruebe."
+    }
+  },
+  "paraguas": {
+    "estrategia": "Página paraguas de la vertical 'emprendedoras de cocina y repostería'; cada micro app (¿Cuánto Cobro? primero) es un producto dentro de ella.",
+    "pagina_base": {
+      "nombre_actual": "Chef.alejo.cocina",
+      "id_business": "103991017957239",
+      "id_perfil": "100029234593111",
+      "seguidores": 159,
+      "propietario": "BM Alejo Traffiker Respaldo (140800390819351)",
+      "socios": [
+        "Respaldo 2 Uñas (1482470455485147) — control total sobre la página"
+      ],
+      "alertas": [
+        "Las publicaciones de la Cumbre entraron 'Publicado por Instagram': revisar qué IG está vinculado a la página",
+        "Chrome quedó actuando como la página Chef.alejo.cocina"
+      ],
+      "anuncios_en_circulacion": "ninguno (Biblioteca de Anuncios, 2026-10-19)",
+      "pauta": {
+        "bm_pauta": "BM 2 Fokuz Anunciante (3158645351122587): cuentas CP - EMBAJADORES, CP - Alejo traffciker, CP Fokuz 1",
+        "conectada_a_pauta": false,
+        "detalle": "Fokuz es socio de BM Alejo Traffiker Respaldo pero solo tiene asignados la página Alejo Trafficker y el IG alejo_trafficker; Chef.alejo.cocina NO está asignada a Fokuz.",
+        "revisado": "2026-10-19"
+      },
+      "publicaciones": {
+        "total": 8,
+        "cumbre_mc": "5 (1-5 dic 2024, publicadas desde un Instagram vinculado)",
+        "archivadas": [
+          "5 dic 2024 — 'Reconoces los miedos…'"
+        ],
+        "pendientes_de_archivar": 4,
+        "propias_cocina": "3 (reel 2020, foto perfil 2022, foto 2023)"
+      }
+    },
+    "nombres_propuestos": [
+      {
+        "nombre": "Receta Rentable",
+        "handle": "recetarentable",
+        "ig": "parece libre (2026-10-19)",
+        "nota": "recomendado"
+      },
+      {
+        "nombre": "Chef Alejo · Receta Rentable",
+        "handle": "recetarentable",
+        "ig": "parece libre",
+        "nota": "cambio de nombre más fácil de aprobar"
+      },
+      {
+        "nombre": "Hornea y Cobra",
+        "handle": "hornea.y.cobra",
+        "ig": "parece libre",
+        "nota": "más pegajoso, más cerrado a repostería"
+      }
+    ],
+    "ocupados": [
+      "cocinaquevende",
+      "reposteriarentable"
+    ],
+    "elegido": "Receta Rentable",
+    "handle_elegido": "recetarentable"
+  }
+}

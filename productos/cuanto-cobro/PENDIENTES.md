@@ -9,9 +9,20 @@ Modelo de negocio: `conocimiento/_COMPARTIDO/investigaciones/2026-10-micro-apps-
 - Eventos de medición en `window.dataLayer`: `landing_a_calculadora`, `clic_comprar_preventa`, `calc_ejemplo`, `calc_primer_resultado`, `calc_compartir`, `calc_a_preventa`.
 
 ## Falta antes de `bash scripts/deploy.sh cuanto-cobro`
-- [ ] Crear el producto de preventa en Hotmart (USD 12) y poner el enlace en `#boton-comprar` (index.html).
-- [ ] Fijar la fecha real de entrega en `#fecha-entrega` (≤ 7 días después de abrir la preventa).
+- [x] ~~Crear el producto de preventa en Hotmart (USD 12) y poner el enlace en `#boton-comprar` (index.html).~~ 2026-10-20: ID 8770692 (borrador), checkout https://pay.hotmart.com/D108114823S.
+- [x] ~~Hotmart → contenido del producto~~ 2026-10-20: PDF `entrega/cuanto-cobro-acceso-y-guia.pdf` subido (acceso a /app/ + guía de las 4 cosas + mensajes para "está caro").
+- [x] ~~Alejo compra el dominio~~ 2026-10-20: `vendedecasa.com` (paraguas para todas las micro apps) → `cuantocobro.vendedecasa.com`.
+- [ ] App paga en `public/app/` (la está haciendo otra sesión): sin ella, el PDF lleva a un 404.
+- [ ] Hotmart → Página de venta externa `cuantocobro.vendedecasa.com/` (solo se acepta cuando el dominio ya responde) → Finalizar registro (acepta el Término de Datos: sí de Alejo) → aprobación.
+- [x] ~~Fijar la fecha real de entrega en `#fecha-entrega`~~ 2026-10-20: 30 de noviembre de 2026 (decisión de Alejo). Es solo protocolo: la entrega es inmediata (PDF + /app/).
 - [ ] Conectar el píxel de Meta / analítica a los eventos de `dataLayer`.
-- [ ] Elegir dominio (o salir en `cuanto-cobro.<subdominio>.workers.dev`).
+- [x] ~~Elegir dominio~~ 2026-10-20: `cuantocobro.vendedecasa.com` (dominio paraguas `vendedecasa.com`).
 - [ ] Pasar el copy por `guardian-etico` (claims) y `editor-voz-marca`.
 - [ ] Decidir nombre definitivo (alternativas: Cobra Bien, Precio Justo, Mi Costo Real).
+
+## Activos digitales (skill `activos-digitales`)
+- [x] Kit de marca preparado (`marca/`)
+- [ ] Alejo aprueba nombre y handle
+- [ ] Fanpage de Facebook (`crear-fanpage-facebook`)
+- [ ] Cuenta de Instagram (`crear-cuenta-instagram`)
+- [~] Producto en Hotmart (`crear-producto-hotmart`): creado en borrador (ID 8770692), falta finalizar el registro

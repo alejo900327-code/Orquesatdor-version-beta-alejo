@@ -1,0 +1,146 @@
+/* ¿Cuánto Cobro? — estilos propios de la app (se suman a ../estilos.css) */
+body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+body.sin-pestanas { padding-bottom: 0; }
+body.sin-pestanas .pestanas { display: none; }
+.barra-pais { font-size: .82rem; color: var(--tinta-2); font-weight: 600; }
+.app { padding-top: 18px; padding-bottom: 32px; }
+.app h1 { font-size: clamp(1.6rem, 6vw, 2.2rem); margin: 0; }
+.cabeza-vista { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; min-height: 44px; }
+.volver { font-weight: 600; text-decoration: none; padding: 10px 0; }
+.ayuda { font-size: .92rem; color: var(--tinta-2); }
+.ayuda-chica { font-size: .85rem; color: var(--tinta-2); margin: 8px 0; }
+.ayuda-chica.error { color: var(--rojo); }
+
+/* Pestañas inferiores */
+.pestanas {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; display: grid; grid-template-columns: repeat(4, 1fr);
+  background: var(--blanco); border-top: 1px solid var(--linea); padding-bottom: env(safe-area-inset-bottom);
+}
+.pestanas a {
+  display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 4px 10px; min-height: 60px;
+  font-size: .75rem; font-weight: 600; color: var(--tinta-2); text-decoration: none;
+}
+.pestanas a span { font-size: 1.25rem; line-height: 1.2; }
+.pestanas a[aria-current="page"] { color: var(--frambuesa); }
+@media (min-width: 940px) {
+  .pestanas { position: sticky; top: 60px; bottom: auto; border-top: 0; border-bottom: 1px solid var(--linea); grid-template-columns: repeat(4, 160px); justify-content: center; }
+  .pestanas a { flex-direction: row; justify-content: center; min-height: 48px; font-size: .9rem; gap: 6px; }
+  body { padding-bottom: 0; display: flex; flex-direction: column; }
+  body > .barra { order: 0; } body > .pestanas { order: 1; } body > .aviso { order: 2; } body > .app { order: 3; }
+}
+
+/* Aviso superior */
+.aviso { position: sticky; top: 60px; z-index: 15; background: var(--verde-fondo); color: var(--verde); border-bottom: 1px solid var(--linea); font-size: .92rem; }
+.aviso .contenedor { display: flex; gap: 10px; align-items: flex-start; padding-top: 12px; padding-bottom: 12px; }
+.aviso .contenedor > div { flex: 1; }
+.aviso ul { margin: 6px 0; padding-left: 18px; color: var(--tinta); }
+.aviso a { font-weight: 700; }
+.aviso .sube { color: var(--rojo); font-weight: 700; }
+.aviso .baja { color: var(--verde); font-weight: 700; }
+.aviso-amarillo { background: var(--amarillo-fondo); color: var(--amarillo); }
+.aviso-rojo { background: var(--rojo-fondo); color: var(--rojo); }
+.aviso-cerrar { flex: none; width: 36px; height: 36px; border: 0; background: transparent; font-size: 1.4rem; color: inherit; cursor: pointer; }
+
+/* Bienvenida */
+.bienvenida { padding: 16px 0 24px; }
+.rejilla-paises { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
+@media (min-width: 560px) { .rejilla-paises { grid-template-columns: repeat(3, 1fr); } }
+.opcion-pais {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 16px; min-height: 72px;
+  background: var(--blanco); border: 1.5px solid var(--linea); border-radius: var(--radio); cursor: pointer;
+  font: 400 1rem var(--texto); color: var(--tinta); text-align: left;
+}
+.opcion-pais span { font-size: .85rem; color: var(--tinta-2); }
+.opcion-pais:hover, .opcion-pais:focus-visible { border-color: var(--frambuesa); }
+
+/* Lista de recetas */
+.lista-tarjetas { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+@media (min-width: 720px) { .lista-tarjetas { grid-template-columns: 1fr 1fr; } }
+.tarjeta-receta {
+  display: block; background: var(--blanco); border: 1px solid var(--linea); border-radius: var(--radio);
+  padding: 16px; color: var(--tinta); text-decoration: none; box-shadow: var(--sombra);
+}
+.tarjeta-receta:hover { border-color: var(--frambuesa); }
+.tr-cabeza { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 8px; font-size: 1.05rem; }
+.tr-precios { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; font-variant-numeric: tabular-nums; }
+.tr-precios small { display: block; font-size: .78rem; color: var(--tinta-2); }
+.tr-precios > div:last-child { text-align: right; }
+.tr-grande { font-family: var(--display); font-size: 1.6rem; font-weight: 700; color: var(--frambuesa); display: block; line-height: 1.15; }
+.tr-falta { margin: 0; font-size: .9rem; color: var(--tinta-2); }
+.insignia { flex: none; display: inline-block; padding: 3px 9px; border-radius: 999px; font-size: .75rem; font-weight: 700; white-space: nowrap; }
+.insignia-sube { background: var(--rojo-fondo); color: var(--rojo); }
+.insignia-baja { background: var(--verde-fondo); color: var(--verde); }
+.insignia-ref { background: var(--amarillo-fondo); color: var(--amarillo); margin-top: 4px; }
+.franja-subio { margin: 0 0 14px; }
+.vacio-caja { background: var(--blanco); border: 1.5px dashed var(--linea); border-radius: var(--radio); padding: 22px; text-align: center; }
+
+/* Editor de receta */
+.linea {
+  display: grid; grid-template-columns: 1fr 46px; gap: 8px 10px; align-items: end;
+  border: 1px solid var(--linea); border-radius: 12px; padding: 12px; margin-bottom: 10px; background: var(--crema);
+}
+.linea-ing { grid-column: 1; }
+.linea .l-quitar { grid-column: 2; grid-row: 1; }
+.linea-cant { grid-column: 1 / -1; }
+.linea .l-costo { grid-column: 1 / -1; margin-top: 0; }
+.linea .l-costo:empty { display: none; }
+@media (min-width: 560px) {
+  .linea { grid-template-columns: 1.3fr 1fr 46px; }
+  .linea-cant { grid-column: 2; grid-row: 1; }
+  .linea .l-quitar { grid-column: 3; }
+}
+.acciones-receta { display: flex; justify-content: space-between; gap: 12px; padding: 4px 4px 12px; }
+.enlace-peligro { color: var(--rojo); }
+.resultado .boton-principal { margin-top: 16px; }
+.pastilla[hidden] { display: none; }
+
+/* Ingredientes */
+.buscador { margin: 4px 0 12px; }
+.lista-ing { list-style: none; margin: 12px 0 0; padding: 0; background: var(--blanco); border: 1px solid var(--linea); border-radius: var(--radio); overflow: hidden; }
+.lista-ing li + li { border-top: 1px solid var(--linea); }
+.fila-ing {
+  width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 16px; min-height: 64px;
+  background: none; border: 0; text-align: left; font: 400 1rem var(--texto); color: var(--tinta); cursor: pointer;
+}
+.fila-ing:hover { background: var(--crema); }
+.fi-nombre small, .fi-costo small { display: block; font-size: .8rem; color: var(--tinta-2); }
+.fi-costo { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; flex: none; }
+.costo-base { font-weight: 600; color: var(--verde); margin: 10px 0 0; min-height: 1.5em; }
+
+/* Mensajes */
+.mensaje { background: var(--blanco); border: 1px solid var(--linea); border-left: 4px solid var(--frambuesa); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.mensaje h3 { font-size: 1rem; margin-bottom: 6px; font-family: var(--texto); font-weight: 700; color: var(--tinta-2); }
+.mensaje-acciones { display: flex; flex-wrap: wrap; gap: 8px; }
+.guia { margin-top: 20px; }
+.guia ol { padding-left: 20px; margin: 8px 0 0; }
+.guia li { margin-bottom: 8px; }
+
+/* Hojas (dialog) */
+dialog.hoja {
+  width: min(560px, 100%); max-width: 100%; max-height: 92vh; margin: auto auto 0; padding: 22px 16px calc(22px + env(safe-area-inset-bottom));
+  border: 0; border-radius: 20px 20px 0 0; background: var(--blanco); color: var(--tinta); box-shadow: 0 -10px 40px rgba(43, 29, 22, .2);
+}
+@media (min-width: 600px) { dialog.hoja { margin: auto; border-radius: 20px; padding: 26px; } }
+dialog.hoja::backdrop { background: rgba(43, 29, 22, .45); }
+dialog.hoja h2 { font-size: 1.35rem; }
+dialog.hoja label { margin-top: 10px; }
+.hoja-acciones { display: grid; gap: 10px; margin-top: 18px; }
+#ing-borrar { margin-top: 14px; }
+textarea {
+  width: 100%; padding: 10px 12px; border: 1.5px solid var(--linea); border-radius: 10px; background: #fff;
+  color: var(--tinta); font: 400 16px/1.4 var(--texto); resize: vertical;
+}
+textarea:focus { border-color: var(--frambuesa); outline: none; }
+
+/* Resumen fijo del precio en el editor (solo celular: el resultado queda abajo del formulario) */
+.resumen-fijo {
+  position: fixed; left: 12px; right: 12px; bottom: calc(70px + env(safe-area-inset-bottom)); z-index: 19;
+  display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 16px; min-height: 48px;
+  background: var(--tinta); color: #fff; border: 0; border-radius: 14px; box-shadow: 0 8px 24px rgba(43, 29, 22, .25);
+  font: 600 .95rem var(--texto); cursor: pointer;
+}
+.resumen-fijo[hidden] { display: none; }
+.resumen-fijo strong { font-variant-numeric: tabular-nums; font-size: 1.05rem; }
+@media (min-width: 940px) { .resumen-fijo { display: none; } }
+.app:has(.resumen-fijo:not([hidden])) { padding-bottom: 96px; }
+.bienvenida h1 { margin-bottom: 12px; }
