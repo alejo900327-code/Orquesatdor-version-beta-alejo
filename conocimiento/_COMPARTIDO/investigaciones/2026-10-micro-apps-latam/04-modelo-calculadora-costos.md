@@ -73,7 +73,7 @@ Ventajas a defender: **en el celular**, **español local + moneda local**, **rec
 **Fuera del MVP:** inventario, agenda de pedidos, varias usuarias, sincronización en la nube, IA.
 
 ### 3.3 Decisiones técnicas (para el carril de Alejo Cloud)
-- `bash scripts/nuevo-producto.sh cuanto-cobro` → PWA estática en Cloudflare (cuenta personal `28a0caea…`), deploy por `scripts/deploy.sh`.
+- `bash scripts/nuevo-producto.sh cuanto-cobro` → PWA estática en Cloudflare (cuenta personal `ff989b53…`), deploy por `scripts/deploy.sh`.
 - **Datos en el dispositivo** (IndexedDB): costo de servidor ≈ 0, sin datos personales de clientas en nuestra base, funciona offline.
 - **Acceso**: webhook de Hotmart → Worker → D1 guarda solo email + estado de licencia → enlace mágico por email. (En preventa no hace falta: entrega manual.)
 - Sin IA en v1 → costo marginal por usuaria ≈ USD 0 (clave para el pago único).

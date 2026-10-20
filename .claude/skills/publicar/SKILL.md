@@ -7,7 +7,7 @@ description: Publica (deploy) un producto de Alejo Cloud en el Cloudflare PERSON
 
 Aquí manda Alejo: cuando él dice "deployalo" en el chat, eso ES la autorización. No hace falta
 pedir otro permiso para productos de `productos/`. Todo va a la cuenta personal
-(`28a0caea…`) y al GitHub `Alejoobregon27/alejo-cloud`. Nunca a la empresa.
+(`ff989b53…`) y al GitHub `Alejoobregon27/alejo-cloud`. Nunca a la empresa.
 
 ## Pasos (en orden; si algo falla, DETENTE y reporta)
 1. **¿Qué producto?** El que se está trabajando en la conversación. Si no es obvio, el
@@ -17,7 +17,7 @@ pedir otro permiso para productos de `productos/`. Todo va a la cuenta personal
 2. **¿Qué dominio?**
    - Si `productos/<slug>/wrangler.toml` ya tiene `[[routes]]`, ese es.
    - Si no, lista las zonas de la cuenta personal:
-     `curl -s -H "Authorization: Bearer $(grep -E '^oauth_token' ~/Library/Preferences/.wrangler/config/default.toml | cut -d'"' -f2)" "https://api.cloudflare.com/client/v4/zones?account.id=28a0caea3d6af60c2a36eb7ae3f6ecf9" | jq -r '.result[].name'`
+     `curl -s -H "Authorization: Bearer $(grep -E '^oauth_token' ~/.config/alejo-cloud/.wrangler/config/default.toml | cut -d'"' -f2)" "https://api.cloudflare.com/client/v4/zones?account.id=ff989b53c26e6dbfa506425033548f68" | jq -r '.result[].name'`
      y propón `<slug>.<zona>` (o la raíz si el producto tiene dominio propio). Añade el bloque
      `[[routes]] pattern = "…" custom_domain = true` al toml.
    - Si no hay zonas: publica en `workers.dev` y dile a Alejo que compre/agregue un dominio.
