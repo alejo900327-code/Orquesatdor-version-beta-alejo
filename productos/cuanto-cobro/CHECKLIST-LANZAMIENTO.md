@@ -33,7 +33,7 @@ Estado al 2026-10-20 (actualizado tras el deploy 5106f634). Leyenda: ✅ listo y
 | C6 | Afiliados desactivados | Claude | ✅ | Programa de afiliados sin configurar |
 | C7 | Email de atención al cliente `soporte@vendedecasa.com` (Cloudflare Email Routing → gmail de Alejo) | Claude | ✅ | Hotmart → Página de pago; también en /privacidad/ y en el PDF |
 | C8 | Datos bancarios para recibir pagos | Alejo | ✅ (confirmado por Alejo) | Hotmart → Mi cuenta → Datos bancarios |
-| C9 | **Compra real de prueba** con cupón `PRUEBACC0VX42K` (95 %, vence 23-oct 00:00 BRT): llega email, PDF y bump | Alejo | ⬜🔴 | Recibir el email de Hotmart y abrir `/app/` |
+| C9 | Compra real de prueba | Alejo | ⏭️ omitida por decisión de Alejo (21-oct) | Verificado sin compra: soporte@vendedecasa.com acepta correo (SMTP 250) y reenvía a gmail; PDF en Hotmart; /app/ y pack 200; checkout con bump, autor Receta Rentable y email de soporte; Hotmart inyecta el píxel 520582086176158 con Purchase activo. Queda sin probar: el email real de Hotmart a la compradora y el disparo del Purchase → revisar con la PRIMERA venta real |
 
 ## D · Medición (píxel 520582086176158, BM Alejo Traffiker Respaldo)
 | # | Ítem | Quién | Estado | Cómo se verifica |
