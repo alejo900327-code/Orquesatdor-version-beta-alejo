@@ -10,3 +10,6 @@ Lee dos archivos que viven aquí y se suben al dashboard cada vez que se actuali
 - `anuncios.csv`: acumulado por anuncio (gasto, impresiones, clics, compras según Meta, estado de entrega).
 
 Para actualizar, pedir "actualiza el dash del embudo". Claude lee Ads Manager, Events Manager y Hotmart en Chrome, edita los CSV, los sube como asset nuevo y apunta el dataset al nuevo `/_blob/…`.
+
+## Actualización automática
+Tarea programada `dash-embudo-cuanto-cobro`: todos los días ~7:45 a. m. (hora del Mac) carga los números de AYER. Corre solo con la app de Claude abierta; si estaba cerrada, corre al abrirla. Solo lee Meta y Hotmart, actualiza estos CSV y el dashboard, hace commit de los CSV y deja un resumen. Ingresos = compras × USD 12 + bumps × USD 5 (precio de lista, sin comisiones de Hotmart).
