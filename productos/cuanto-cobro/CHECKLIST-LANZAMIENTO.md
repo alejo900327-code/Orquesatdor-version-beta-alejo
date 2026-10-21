@@ -40,7 +40,7 @@ Estado al 2026-10-20 (actualizado tras el deploy 5106f634). Leyenda: ✅ listo y
 |---|---|---|---|---|
 | D1 | Píxel en landing y calculadora (`public/pixel.js`) | Claude | ✅ PageView y ViewContent verificados en vivo | Meta Pixel Helper o Events Manager → Probar eventos |
 | D2 | PageView · Lead (`calc_primer_resultado`, 1 vez por navegador) · `ClicComprar` personalizado | Claude | ✅ código; Lead se verá con la primera calculadora real | Probar eventos en vivo |
-| D3 | Hotmart envía InitiateCheckout y Purchase al mismo píxel (web) | Claude | ✅ | Configurado; ver eventos tras la compra de prueba |
+| D3 | Hotmart envía InitiateCheckout ("Visitas en la Página de Pago", activado 21-oct) y Purchase ("Ventas realizadas") al mismo píxel (web) | Claude | ✅ | Hotmart → Píxel de seguimiento → Detalles de la configuración; ver eventos con las primeras visitas |
 | D4 | API de Conversiones en Hotmart (token de Meta) | Alejo | ⬜ | Generar el token en Events Manager y pegarlo en Hotmart → Píxel → API |
 | D5 | Dominio `vendedecasa.com` **verificado** en el BM (metaetiqueta en la portada vendedecasa.com) | Claude | ✅ | BM → Seguridad de la marca → Dominios |
 | D6 | Eventos priorizados en Events Manager (Purchase, Lead) | Alejo/Claude | ⬜ | Tras verificar dominio |
@@ -65,6 +65,7 @@ Estado al 2026-10-20 (actualizado tras el deploy 5106f634). Leyenda: ✅ listo y
 | F7 | Meta de CPA **USD 6** (50 % del ticket) como REGLA, sin tope de costo en Meta (decisión de Alejo 21-oct). Pausar un anuncio con gasto ≥ USD 12 y 0 compras · días 1-3 no tocar presupuesto · escalar +20 % el presupuesto si el CPA de la campaña ≤ USD 6 tres días seguidos · si a los 7 días CPA > USD 9, cambiar creativos/ángulos | Claude | ✅ reglas creadas 21-oct | Ads Manager → Más → Administrar reglas: **R1** `cc-prueba1 · Pausar anuncio con USD 12 gastados y 0 compras` (anuncios activos de la campaña · Gasto > USD 12 y Resultados < 1 · período máximo · continua · desactiva el anuncio + aviso). **R2** `cc-prueba1 · Escalar +20 % si CPA ≤ USD 6 (3 días)` (la campaña · Costo por resultado < USD 6,01 y Resultados > 2 · últimos 3 días sin hoy · por día · +20 % presupuesto diario, máx. 1 vez/día, tope USD 30/día + aviso). La revisión del día 7 (CPA > USD 9 → cambiar creativos) es manual |
 
 ## G · Después de encender (día 1-7)
+- Seguimiento diario en el dashboard del embudo (`metricas/README.md`).
 - Día 1: revisar que lleguen Lead y Purchase en Events Manager; nada de tocar presupuestos.
 - Día 3: primera lectura de CTR y costo por Lead; solo apagar lo que rompa las reglas de F7.
 - Día 7: decisión matar/escalar, registrar en `activos/angulos-ganadores.md` (registrador-ganadores).
