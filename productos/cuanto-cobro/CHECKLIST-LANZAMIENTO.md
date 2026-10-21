@@ -62,7 +62,7 @@ Estado al 2026-10-20 (actualizado tras el deploy 5106f634). Leyenda: ✅ listo y
 | F4 | Chats/escenas actuadas rotulados "recreación"; verbatims confirmados en su fuente | Claude | ⬜ | Revisión final |
 | F5 | UTMs en cada URL (`utm_campaign=cc-prueba1`) | Claude | ✅ | En el archivo de anuncios |
 | F6 | Campaña **en borrador** `cc-prueba1 · CO · Ventas` (ID 120249380452430302) en la cuenta CP Fokuz 1 (381913140730176): objetivo Ventas · evento Compra · píxel 520582086176158 · CBO USD 10/día · 1 conjunto `CO 23+ amplio · 10 anuncios` (Colombia, 23+, Advantage+, ubicaciones automáticas) · 10 anuncios video 9:16 → landing con UTM por anuncio · identidad Receta Rentable / @recetarentable · mejoras con IA apagadas · sin catálogo · sin contenido relacionado | Claude | ✅ borrador (NO publicado) | Revisar en Ads Manager y publicar SOLO esa campaña (ojo: hay 2 borradores ajenos en la cuenta) |
-| F7 | Meta de CPA: **USD 6** (50 % del ticket). Reglas: ver resumen de la conversación del 21-oct (apagar anuncio con gasto ≥ USD 12 y 0 compras; escalar si CPA ≤ USD 6 por 3 días) | Claude | ✅ | `copy/05-anuncios-campana-1.md` |
+| F7 | Meta de CPA **USD 6** (50 % del ticket) como REGLA, sin tope de costo en Meta (decisión de Alejo 21-oct). Pausar un anuncio con gasto ≥ USD 12 y 0 compras · días 1-3 no tocar presupuesto · escalar +20 % el presupuesto si el CPA de la campaña ≤ USD 6 tres días seguidos · si a los 7 días CPA > USD 9, cambiar creativos/ángulos | Claude | ✅ | Reglas automáticas en Ads Manager: crear al publicar |
 
 ## G · Después de encender (día 1-7)
 - Día 1: revisar que lleguen Lead y Purchase en Events Manager; nada de tocar presupuestos.
