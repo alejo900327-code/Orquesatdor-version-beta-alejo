@@ -61,8 +61,8 @@ Estado al 2026-10-20 (actualizado tras el deploy 5106f634). Leyenda: ✅ listo y
 | F3 | Videos 9:16 (b-roll Higgsfield + pantallas reales + texto) | Claude | ✅ 10 MP4 25-30 s, sin música ni voz | `creativos/videos/` |
 | F4 | Chats/escenas actuadas rotulados "recreación"; verbatims confirmados en su fuente | Claude | ⬜ | Revisión final |
 | F5 | UTMs en cada URL (`utm_campaign=cc-prueba1`) | Claude | ✅ | En el archivo de anuncios |
-| F6 | Campaña: Clientes potenciales · optimiza Lead · ABO 5 × USD 2/día · Colombia · 23+ · Advantage+ audiencia · sin Audience Network · excluir compradoras | Alejo (o Claude con acceso) | ⬜ | Revisión antes de publicar |
-| F7 | Reglas de lectura escritas (matar CTR < 0,8 % o costo/Lead > USD 1; escalar < USD 0,50 y CPA ≤ USD 10) | Claude | ✅ | `copy/05-anuncios-campana-1.md` |
+| F6 | Campaña **en borrador** `cc-prueba1 · CO · Ventas` (ID 120249380452430302) en la cuenta CP Fokuz 1 (381913140730176): objetivo Ventas · evento Compra · píxel 520582086176158 · CBO USD 10/día · 1 conjunto `CO 23+ amplio · 10 anuncios` (Colombia, 23+, Advantage+, ubicaciones automáticas) · 10 anuncios video 9:16 → landing con UTM por anuncio · identidad Receta Rentable / @recetarentable · mejoras con IA apagadas · sin catálogo · sin contenido relacionado | Claude | ✅ borrador (NO publicado) | Revisar en Ads Manager y publicar SOLO esa campaña (ojo: hay 2 borradores ajenos en la cuenta) |
+| F7 | Meta de CPA: **USD 6** (50 % del ticket). Reglas: ver resumen de la conversación del 21-oct (apagar anuncio con gasto ≥ USD 12 y 0 compras; escalar si CPA ≤ USD 6 por 3 días) | Claude | ✅ | `copy/05-anuncios-campana-1.md` |
 
 ## G · Después de encender (día 1-7)
 - Día 1: revisar que lleguen Lead y Purchase en Events Manager; nada de tocar presupuestos.
