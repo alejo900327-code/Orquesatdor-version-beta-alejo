@@ -25,6 +25,7 @@ var META_PIXEL_ID = "520582086176158";
     landing_a_calculadora: ["trackCustom", "LandingACalculadora"],
     calc_primer_resultado: ["track", "Lead", { content_name: "calculadora" }],
     calc_a_preventa: ["trackCustom", "ClicComprar", { origen: "calculadora" }],
+    calc_barra_comprar: ["trackCustom", "ClicComprar", { origen: "calculadora-barra" }],
     clic_comprar_preventa: ["trackCustom", "ClicComprar", { origen: "landing" }]
   };
 

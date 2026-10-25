@@ -272,6 +272,7 @@
     window.open("https://wa.me/?text=" + encodeURIComponent(texto), "_blank", "noopener");
   });
   $("ir-preventa").addEventListener("click", function () { medir("calc_a_preventa"); });
+  $("barra-comprar").addEventListener("click", function () { medir("calc_barra_comprar"); });
 
   // Inicio: Colombia por defecto; ?pais=MX (o CO, PE, CL, AR, US) elige otro país si no hay borrador guardado.
   if (!restaurar()) {
