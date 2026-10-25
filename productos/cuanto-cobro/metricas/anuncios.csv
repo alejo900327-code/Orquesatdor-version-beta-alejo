@@ -1,11 +1,11 @@
 anuncio,angulo,destino,gasto_usd,impresiones,clics_enlace,compras,estado
-rojo-a,El número en rojo,Calculadora,0.28,33,1,0,Aprendizaje
-rojo-b,El número en rojo,Calculadora,15.01,1934,65,0,Aprendizaje
-visto-a,El precio en visto,Calculadora,0.31,125,24,0,Aprendizaje
-visto-b,El precio en visto,Calculadora,0.03,4,0,0,Aprendizaje
-horas-a,Calculaste 4 horas,Calculadora,0.58,103,1,0,Aprendizaje
-horas-b,Calculaste 4 horas,Calculadora,0.88,121,1,0,Aprendizaje
-x3-a,¿De dónde sale el × 3?,Calculadora,0.02,20,1,0,Aprendizaje
-x3-b,¿De dónde sale el × 3?,Calculadora,0.03,9,0,0,Aprendizaje
-caro-a,Está caro,Landing,0.00,5,3,0,Aprendizaje
-caro-b,Está caro,Landing,0.12,8,0,0,Aprendizaje
+rojo-a,El número en rojo,Calculadora,1.18,135,5,0,Aprendizaje
+rojo-b,El número en rojo,Calculadora,32.05,4111,160,1,Aprendizaje
+visto-a,El precio en visto,Calculadora,1.32,296,27,0,Aprendizaje
+visto-b,El precio en visto,Calculadora,0.06,13,0,0,Aprendizaje
+horas-a,Calculaste 4 horas,Calculadora,0.72,116,1,0,Aprendizaje
+horas-b,Calculaste 4 horas,Calculadora,1.39,182,4,0,Aprendizaje
+x3-a,¿De dónde sale el × 3?,Calculadora,0.37,69,2,0,Aprendizaje
+x3-b,¿De dónde sale el × 3?,Calculadora,0.06,13,0,0,Aprendizaje
+caro-a,Está caro,Landing,0.15,19,3,0,Aprendizaje
+caro-b,Está caro,Landing,0.12,9,0,0,Aprendizaje
