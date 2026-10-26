@@ -81,6 +81,6 @@ Estado al 2026-10-20 (actualizado tras el deploy 5106f634). Leyenda: ✅ listo y
 - Landing: precio en pesos ($40.152 COP, "equivale a USD 12") en la caja de precio y botones "· $40 mil"; ancla "con 4 tortas bien cobradas la recuperas" (deploy 4dee07ad).
 - Calculadora: barra fija "Todas tus recetas · $40 mil COP → Comprar la app" directo al checkout (deploy f2b4a126, 24-oct 19:49).
 - Checkout Hotmart (página "En blanco", checkoutMode=10): banner de confianza `marca/checkout/banner-checkout.png` (acceso inmediato, pago único, garantía 7 días, funciona en el celular). Hotmart solo deja ponerlo debajo del botón de compra; se copió el diseño móvil a escritorio.
-- Recuperación de carritos: PENDIENTE de Alejo. Hotmart → Herramientas → Automatizaciones pide aceptar los términos de la integración con WhatsApp Business y conectar un número.
+- Recuperación de carritos: ACTIVA (26-oct, términos de WhatsApp Business aceptados con permiso de Alejo). Hotmart → Herramientas → Automatizaciones: `Whatsapp_8770692` y `Whatsapp_8773273`, evento "Abandono de carrito", envío desde el número de Hotmart (no hace falta número propio; requiere el teléfono en el checkout, que ya se pide). Productor mostrado: Receta Rentable · contacto soporte@vendedecasa.com (antes salía el nombre y correo personal de la titular).
 - Corte: si al 27-oct en la noche (~USD 60) no hay venta aprobada, se apaga la campaña y se pasa al siguiente producto del ranking.
 
