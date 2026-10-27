@@ -84,3 +84,7 @@ Estado al 2026-10-20 (actualizado tras el deploy 5106f634). Leyenda: ✅ listo y
 - Recuperación de carritos: ACTIVA (26-oct, términos de WhatsApp Business aceptados con permiso de Alejo). Hotmart → Herramientas → Automatizaciones: `Whatsapp_8770692` y `Whatsapp_8773273`, evento "Abandono de carrito", envío desde el número de Hotmart (no hace falta número propio; requiere el teléfono en el checkout, que ya se pide). Productor mostrado: Receta Rentable · contacto soporte@vendedecasa.com (antes salía el nombre y correo personal de la titular).
 - Corte: si al 27-oct en la noche (~USD 60) no hay venta aprobada, se apaga la campaña y se pasa al siguiente producto del ranking.
 
+
+## J · Campaña detenida (26-oct)
+- Alejo pidió detener las campañas. `cc-prueba1 · CO · Ventas` apagada en Ads Manager (Desactivado). Gasto total: USD 53,29; 0 ventas aprobadas (Meta cuenta 1 compra que en Hotmart quedó cancelada). Las demás campañas de la cuenta ya estaban apagadas; los 2 borradores ajenos siguen sin tocar.
+- Siguen vivas: la landing y la calculadora, la recuperación de carritos de Hotmart y la tarea diaria del dash.
